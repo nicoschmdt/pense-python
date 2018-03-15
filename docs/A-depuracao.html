@@ -1,0 +1,413 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Apêndice A: Depuração - Pense em Python</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="Pense como um cientista da computação">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <base href="">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme -->
+        
+
+        
+
+        <!-- Fetch Clipboard.js from CDN but have a local fallback -->
+        <script src="https://cdn.jsdelivr.net/clipboard.js/1.6.1/clipboard.min.js"></script>
+        <script>
+            if (typeof Clipboard == 'undefined') {
+                document.write(unescape("%3Cscript src='clipboard.min.js'%3E%3C/script%3E"));
+            }
+        </script>
+
+    </head>
+    <body class="light">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { } 
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme;
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            document.querySelector('html').classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <ol class="chapter"><li class="affix"><a href="introducao.html">Pense em Python</a></li><li class="affix"><a href="00-prefacio.html">Prefácio</a></li><li><a href="01-jornada.html"><strong aria-hidden="true">1.</strong> A jornada do programa</a></li><li><a href="02-vars-expr-instr.html"><strong aria-hidden="true">2.</strong> Variáveis, expressões e instruções</a></li><li><a href="03-funcoes.html"><strong aria-hidden="true">3.</strong> Funções</a></li><li><a href="04-caso-interface.html"><strong aria-hidden="true">4.</strong> Estudo de caso: projeto de interface</a></li><li><a href="05-cond-recur.html"><strong aria-hidden="true">5.</strong> Condicionais e recursividade</a></li><li><a href="06-funcoes-result.html"><strong aria-hidden="true">6.</strong> Funções com resultado</a></li><li><a href="07-iteracao.html"><strong aria-hidden="true">7.</strong> Iteração</a></li><li><a href="08-strings.html"><strong aria-hidden="true">8.</strong> Strings</a></li><li><a href="09-caso-palavras.html"><strong aria-hidden="true">9.</strong> Estudo de caso: jogos de palavras</a></li><li><a href="10-listas.html"><strong aria-hidden="true">10.</strong> Listas</a></li><li><a href="11-dicionarios.html"><strong aria-hidden="true">11.</strong> Dicionários</a></li><li><a href="12-tuplas.html"><strong aria-hidden="true">12.</strong> Tuplas</a></li><li><a href="13-caso-estruturas.html"><strong aria-hidden="true">13.</strong> Estudo de caso: seleção de estrutura de dados</a></li><li><a href="14-arquivos.html"><strong aria-hidden="true">14.</strong> Arquivos</a></li><li><a href="15-classes-objetos.html"><strong aria-hidden="true">15.</strong> Classes e objetos</a></li><li><a href="16-classes-funcoes.html"><strong aria-hidden="true">16.</strong> Classes e funções</a></li><li><a href="17-classes-metodos.html"><strong aria-hidden="true">17.</strong> Classes e métodos</a></li><li><a href="18-heranca.html"><strong aria-hidden="true">18.</strong> Herança</a></li><li><a href="19-extra.html"><strong aria-hidden="true">19.</strong> Extra</a></li><li class="affix"><a href="A-depuracao.html" class="active">Apêndice A: Depuração</a></li><li class="affix"><a href="B-analise-algorit.html">Apêndice B: Análise de algoritmos</a></li><li class="affix"><a href="C-colofao-autor.html">Colofão / Sobre o Autor</a></li></ol>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light <span class="default">(default)</span></button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                        </div>
+
+                        <h1 class="menu-title">Pense em Python</h1>
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <a class="header" href="A-depuracao.html#apêndice-a-depuração" id="apêndice-a-depuração"><h1>Apêndice A: Depuração</h1></a>
+<p>Durante a depuração, você deve distinguir entre tipos diferentes de erros para rastreá-los mais rapidamente:</p>
+<ul>
+<li>
+<p>Erros de sintaxe são descobertos pelo interpretador quando ele está traduzindo o código-fonte para código de bytes. Eles indicam que há algo errado com a estrutura do programa. Exemplo: a omissão dos dois pontos no fim de uma instrução def gera a mensagem um tanto redundante SyntaxError: invalid syntax.</p>
+</li>
+<li>
+<p>Erros de tempo de execução são produzidos pelo interpretador se algo der errado durante a execução do programa. A maior parte das mensagens de erro de tempo de execução inclui informações sobre onde o erro ocorreu e o que as funções estavam fazendo. Exemplo: a recursividade infinita eventualmente leva ao erro de tempo de execução maximum recursion depth exceeded.</p>
+</li>
+<li>
+<p>Erros semânticos são problemas com um programa que é executado sem produzir mensagens de erro, mas que não faz a coisa certa. Exemplo: uma expressão que não pode ser avaliada na ordem esperada, produzindo um resultado incorreto.</p>
+</li>
+</ul>
+<p>O primeiro passo da depuração é compreender com que tipo de erro você está lidando. Embora as próximas seções sejam organizadas pelo tipo de erro, algumas técnicas são aplicáveis em mais de uma situação.</p>
+<a class="header" href="A-depuracao.html#a1---erros-de-sintaxe" id="a1---erros-de-sintaxe"><h2>A.1 - Erros de sintaxe</h2></a>
+<p>Os erros de sintaxe normalmente são fáceis de corrigir, uma vez que você descubra quais são. Infelizmente, as mensagens de erro muitas vezes não são úteis. As mensagens mais comuns são SyntaxError: invalid syntax e SyntaxError: invalid token, e nenhuma das duas é muito informativa.</p>
+<p>Por outro lado, a mensagem diz onde no programa o problema ocorreu. E, na verdade, diz a você onde o Python notou um problema, que é não necessariamente onde o erro está. Às vezes, o erro está antes da posição da mensagem de erro, muitas vezes na linha precedente.</p>
+<p>Se estiver construindo o programa incrementalmente, você terá uma boa ideia sobre onde encontrar o erro. Estará na última linha que acrescentou.</p>
+<p>Se estiver copiando o código de um livro, comece comparando com atenção o seu código e o do livro. Verifique cada caractere. Ao mesmo tempo, lembre-se de que o livro pode estar errado, então, se vir algo que parece um erro de sintaxe, pode ser mesmo.</p>
+<p>Aqui estão algumas formas de evitar os erros de sintaxe mais comuns:</p>
+<ol>
+<li>
+<p>Confira se não está usando uma palavra-chave do Python para um nome de variável.</p>
+</li>
+<li>
+<p>Verifique se há dois pontos no fim do cabeçalho de cada instrução composta, incluindo instruções for, while, if e def.</p>
+</li>
+<li>
+<p>Confira se as strings no código têm as aspas correspondentes. Verifique se todas as aspas são retas, em vez de curvas.</p>
+</li>
+<li>
+<p>Se tiver strings com várias linhas com aspas triplas (simples ou duplas), confira se fechou a string adequadamente. Uma string não fechada pode causar um erro de invalid token no fim do seu programa, ou pode tratar a parte seguinte do programa como uma string até chegar à string seguinte. No segundo caso, o programa pode nem produzir uma mensagem de erro!</p>
+</li>
+<li>
+<p>Um operador inicial aberto – <code>(</code>, <code>{</code> ou <code>[</code> – faz o Python continuar até a linha seguinte, como se esta fosse parte da instrução atual. Geralmente, um erro ocorre quase imediatamente na linha seguinte.</p>
+</li>
+<li>
+<p>Confira se há o clássico <code>=</code> em vez do <code>==</code> dentro de uma condicional.</p>
+</li>
+<li>
+<p>Verifique a endentação para ter certeza de que está alinhada como deveria. O Python pode lidar com espaços e tabulações, mas, se misturá-los, isso pode causar problemas. A melhor forma de evitar esse problema é usar um editor de texto que identifique o Python e gere endentação consistente.</p>
+</li>
+<li>
+<p>Se há caracteres não ASCII no código (incluindo strings e comentários), isso pode causar problemas, embora o Python 3 normalmente lide com caracteres não ASCII. Tenha cuidado se colar texto de uma página web ou outra fonte.</p>
+</li>
+</ol>
+<p>Se nada funcionar, vá para a próxima seção...</p>
+<a class="header" href="A-depuracao.html#a11---continuo-fazendo-alterações-e-não-faz-nenhuma-diferença" id="a11---continuo-fazendo-alterações-e-não-faz-nenhuma-diferença"><h3>A.1.1 - Continuo fazendo alterações e não faz nenhuma diferença</h3></a>
+<p>Se o interpretador disser que há um erro e você não o encontra, pode ser que você e o interpretador não estejam olhando para o mesmo código. Verifique o seu ambiente de programação para ter certeza de que o programa que está editando é o mesmo que o Python está tentando executar.</p>
+<p>Se não estiver certo, tente pôr um erro de sintaxe óbvio e deliberado no início do programa. Agora execute-o novamente. Se o interpretador não encontrar o novo erro, você não está executando o novo código.</p>
+<p>Há alguns culpados prováveis:</p>
+<ul>
+<li>
+<p>Você editou o arquivo e esqueceu de salvar as alterações antes de executá-lo novamente. Alguns ambientes de programação fazem isso para você, mas alguns não fazem.</p>
+</li>
+<li>
+<p>Você mudou o nome do arquivo, mas ainda está executando o nome antigo.</p>
+</li>
+<li>
+<p>Algo no seu ambiente de desenvolvimento está configurado incorretamente.</p>
+</li>
+<li>
+<p>Se estiver escrevendo um módulo e usando import, confira se não usou o mesmo nome no seu módulo que os dos módulos padrão do Python.</p>
+</li>
+<li>
+<p>Se você estiver usando import para ler um módulo, lembre-se de que é preciso reiniciar o interpretador ou usar reload para ler um arquivo alterado. Se importar o módulo novamente, ele não faz nada.</p>
+</li>
+</ul>
+<p>Se já esgotou as possibilidades e não conseguiu descobrir o que está acontecendo, uma abordagem é começar novamente com um programa como “Hello, World!”, para ter certeza de que consegue executar um programa conhecido. Então, gradualmente acrescente as partes do programa original ao novo.</p>
+<a class="header" href="A-depuracao.html#a2---erros-de-tempo-de-execução" id="a2---erros-de-tempo-de-execução"><h2>A.2 - Erros de tempo de execução</h2></a>
+<p>Uma vez que o seu programa esteja sintaticamente correto, o Python pode lê-lo e, pelo menos, começar a executá-lo. O que poderia dar errado?</p>
+<a class="header" href="A-depuracao.html#a21---meu-programa-não-faz-nada" id="a21---meu-programa-não-faz-nada"><h3>A.2.1 - Meu programa não faz nada</h3></a>
+<p>Este problema é mais comum quando o seu arquivo é composto de funções e classes, mas na verdade não invoca uma função para começar a execução. Isso pode ser intencional se você só planeja importar este módulo para fornecer classes e funções.</p>
+<p>Se não for intencional, tenha certeza de que há uma chamada de função no programa, e que o fluxo de execução o alcança (veja “Fluxo da execução” a seguir).</p>
+<a class="header" href="A-depuracao.html#a22---meu-programa-trava" id="a22---meu-programa-trava"><h3>A.2.2 - Meu programa trava</h3></a>
+<p>Se um programa parar e parecer que não está fazendo nada, ele está “travado”. Muitas vezes isso significa que está preso em um loop ou recursão infinita.</p>
+<ul>
+<li>
+<p>Se houver determinado loop que você suspeita ser o problema, acrescente uma instrução print imediatamente antes do loop que diga “entrando no loop”, e outra imediatamente depois que diga “saindo do loop”.
+<br><br>Execute o programa. Se receber a primeira mensagem e a segunda não, você tem um loop infinito. Vá à seção “Loop infinito” mais adiante.</p>
+</li>
+<li>
+<p>Na maior parte do tempo, a recursividade infinita fará com que o programa seja executado durante algum tempo e então gere um erro “RuntimeError: Maximum recursion depth exceeded”. Se isso acontecer, vá à seção “Recursividade infinita” mais adiante.
+<br><br>Se não estiver recebendo este erro, mas suspeita que há um problema com um método ou função recursiva, você ainda pode usar as técnicas da seção “Recursividade infinita”.</p>
+</li>
+<li>
+<p>Se nenhum desses passos funcionar, comece a testar outros loops e outras funções e métodos recursivos.</p>
+</li>
+<li>
+<p>Se isso não funcionar, então é possível que você não entenda o fluxo de execução do seu programa. Vá à seção “Fluxo de execução” mais adiante.</p>
+</li>
+</ul>
+<a class="header" href="A-depuracao.html#loop-infinito" id="loop-infinito"><h4>Loop infinito</h4></a>
+<p>Se você acha que há um loop infinito e talvez saiba qual loop está causando o problema, acrescente uma instrução print no fim do loop que exiba os valores das variáveis na condição e o valor da condição.</p>
+<p>Por exemplo:</p>
+<pre><code class="language-python">while x &gt; 0 and y &lt; 0 :
+    # faz algo com x
+    # faz algo com y
+    print('x: ', x)
+    print('y: ', y)
+    print(&quot;condition: &quot;, (x &gt; 0 and y &lt; 0))
+</code></pre>
+<p>Agora, quando executar o programa, você verá três linhas de saída para cada vez que o programa passar pelo loop. Na última vez que passar pelo loop, a condição deve ser False. Se o loop continuar, você poderá ver os valores de x e y, e compreender porque não estão sendo atualizados corretamente.</p>
+<a class="header" href="A-depuracao.html#recursividade-infinita" id="recursividade-infinita"><h4>Recursividade infinita</h4></a>
+<p>Na maioria das vezes, a recursividade infinita faz o programa rodar durante algum tempo e então produzir um erro de &quot;Maximum recursion depth exceeded&quot;.</p>
+<p>Se suspeitar que uma função está causando recursividade infinita, confira se há um caso-base. Deve haver alguma condição que faz a função retornar sem fazer uma invocação recursiva. Do contrário, você terá que repensar o algoritmo e identificar um caso-base.</p>
+<p>Se houver um caso-base, mas o programa não parece alcançá-lo, acrescente uma instrução print no início da função para exibir os parâmetros. Agora, quando executar o programa, você verá algumas linhas de saída cada vez que a função for invocada, e verá os valores dos parâmetros. Se os parâmetros não estiverem se movendo em direção ao caso-base, você terá algumas ideias sobre a razão disso.</p>
+<a class="header" href="A-depuracao.html#fluxo-de-execução" id="fluxo-de-execução"><h4>Fluxo de execução</h4></a>
+<p>Se não tiver certeza de como o fluxo de execução está se movendo pelo seu programa, acrescente instruções print ao começo de cada função com uma mensagem como “entrada na função foo”, onde foo é o nome da função.</p>
+<p>Agora, quando executar o programa, ele exibirá cada função que for invocada.</p>
+<a class="header" href="A-depuracao.html#a23---quando-executo-o-programa-recebo-uma-exceção" id="a23---quando-executo-o-programa-recebo-uma-exceção"><h3>A.2.3 - Quando executo o programa recebo uma exceção</h3></a>
+<p>Se algo der errado durante o tempo de execução, o Python exibe uma mensagem que inclui o nome da exceção, a linha do programa onde o problema ocorreu, e um traceback.</p>
+<p>O traceback identifica a função que está rodando atualmente, e a função que a chamou, assim como a função que chamou esta, e assim por diante. Em outras palavras, ele traça a sequência de chamadas de função que fez com que você chegasse onde está, incluindo o número da linha no seu arquivo onde cada chamada ocorreu.</p>
+<p>O primeiro passo é examinar o lugar no programa onde o erro ocorreu e ver se consegue compreender o que aconteceu. Esses são alguns dos erros de tempo de execução mais comuns:</p>
+<a class="header" href="A-depuracao.html#nameerror" id="nameerror"><h4>NameError</h4></a>
+<p>Você está tentando usar uma variável que não existe no ambiente atual. Confira se o nome está escrito corretamente e de forma consistente. E lembre-se de que as variáveis locais são locais; você não pode se referir a elas a partir do exterior da função onde são definidas.</p>
+<a class="header" href="A-depuracao.html#typeerror" id="typeerror"><h4>TypeError</h4></a>
+<p>Há várias causas possíveis:</p>
+<ul>
+<li>
+<p>Você está tentando usar um valor de forma inadequada. Exemplo: indexar uma string, lista ou tupla com algo diferente de um número inteiro.</p>
+</li>
+<li>
+<p>Não há correspondência entre os itens em uma string de formatação e os itens passados para conversão. Isso pode acontecer se o número de itens não tiver correspondência ou uma conversão inválida for chamada.</p>
+</li>
+<li>
+<p>Você está passando o número incorreto de argumentos a uma função. Para métodos, olhe para a definição do método e verifique se o primeiro parâmetro é self. Então olhe para a invocação do método; confira se está invocando o método a um objeto com o tipo correto e fornecendo os outros argumentos corretamente.</p>
+</li>
+</ul>
+<a class="header" href="A-depuracao.html#keyerror" id="keyerror"><h4>KeyError</h4></a>
+<p>Você está tentando acessar um elemento de um dicionário usando uma chave que o dicionário não contém. Se as chaves forem strings, lembre-se de que letras maiúsculas são diferentes de minúsculas.</p>
+<a class="header" href="A-depuracao.html#attributeerror" id="attributeerror"><h4>AttributeError</h4></a>
+<p>Você está tentando acessar um atributo ou método que não existe. Verifique a ortografia! Você pode usar a função integrada vars para listar os atributos que existem mesmo.</p>
+<p>Se um AttributeError indicar que um objeto é do tipo NoneType, fica subentendido que é None. Então o problema não é o nome do atributo, mas o objeto.</p>
+<p>Pode ser que o objeto seja none porque você se esqueceu de retornar um valor de uma função; se chegar ao fim de uma função sem chegar a uma instrução return, ela retorna None. Outra causa comum é usar o resultado de um método de lista, como sort, que retorne None.</p>
+<a class="header" href="A-depuracao.html#indexerror" id="indexerror"><h4>IndexError</h4></a>
+<p>O índice que você está usando para acessar uma lista, string ou tupla é maior que o seu comprimento menos um. Imediatamente antes do local do erro, acrescente uma instrução print para exibir o valor do índice e o comprimento do array. O array é do tamanho certo? O índice tem o valor certo?</p>
+<p>O depurador do Python (pdb) é útil para rastrear exceções porque permite examinar o estado do programa imediatamente antes do erro. Você pode ler sobre o pdb em https://docs.python.org/3/library/pdb.html.</p>
+<a class="header" href="A-depuracao.html#a24---acrescentei-tantas-instruções-print-que-fui-inundado-pelos-resultados" id="a24---acrescentei-tantas-instruções-print-que-fui-inundado-pelos-resultados"><h3>A.2.4 - Acrescentei tantas instruções print que fui inundado pelos resultados</h3></a>
+<p>Um dos problemas com a utilização de instruções print para a depuração é que você pode terminar enterrado pelos resultados. Há duas formas de prosseguir: simplifique a saída ou simplifique o programa.</p>
+<p>Para simplificar a saída, você pode retirar ou transformar as instruções print que não estão ajudando em comentários, ou combiná-las, ou formatar a saída para que seja mais fácil de entender.</p>
+<p>Para simplificar o programa, há várias coisas que você pode fazer. Em primeiro lugar, reduza o problema no qual o programa está trabalhando. Por exemplo, se está fazendo uma busca em uma lista, procure em uma lista pequena. Se o programa receber entradas do usuário, dê a entrada mais simples possível que cause o problema.</p>
+<p>Em segundo lugar, limpe o programa. Retire o código morto e reorganize o programa para torná-lo o mais fácil possível de ler. Por exemplo, se você suspeitar que o problema está em uma parte profundamente aninhada do programa, tente reescrever aquela parte com uma estrutura mais simples. Se suspeitar de uma função grande, tente quebrá-la em funções menores para testá-las separadamente.</p>
+<p>Muitas vezes, o próprio processo de encontrar o caso de teste mínimo leva você ao problema. Se descobrir que um programa funciona em uma situação, mas não em outra, isso dá uma pista sobre o que está acontecendo.</p>
+<p>De forma similar, reescrever uma parte do código pode ajudar a encontrar erros sutis. Se fizer uma alteração que você ache que não vai afetar o programa, mas que acabe afetando, isso pode ajudá-lo.</p>
+<a class="header" href="A-depuracao.html#a3---erros-semânticos" id="a3---erros-semânticos"><h2>A.3 - Erros semânticos</h2></a>
+<p>De algumas formas, os erros semânticos são os mais difíceis de depurar, porque o interpretador não fornece nenhuma informação sobre qual é o problema. Só você sabe o que o programa deve fazer.</p>
+<p>O primeiro passo é fazer uma conexão entre o texto do programa e o comportamento que está vendo. Você precisa de uma hipótese sobre o que o programa está fazendo de fato. Uma das coisas que torna isso difícil é que os computadores são rápidos.</p>
+<p>Pode ser que você queira diminuir a velocidade do programa para ser equivalente à humana; com alguns depuradores é possível fazer isso. No entanto, o tempo que leva para inserir instruções print bem colocadas muitas vezes é curto em comparação ao da configuração do depurador, inserção e remoção de marcações e colocação do “compasso” do programa onde o erro está ocorrendo.</p>
+<a class="header" href="A-depuracao.html#a31---meu-programa-não-funciona" id="a31---meu-programa-não-funciona"><h3>A.3.1 - Meu programa não funciona</h3></a>
+<p>Você deve se perguntar o seguinte:</p>
+<ul>
+<li>
+<p>Há algo que o programa deveria fazer, mas que não parece acontecer? Encontre a seção do código que executa a função em questão e confira se está sendo executada quando você acha que deveria.</p>
+</li>
+<li>
+<p>Algo está acontecendo, mas não o que deveria? Encontre o código no seu programa que executa a função em questão e veja se está sendo executada na hora errada.</p>
+</li>
+<li>
+<p>Uma seção do código está produzindo um efeito que não é o esperado? Tenha certeza de que entende o código em questão, especialmente se envolver funções ou métodos de outros módulos do Python. Leia a documentação das funções que chama. Teste-as escrevendo casos de teste simples e verificando os resultados.</p>
+</li>
+</ul>
+<p>Para programar, é preciso ter um modelo mental de como os programas funcionam. Se escrever um programa que não faz o que espera, muitas vezes o problema não está no programa, está no seu modelo mental.</p>
+<p>A melhor forma de corrigir o seu modelo mental é quebrar o programa nos seus componentes (normalmente as funções e métodos) e testar cada componente em separado. Uma vez que encontre a discrepância entre o seu modelo e a realidade, poderá resolver o problema.</p>
+<p>Naturalmente, você deveria construir e testar componentes conforme desenvolva o programa. Assim, se encontrar um problema, deve haver só uma pequena quantidade de código novo que não sabe se está correto.</p>
+<a class="header" href="A-depuracao.html#a32---tenho-uma-baita-expressão-cabeluda-e-ela-não-faz-o-que-espero" id="a32---tenho-uma-baita-expressão-cabeluda-e-ela-não-faz-o-que-espero"><h3>A.3.2 - Tenho uma baita expressão cabeluda e ela não faz o que espero</h3></a>
+<p>Escrever expressões complexas é ótimo enquanto são legíveis, mas elas podem ser difíceis de depurar. Muitas vezes é uma boa ideia quebrar uma expressão complexa em uma série de atribuições a variáveis temporárias.</p>
+<p>Por exemplo:</p>
+<pre><code class="language-python">self.hands[i].addCard(self.hands[self.findNeighbor(i)].popCard())
+</code></pre>
+<p>A expressão pode ser reescrita assim:</p>
+<pre><code class="language-python">neighbor = self.findNeighbor(i)
+pickedCard = self.hands[neighbor].popCard()
+self.hands[i].addCard(pickedCard)
+</code></pre>
+<p>A versão explícita é mais fácil de ler porque os nomes das variáveis oferecem documentação adicional, e é mais fácil de depurar porque você pode verificar os tipos das variáveis intermediárias e exibir seus valores.</p>
+<p>Outro problema que pode ocorrer com grandes expressões é que a ordem da avaliação pode não ser o que você espera. Por exemplo, se estiver traduzindo a expressão <img src="https://github.com/PenseAllen/PensePython2e/raw/master/fig/p242f1.png" alt="Fórmula – x / (2 * pi) em notação matemática." /> para o Python, poderia escrever:</p>
+<pre><code class="language-python">y = x / 2 * math.pi
+</code></pre>
+<p>Isso não está correto porque a multiplicação e a divisão têm a mesma precedência e são avaliadas da esquerda para a direita. Então, é assim que essa expressão é calculada: xπ/2.</p>
+<p>Uma boa forma de depurar expressões é acrescentar parênteses para tornar a ordem da avaliação explícita:</p>
+<pre><code class="language-python">y = x / (2 * math.pi)
+</code></pre>
+<p>Sempre que não tiver certeza sobre a ordem da avaliação, use parênteses. Além de o programa ficar correto (quanto à execução do que era pretendido), ele também será mais legível para outras pessoas que não memorizaram a ordem de operações.</p>
+<a class="header" href="A-depuracao.html#a33---tenho-uma-função-que-não-retorna-o-que-espero" id="a33---tenho-uma-função-que-não-retorna-o-que-espero"><h3>A.3.3 - Tenho uma função que não retorna o que espero</h3></a>
+<p>Se tiver uma instrução return com uma expressão complexa, não há possibilidade de exibir o resultado antes do retorno. Novamente, você pode usar uma variável temporária. Por exemplo, em vez de:</p>
+<pre><code class="language-python">return self.hands[i].removeMatches()
+</code></pre>
+<p>você poderia escrever:</p>
+<pre><code class="language-python">count = self.hands[i].removeMatches()
+return count
+</code></pre>
+<p>Agora você tem a oportunidade de exibir o valor de count antes do retorno.</p>
+<a class="header" href="A-depuracao.html#a34---estou-perdido-e-preciso-de-ajuda" id="a34---estou-perdido-e-preciso-de-ajuda"><h3>A.3.4 - Estou perdido e preciso de ajuda</h3></a>
+<p>Em primeiro lugar, afaste-se do computador por alguns minutos. Computadores emitem ondas que afetam o cérebro, causando estes sintomas:</p>
+<ul>
+<li>
+<p>frustração e raiva;</p>
+</li>
+<li>
+<p>crenças supersticiosas (“o computador me odeia”) e pensamento mágico (“o programa só funciona quando uso o meu chapéu virado para trás”);</p>
+</li>
+<li>
+<p>programação aleatória (a tentativa de programar escrevendo todos os programas possíveis e escolhendo aquele que faz a coisa certa).</p>
+</li>
+</ul>
+<p>Se estiver sofrendo algum desses sintomas, levante-se e dê uma volta. Quando se acalmar, pense no programa. O que ele está fazendo? Quais são algumas causas possíveis para esse comportamento? Quando foi a última vez que tinha um programa funcionando, e o que fez depois disso?</p>
+<p>Às vezes leva tempo para encontrar um erro. Com frequência encontro erros quando estou longe do computador e deixo a minha mente vagar. Os melhores lugares para encontrar erros são os trens, o chuveiro e a cama, logo antes de adormecer.</p>
+<a class="header" href="A-depuracao.html#a35---sério-preciso-mesmo-de-ajuda" id="a35---sério-preciso-mesmo-de-ajuda"><h3>A.3.5 - Sério, preciso mesmo de ajuda</h3></a>
+<p>Acontece. Mesmo os melhores programadores ocasionalmente empacam. Pode ocorrer de você trabalhar tanto em um programa que não consegue enxergar o erro. Precisa de outro par de olhos.</p>
+<p>Antes de trazer mais alguém, não se esqueça de se preparar. Seu programa deve ser o mais simples possível, e deve estar funcionando com a menor entrada possível que cause o erro. Deve ter instruções print nos lugares adequados (e a saída que produzem deve ser compreensível). Você deve entender o problema o suficiente para descrevê-lo de forma concisa.</p>
+<p>Ao trazer alguém para ajudar, lembre-se de dar as informações de que a pessoa possa precisar:</p>
+<ul>
+<li>
+<p>Se houver uma mensagem de erro, qual é e que parte do programa indica?</p>
+</li>
+<li>
+<p>Qual foi a última coisa que fez antes de este erro ocorrer? Quais foram as últimas linhas de código que escreveu, ou qual é o novo caso de teste que falhou?</p>
+</li>
+<li>
+<p>O que tentou até agora e o que aprendeu?</p>
+</li>
+</ul>
+<p>Quando encontrar o erro, pense por um segundo no que poderia ter feito para encontrá-lo mais rápido. Na próxima vez em que vir algo similar, poderá encontrar o erro mais rapidamente.</p>
+<p>Lembre-se, a meta não é só fazer o programa funcionar. A meta é aprender como fazer o programa funcionar.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="19-extra.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="B-analise-algorit.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="19-extra.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="B-analise-algorit.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+
+        <!-- Local fallback for Font Awesome -->
+        <script>
+            if (getComputedStyle(document.querySelector(".fa")).fontFamily !== "FontAwesome") {
+                var link = document.createElement('link');
+                link.rel = 'stylesheet';
+                link.type = 'text/css';
+                link.href = '_FontAwesome/css/font-awesome.css';
+                document.head.insertBefore(link, document.head.firstChild)
+            }
+        </script>
+
+        
+
+        
+
+        
+
+        
+
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS script -->
+        
+
+    </body>
+</html>

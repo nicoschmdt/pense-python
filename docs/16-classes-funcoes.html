@@ -1,0 +1,362 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Classes e funções - Pense em Python</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="Pense como um cientista da computação">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <base href="">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme -->
+        
+
+        
+
+        <!-- Fetch Clipboard.js from CDN but have a local fallback -->
+        <script src="https://cdn.jsdelivr.net/clipboard.js/1.6.1/clipboard.min.js"></script>
+        <script>
+            if (typeof Clipboard == 'undefined') {
+                document.write(unescape("%3Cscript src='clipboard.min.js'%3E%3C/script%3E"));
+            }
+        </script>
+
+    </head>
+    <body class="light">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { } 
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme;
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            document.querySelector('html').classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <ol class="chapter"><li class="affix"><a href="introducao.html">Pense em Python</a></li><li class="affix"><a href="00-prefacio.html">Prefácio</a></li><li><a href="01-jornada.html"><strong aria-hidden="true">1.</strong> A jornada do programa</a></li><li><a href="02-vars-expr-instr.html"><strong aria-hidden="true">2.</strong> Variáveis, expressões e instruções</a></li><li><a href="03-funcoes.html"><strong aria-hidden="true">3.</strong> Funções</a></li><li><a href="04-caso-interface.html"><strong aria-hidden="true">4.</strong> Estudo de caso: projeto de interface</a></li><li><a href="05-cond-recur.html"><strong aria-hidden="true">5.</strong> Condicionais e recursividade</a></li><li><a href="06-funcoes-result.html"><strong aria-hidden="true">6.</strong> Funções com resultado</a></li><li><a href="07-iteracao.html"><strong aria-hidden="true">7.</strong> Iteração</a></li><li><a href="08-strings.html"><strong aria-hidden="true">8.</strong> Strings</a></li><li><a href="09-caso-palavras.html"><strong aria-hidden="true">9.</strong> Estudo de caso: jogos de palavras</a></li><li><a href="10-listas.html"><strong aria-hidden="true">10.</strong> Listas</a></li><li><a href="11-dicionarios.html"><strong aria-hidden="true">11.</strong> Dicionários</a></li><li><a href="12-tuplas.html"><strong aria-hidden="true">12.</strong> Tuplas</a></li><li><a href="13-caso-estruturas.html"><strong aria-hidden="true">13.</strong> Estudo de caso: seleção de estrutura de dados</a></li><li><a href="14-arquivos.html"><strong aria-hidden="true">14.</strong> Arquivos</a></li><li><a href="15-classes-objetos.html"><strong aria-hidden="true">15.</strong> Classes e objetos</a></li><li><a href="16-classes-funcoes.html" class="active"><strong aria-hidden="true">16.</strong> Classes e funções</a></li><li><a href="17-classes-metodos.html"><strong aria-hidden="true">17.</strong> Classes e métodos</a></li><li><a href="18-heranca.html"><strong aria-hidden="true">18.</strong> Herança</a></li><li><a href="19-extra.html"><strong aria-hidden="true">19.</strong> Extra</a></li><li class="affix"><a href="A-depuracao.html">Apêndice A: Depuração</a></li><li class="affix"><a href="B-analise-algorit.html">Apêndice B: Análise de algoritmos</a></li><li class="affix"><a href="C-colofao-autor.html">Colofão / Sobre o Autor</a></li></ol>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light <span class="default">(default)</span></button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                        </div>
+
+                        <h1 class="menu-title">Pense em Python</h1>
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <a class="header" href="16-classes-funcoes.html#capítulo-16-classes-e-funções" id="capítulo-16-classes-e-funções"><h1>Capítulo 16: Classes e funções</h1></a>
+<p>Agora que sabemos como criar tipos, o próximo passo deve ser escrever funções que recebam objetos definidos pelo programador como parâmetros e os retornem como resultados. Neste capítulo também vou apresentar o “estilo funcional de programação” e dois novos planos de desenvolvimento de programas.</p>
+<p>Os exemplos de código deste capítulo estão disponíveis em http://thinkpython2.com/code/Time1.py. As soluções para os exercícios estão em http://thinkpython2.com/code/Time1_soln.py.</p>
+<a class="header" href="16-classes-funcoes.html#161---time" id="161---time"><h2>16.1 - Time</h2></a>
+<p>Para ter mais um exemplo de tipo definido pelo programador, criaremos uma classe chamada <code>Time</code> (hora), que registra um horário no dia. A definição da classe é assim:</p>
+<pre><code class="language-python">class Time:
+    &quot;&quot;&quot;Represents the time of day.
+    attributes: hour, minute, second
+    &quot;&quot;&quot;
+</code></pre>
+<p>Podemos criar um objeto <code>Time</code> e ter atributos para horas, minutos e segundos:</p>
+<pre><code class="language-python">time = Time()
+time.hour = 11
+time.minute = 59
+time.second = 30
+</code></pre>
+<p>O diagrama de estado do objeto Time está na Figura 16.1.</p>
+<p><img src="https://github.com/PenseAllen/PensePython2e/raw/master/fig/tnkp_1601.png" alt="Figura 16.1 – Diagrama de um objeto Time." />
+<br><em>Figura 16.1 – Diagrama de um objeto</em> <code>Time</code>.</p>
+<p>Como exercício, escreva uma função chamada <code>print_time</code>, que receba um objeto Time e o exiba na forma hour:minute:second. Dica: a sequência de formatação <code>'%.2d'</code> exibe um número inteiro com, pelo menos, dois dígitos, incluindo um zero à esquerda, se for necessário.</p>
+<p>Escreva uma função booleana chamada <code>is_after</code>, que receba dois objetos Time, <code>t1</code> e <code>t2</code>, e devolva <code>True</code> se <code>t1</code> for cronologicamente depois de <code>t2</code> e <code>False</code> se não for. Desafio: não use uma instrução <code>if</code>.</p>
+<a class="header" href="16-classes-funcoes.html#162---funções-puras" id="162---funções-puras"><h2>16.2 - Funções puras</h2></a>
+<p>Nas próximas seções, vamos escrever duas funções que adicionam valores de tempo. Elas demonstram dois tipos de funções: funções puras e modificadores. Também demonstram um plano de desenvolvimento que chamarei de protótipo e correção, que é uma forma de atacar um problema complexo começando com um protótipo simples e lidando com as complicações de forma incremental.</p>
+<p>Aqui está um protótipo simples de <code>add_time</code>:</p>
+<pre><code class="language-python">def add_time(t1, t2):
+    sum = Time()
+    sum.hour = t1.hour + t2.hour
+    sum.minute = t1.minute + t2.minute
+    sum.second = t1.second + t2.second
+    return sum
+</code></pre>
+<p>A função cria um novo objeto <code>Time</code>, inicializa seus atributos e retorna uma referência ao novo objeto. A função pura é chamada assim porque não altera nenhum dos objetos passados a ela como argumentos; além disso, ela não tem efeitos, como exibir um valor ou receber entradas de usuário, apenas retorna um valor.</p>
+<p>Para testar esta função, criarei objetos <code>Time</code>: <code>start</code>, que contém o tempo de início de um filme, como <em>Monty Python e o cálice sagrado</em>, e <code>duration</code>, que contém o tempo de execução do filme, que é de 1 hora e 35 minutos.</p>
+<p><code>add_time</code> calcula quando o filme acaba:</p>
+<pre><code class="language-python">&gt;&gt;&gt; start = Time()
+&gt;&gt;&gt; start.hour = 9
+&gt;&gt;&gt; start.minute = 45
+&gt;&gt;&gt; start.second = 0
+&gt;&gt;&gt; duration = Time()
+&gt;&gt;&gt; duration.hour = 1
+&gt;&gt;&gt; duration.minute = 35
+&gt;&gt;&gt; duration.second = 0
+&gt;&gt;&gt; done = add_time(start, duration)
+&gt;&gt;&gt; print_time(done)
+10:80:00
+</code></pre>
+<p>O resultado, 10:80:00, pode não ser o que você esperava. O problema é que esta função não trata casos onde o número de segundos ou minutos é maior que 60. Quando isso acontece, precisamos transportar os segundos extras à coluna dos minutos ou os minutos extras à coluna das horas.</p>
+<p>Aqui está uma versão melhorada:</p>
+<pre><code class="language-python">def add_time(t1, t2):
+    sum = Time()
+    sum.hour = t1.hour + t2.hour
+    sum.minute = t1.minute + t2.minute
+    sum.second = t1.second + t2.second
+    if sum.second &gt;= 60:
+        sum.second -= 60
+        sum.minute += 1
+    if sum.minute &gt;= 60:
+        sum.minute -= 60
+        sum.hour += 1
+    return sum
+</code></pre>
+<p>Embora esta função esteja correta, é um pouco extensa. Veremos uma alternativa menor mais adiante.</p>
+<a class="header" href="16-classes-funcoes.html#163---modificadores" id="163---modificadores"><h2>16.3 - Modificadores</h2></a>
+<p>Às vezes é útil uma função alterar os objetos que recebe como parâmetros. Nesse caso, as mudanças são visíveis a quem chama a função. As funções que fazem isso chamam-se modificadores.</p>
+<p><code>increment</code>, que acrescenta um dado número de segundos a um objeto <code>Time</code>, pode ser escrita naturalmente como um modificador. Aqui está um primeiro esboço:</p>
+<pre><code class="language-python">def increment(time, seconds):
+    time.second += seconds
+    if time.second &gt;= 60:
+        time.second -= 60
+        time.minute += 1
+    if time.minute &gt;= 60:
+        time.minute -= 60
+        time.hour += 1
+</code></pre>
+<p>A primeira linha executa a operação básica; o resto lida com os casos especiais que vimos antes.</p>
+<p>Esta função está correta? O que acontece se <code>second</code> for muito mais que 60?</p>
+<p>Neste caso não basta transportar uma vez, temos que continuar fazendo isso até que time.second seja menos de 60. Uma solução é substituir a instrução <code>if</code> pela instrução <code>while</code>. Isso tornaria a função correta, mas não muito eficiente. Como exercício, escreva uma versão correta de <code>increment</code> que não contenha loops.</p>
+<p>O que se faz com modificadores também pode ser feito com funções puras. Na verdade, algumas linguagens de programação só permitem funções puras. Há evidências de que os programas que usam funções puras são mais rápidos para serem desenvolvidos e menos propensos a erros que programas que usam modificadores. No entanto, modificadores são convenientes de vez em quando, e os programas funcionais tendem a ser menos eficientes.</p>
+<p>De forma geral, recomendo que você escreva funções puras sempre que achar razoável e recorra a modificadores só se houver alguma vantagem clara. Esta abordagem pode ser chamada de <strong>programação funcional</strong>.</p>
+<p>Como exercício, escreva uma versão “pura” de increment que cria e retorna um objeto <code>Time</code> em vez de alterar o parâmetro.</p>
+<a class="header" href="16-classes-funcoes.html#164---prototipação-versus-planejamento" id="164---prototipação-versus-planejamento"><h2>16.4 - Prototipação versus planejamento</h2></a>
+<p>O plano de desenvolvimento que estou demonstrando chama-se “protótipo e correção”. Para cada função, escrevi um protótipo que executa o cálculo básico e então testa a função, corrigindo erros no decorrer do caminho.</p>
+<p>Esta abordagem pode ser eficaz, especialmente se você ainda não tem uma compreensão profunda do problema. Porém, as correções incrementais podem gerar código que se complica desnecessariamente (pois trata de muitos casos especiais) e pouco confiáveis (já que é difícil saber se todos os erros foram encontrados).</p>
+<p>Uma alternativa é o desenvolvimento planejado, no qual a compreensão de alto nível do problema pode facilitar muito a programação. Neste caso, descobre-se que um objeto Time é, na verdade, um número de três dígitos na base 60 (veja http://en.wikipedia.org/wiki/Sexagesimal)! O atributo second é a “coluna de unidades”, o atributo minute é a “coluna dos 60”, e o atributo hour é a “coluna do 3.600”.</p>
+<p>Quando escrevemos <code>add_time</code> e <code>increment</code>, estávamos na verdade fazendo adições na base 60, e por isso transportávamos os resultados de uma coluna à seguinte.</p>
+<p>Essa observação sugere outra abordagem para o problema inteiro – podemos converter objetos <code>Time</code> em números inteiros e aproveitar o fato de que o computador sabe trabalhar com aritmética de números inteiros.</p>
+<p>Aqui está uma função que converte objetos <code>Time</code> em números inteiros:</p>
+<pre><code class="language-python">def time_to_int(time):
+    minutes = time.hour * 60 + time.minute
+    seconds = minutes * 60 + time.second
+    return seconds
+</code></pre>
+<p>E aqui está uma função que converte um número inteiro em um <code>Time</code> (lembre-se de que <code>divmod</code> divide o primeiro argumento pelo segundo e devolve o quociente e o resto como uma tupla):</p>
+<pre><code class="language-python">def int_to_time(seconds):
+    time = Time()
+    minutes, time.second = divmod(seconds, 60)
+    time.hour, time.minute = divmod(minutes, 60)
+    return time
+</code></pre>
+<p>Você pode ter que pensar um pouco e fazer alguns testes, para se convencer de que essas funções estão corretas. Um modo de testá-las é ver se <code>time_to_int(int_to_time(x)) == x</code> para muitos valores de <code>x</code>. Este é um exemplo de uma verificação de consistência.</p>
+<p>Uma vez que esteja convencido de que estão corretas, você pode usá-las para reescrever <code>add_time</code>:</p>
+<pre><code class="language-python">def add_time(t1, t2):
+    seconds = time_to_int(t1) + time_to_int(t2)
+    return int_to_time(seconds)
+</code></pre>
+<p>Esta versão é mais curta que a original, e mais fácil de verificar. Como exercício, reescreva <code>increment</code> usando <code>time_to_int</code> e <code>int_to_time</code>.</p>
+<p>Em algumas situações, converter da base 60 para a base 10 e de volta é mais difícil que apenas lidar com as horas. A conversão de base é mais abstrata; nossa intuição para lidar com valores temporais é melhor.</p>
+<p>No entanto, se tivermos discernimento para lidar com horas como números de base 60 e investirmos esforço em escrever as funções de conversão (<code>time_to_int</code> e <code>int_to_time</code>), chegamos a um programa que é mais curto, mais fácil de ler e depurar, e mais confiável.</p>
+<p>Também é mais fácil acrescentar recursos depois. Por exemplo, imagine subtrair dois objetos <code>Time</code> para encontrar a duração entre eles. Uma abordagem ingênua seria implementar a subtração com transporte. Porém, usar funções de conversão seria mais fácil e, provavelmente, mais correto.</p>
+<p>Ironicamente, tornar um problema mais difícil (ou mais geral) facilita (porque há menos casos especiais e menos oportunidades de erro).</p>
+<a class="header" href="16-classes-funcoes.html#165---depuração" id="165---depuração"><h2>16.5 - Depuração</h2></a>
+<p>Um objeto <code>Time</code> é bem formado se os valores de <code>minute</code> e <code>second</code> estiverem entre 0 e 60 (incluindo 0, mas não 60) e se <code>hour</code> for positivo. <code>hour</code> e <code>minute</code> devem ser valores inteiros, mas podemos permitir que <code>second</code> tenha uma parte fracionária.</p>
+<p>Requisitos como esses chamam-se invariáveis porque sempre devem ser verdadeiros. Para dizer de outra forma, se não forem verdadeiros, algo deu errado.</p>
+<p>Escrever código para verificar requisitos invariáveis pode ajudar a descobrir erros e encontrar suas causas. Por exemplo, você pode ter uma função como valid_time, que receba um objeto Time e retorne False se ele violar um requisito invariável:</p>
+<pre><code class="language-python">def valid_time(time):
+    if time.hour &lt; 0 or time.minute &lt; 0 or time.second &lt; 0:
+        return False
+    if time.minute &gt;= 60 or time.second &gt;= 60:
+        return False
+    return True
+</code></pre>
+<p>No início de cada função você pode verificar os argumentos para ter certeza de que são válidos:</p>
+<pre><code class="language-python">def add_time(t1, t2):
+    if not valid_time(t1) or not valid_time(t2):
+        raise ValueError('invalid Time object in add_time')
+
+    seconds = time_to_int(t1) + time_to_int(t2)
+    return int_to_time(seconds)
+</code></pre>
+<p>Ou você pode usar uma instrução <code>assert</code>, que verifica determinado requisito invariável e cria uma exceção se ela falhar:</p>
+<pre><code class="language-python">def add_time(t1, t2):
+    assert valid_time(t1) and valid_time(t2)
+    seconds = time_to_int(t1) + time_to_int(t2)
+    return int_to_time(seconds)
+</code></pre>
+<p>Instruções assert são úteis porque distinguem o código que lida com condições normais do código que verifica erros.</p>
+<a class="header" href="16-classes-funcoes.html#166---glossário" id="166---glossário"><h2>16.6 - Glossário</h2></a>
+<dl>
+<dt><a id="glos:protótipo e correção" href="16-classes-funcoes.html#termo:protótipo e correção">protótipo e correção</a></dt>
+<dd>Plano de desenvolvimento no qual a escrita do programa parte de um esboço inicial, e depois segue ao teste e correção de erros, conforme sejam encontrados.</dd>
+<dt><a id="glos:desenvolvimento planejado" href="16-classes-funcoes.html#termo:desenvolvimento planejado">desenvolvimento planejado</a></dt>
+<dd>Plano de desenvolvimento que implica uma compreensão de alto nível do problema e mais planejamento que desenvolvimento incremental ou desenvolvimento prototipado.</dd>
+<dt><a id="glos:função pura" href="16-classes-funcoes.html#termo:função pura">função pura</a></dt>
+<dd>Função que não altera nenhum dos objetos que recebe como argumento. A maior parte das funções puras gera resultado.</dd>
+<dt><a id="glos:modificador" href="16-classes-funcoes.html#termo:modificador">modificador</a></dt>
+<dd>Função que modifica um ou vários dos objetos que recebe como argumento. A maior parte dos modificadores são nulos; isto é, retornam None.</dd>
+<dt><a id="glos:programação funcional" href="16-classes-funcoes.html#termo:programação funcional">programação funcional</a></dt>
+<dd>Estilo de projeto de programa no qual a maioria das funções são puras.</dd>
+<dt><a id="glos:invariável" href="16-classes-funcoes.html#termo:invariável">invariável</a></dt>
+<dd>Condição que sempre deve ser verdadeira durante a execução de um programa.</dd>
+<dt><a id="glos:instrução assert" href="16-classes-funcoes.html#termo:instrução assert">instrução assert</a></dt>
+<dd>Instrução que verifica uma condição e levanta uma exceção se esta falhar.</dd>
+</dl>
+<a class="header" href="16-classes-funcoes.html#167---exercícios" id="167---exercícios"><h2>16.7 - Exercícios</h2></a>
+<p>Os exemplos de código deste capítulo estão disponíveis em http://thinkpython2.com/code/Time1.py; as soluções para os exercícios estão disponíveis em http://thinkpython2.com/code/Time1_soln.py.</p>
+<a class="header" href="16-classes-funcoes.html#exercício-161" id="exercício-161"><h3>Exercício 16.1</h3></a>
+<p>Escreva uma função chamada <code>mul_time</code> que receba um objeto <code>Time</code> e um número e retorne um novo objeto <code>Time</code> que contenha o produto do <code>Time</code> original e do número.</p>
+<p>Então use <code>mul_time</code> para escrever uma função que receba um objeto <code>Time</code> representando o tempo até o fim de uma corrida e um número que represente a distância, e retorne um objeto <code>Time</code> com o passo médio (tempo por milha).</p>
+<a class="header" href="16-classes-funcoes.html#exercício-162" id="exercício-162"><h3>Exercício 16.2</h3></a>
+<p>O módulo <code>datetime</code> fornece objetos <code>time</code> que são semelhantes aos objetos <code>Time</code> deste capítulo, mas ele oferece um grande conjunto de métodos e operadores. Leia a documentação em http://docs.python.org/3/library/datetime.html.</p>
+<ol>
+<li>
+<p>Use o módulo <code>datetime</code> para escrever um programa que receba a data atual e exiba o dia da semana.</p>
+</li>
+<li>
+<p>Escreva um programa que receba um aniversário como entrada e exiba a idade do usuário e o número de dias, horas, minutos e segundos até o seu próximo aniversário.</p>
+</li>
+<li>
+<p>Para duas pessoas nascidas em dias diferentes, há um dia em que a idade de uma equivale a duas vezes a da outra. Este é o Dia Duplo delas. Escreva um programa que receba dois aniversários e calcule o Dia Duplo dos aniversariantes.</p>
+</li>
+<li>
+<p>Para um desafio um pouco maior, escreva a versão mais geral que calcule o dia em que uma pessoa é N vezes mais velha que a outra.</p>
+</li>
+</ol>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="15-classes-objetos.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="17-classes-metodos.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="15-classes-objetos.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="17-classes-metodos.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+
+        <!-- Local fallback for Font Awesome -->
+        <script>
+            if (getComputedStyle(document.querySelector(".fa")).fontFamily !== "FontAwesome") {
+                var link = document.createElement('link');
+                link.rel = 'stylesheet';
+                link.type = 'text/css';
+                link.href = '_FontAwesome/css/font-awesome.css';
+                document.head.insertBefore(link, document.head.firstChild)
+            }
+        </script>
+
+        
+
+        
+
+        
+
+        
+
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS script -->
+        
+
+    </body>
+</html>

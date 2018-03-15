@@ -1,0 +1,199 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Pense em Python - Pense em Python</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="Pense como um cientista da computação">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <base href="">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme -->
+        
+
+        
+
+        <!-- Fetch Clipboard.js from CDN but have a local fallback -->
+        <script src="https://cdn.jsdelivr.net/clipboard.js/1.6.1/clipboard.min.js"></script>
+        <script>
+            if (typeof Clipboard == 'undefined') {
+                document.write(unescape("%3Cscript src='clipboard.min.js'%3E%3C/script%3E"));
+            }
+        </script>
+
+    </head>
+    <body class="light">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { } 
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme;
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            document.querySelector('html').classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <ol class="chapter"><li class="affix"><a href="introducao.html" class="active">Pense em Python</a></li><li class="affix"><a href="00-prefacio.html">Prefácio</a></li><li><a href="01-jornada.html"><strong aria-hidden="true">1.</strong> A jornada do programa</a></li><li><a href="02-vars-expr-instr.html"><strong aria-hidden="true">2.</strong> Variáveis, expressões e instruções</a></li><li><a href="03-funcoes.html"><strong aria-hidden="true">3.</strong> Funções</a></li><li><a href="04-caso-interface.html"><strong aria-hidden="true">4.</strong> Estudo de caso: projeto de interface</a></li><li><a href="05-cond-recur.html"><strong aria-hidden="true">5.</strong> Condicionais e recursividade</a></li><li><a href="06-funcoes-result.html"><strong aria-hidden="true">6.</strong> Funções com resultado</a></li><li><a href="07-iteracao.html"><strong aria-hidden="true">7.</strong> Iteração</a></li><li><a href="08-strings.html"><strong aria-hidden="true">8.</strong> Strings</a></li><li><a href="09-caso-palavras.html"><strong aria-hidden="true">9.</strong> Estudo de caso: jogos de palavras</a></li><li><a href="10-listas.html"><strong aria-hidden="true">10.</strong> Listas</a></li><li><a href="11-dicionarios.html"><strong aria-hidden="true">11.</strong> Dicionários</a></li><li><a href="12-tuplas.html"><strong aria-hidden="true">12.</strong> Tuplas</a></li><li><a href="13-caso-estruturas.html"><strong aria-hidden="true">13.</strong> Estudo de caso: seleção de estrutura de dados</a></li><li><a href="14-arquivos.html"><strong aria-hidden="true">14.</strong> Arquivos</a></li><li><a href="15-classes-objetos.html"><strong aria-hidden="true">15.</strong> Classes e objetos</a></li><li><a href="16-classes-funcoes.html"><strong aria-hidden="true">16.</strong> Classes e funções</a></li><li><a href="17-classes-metodos.html"><strong aria-hidden="true">17.</strong> Classes e métodos</a></li><li><a href="18-heranca.html"><strong aria-hidden="true">18.</strong> Herança</a></li><li><a href="19-extra.html"><strong aria-hidden="true">19.</strong> Extra</a></li><li class="affix"><a href="A-depuracao.html">Apêndice A: Depuração</a></li><li class="affix"><a href="B-analise-algorit.html">Apêndice B: Análise de algoritmos</a></li><li class="affix"><a href="C-colofao-autor.html">Colofão / Sobre o Autor</a></li></ol>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light <span class="default">(default)</span></button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                        </div>
+
+                        <h1 class="menu-title">Pense em Python</h1>
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <a class="header" href="introducao.html#pense-em-python" id="pense-em-python"><h1>Pense em Python</h1></a>
+<a class="header" href="introducao.html#pense-como-um-cientista-da-computação" id="pense-como-um-cientista-da-computação"><h3>Pense como um cientista da computação</h3></a>
+<p><a href="https://novatec.com.br/livros/pense-em-python/">
+<img src="https://github.com/PenseAllen/PensePython2e/raw/master/img/Capa_PenseEmPython167x232.png" align="right" style="margin-left: 20px;">
+</a></p>
+<p>Este livro ensina programação para quem nunca programou, usando <a href="https://www.python.org/">Python 3</a> nos exemplos. É aplicado no Olin College, IBMEC e outras faculdades de engenharia de primeira linha.</p>
+<blockquote>
+<p><strong>DICA</strong>: Você pode comprar um exemplar impresso de <a href="https://novatec.com.br/livros/pense-em-python/"><strong>Pense em Python</strong></a> no site da <a href="https://novatec.com.br/livros/pense-em-python/">Editora Novatec</a> ou em livrarias. <a href="https://novatec.com.br/livros/pense-em-python/">ISBN: 978-85-7522-508-0</a>.</p>
+</blockquote>
+<p><a href="https://novatec.com.br/livros/pense-em-python/"><strong>Pense em Python</strong></a> é uma tradução do livro <a href="http://shop.oreilly.com/product/0636920045267.do">Think Python</a> (2ª edição), de <strong>Allen B. Downey</strong>, traduzido e publicado no Brasil pela <a href="https://novatec.com.br">Editora Novatec</a> sob licença da O'Reilly Media.</p>
+<a class="header" href="introducao.html#créditos-da-edição-brasileira" id="créditos-da-edição-brasileira"><h2>Créditos da edição brasileira</h2></a>
+<p>Editor: Rubens Prates<br>
+Tradução: Sheila Gomes<br>
+Revisão Gramatical: Smirna Cavalheiro<br>
+Editoração Eletrônica: Carolina Kuwabata<br>
+Assistente Editorial: Priscila A. Yoshimatsu</p>
+<a class="header" href="introducao.html#histórico" id="histórico"><h2>Histórico</h2></a>
+<p>Allen Downey publicou o <a href="http://greenteapress.com/wp/think-python-2e/">original em inglês</a> sob uma licença Creative Commons Atribuição-NãoComercial <a href="https://github.com/PenseAllen/PensePython2/blob/master/LICENSE.md">CC BY-NC 3.0</a>. A Novatec oferece à comunidade esta tradução nos termos da mesma licença do original, <a href="https://github.com/PenseAllen/PensePython2/blob/master/LICENSE.md">CC BY-NC 3.0</a>, atendendo ao desejo do autor oferecer seu trabalho através de uma licença livre.</p>
+<p>Esta versão digital de <strong>Pense em Python</strong> em português foi gerada por <a href="https://twitter.com/ramalhoorg">Luciano Ramalho</a> da <a href="https://www.thoughtworks.com/">ThoughtWorks</a> a partir de arquivos cedidos por <a href="https://novatec.com.br/autores/rprates.php">Rubens Prates</a> da <a href="https://novatec.com.br">Editora Novatec</a>.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+
+                        
+                            <a rel="next" href="00-prefacio.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+
+                
+                    <a href="00-prefacio.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+
+        <!-- Local fallback for Font Awesome -->
+        <script>
+            if (getComputedStyle(document.querySelector(".fa")).fontFamily !== "FontAwesome") {
+                var link = document.createElement('link');
+                link.rel = 'stylesheet';
+                link.type = 'text/css';
+                link.href = '_FontAwesome/css/font-awesome.css';
+                document.head.insertBefore(link, document.head.firstChild)
+            }
+        </script>
+
+        
+
+        
+
+        
+
+        
+
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS script -->
+        
+
+    </body>
+</html>

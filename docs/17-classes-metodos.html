@@ -1,0 +1,507 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Classes e métodos - Pense em Python</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="Pense como um cientista da computação">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <base href="">
+
+        <link rel="stylesheet" href="book.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <link rel="shortcut icon" href="favicon.png">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme -->
+        
+
+        
+
+        <!-- Fetch Clipboard.js from CDN but have a local fallback -->
+        <script src="https://cdn.jsdelivr.net/clipboard.js/1.6.1/clipboard.min.js"></script>
+        <script>
+            if (typeof Clipboard == 'undefined') {
+                document.write(unescape("%3Cscript src='clipboard.min.js'%3E%3C/script%3E"));
+            }
+        </script>
+
+    </head>
+    <body class="light">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { } 
+            if (theme === null || theme === undefined) { theme = 'light'; }
+            document.body.className = theme;
+            document.querySelector('html').className = theme;
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            document.querySelector('html').classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <ol class="chapter"><li class="affix"><a href="introducao.html">Pense em Python</a></li><li class="affix"><a href="00-prefacio.html">Prefácio</a></li><li><a href="01-jornada.html"><strong aria-hidden="true">1.</strong> A jornada do programa</a></li><li><a href="02-vars-expr-instr.html"><strong aria-hidden="true">2.</strong> Variáveis, expressões e instruções</a></li><li><a href="03-funcoes.html"><strong aria-hidden="true">3.</strong> Funções</a></li><li><a href="04-caso-interface.html"><strong aria-hidden="true">4.</strong> Estudo de caso: projeto de interface</a></li><li><a href="05-cond-recur.html"><strong aria-hidden="true">5.</strong> Condicionais e recursividade</a></li><li><a href="06-funcoes-result.html"><strong aria-hidden="true">6.</strong> Funções com resultado</a></li><li><a href="07-iteracao.html"><strong aria-hidden="true">7.</strong> Iteração</a></li><li><a href="08-strings.html"><strong aria-hidden="true">8.</strong> Strings</a></li><li><a href="09-caso-palavras.html"><strong aria-hidden="true">9.</strong> Estudo de caso: jogos de palavras</a></li><li><a href="10-listas.html"><strong aria-hidden="true">10.</strong> Listas</a></li><li><a href="11-dicionarios.html"><strong aria-hidden="true">11.</strong> Dicionários</a></li><li><a href="12-tuplas.html"><strong aria-hidden="true">12.</strong> Tuplas</a></li><li><a href="13-caso-estruturas.html"><strong aria-hidden="true">13.</strong> Estudo de caso: seleção de estrutura de dados</a></li><li><a href="14-arquivos.html"><strong aria-hidden="true">14.</strong> Arquivos</a></li><li><a href="15-classes-objetos.html"><strong aria-hidden="true">15.</strong> Classes e objetos</a></li><li><a href="16-classes-funcoes.html"><strong aria-hidden="true">16.</strong> Classes e funções</a></li><li><a href="17-classes-metodos.html" class="active"><strong aria-hidden="true">17.</strong> Classes e métodos</a></li><li><a href="18-heranca.html"><strong aria-hidden="true">18.</strong> Herança</a></li><li><a href="19-extra.html"><strong aria-hidden="true">19.</strong> Extra</a></li><li class="affix"><a href="A-depuracao.html">Apêndice A: Depuração</a></li><li class="affix"><a href="B-analise-algorit.html">Apêndice B: Análise de algoritmos</a></li><li class="affix"><a href="C-colofao-autor.html">Colofão / Sobre o Autor</a></li></ol>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light <span class="default">(default)</span></button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                        </div>
+
+                        <h1 class="menu-title">Pense em Python</h1>
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <a class="header" href="17-classes-metodos.html#capítulo-17-classes-e-métodos" id="capítulo-17-classes-e-métodos"><h1>Capítulo 17: Classes e métodos</h1></a>
+<p>Embora estejamos usando alguns recursos de orientação a objeto do Python, os programas dos dois últimos capítulos não são realmente orientados a objeto, porque não representam as relações entre os tipos definidos pelo programador e as funções que os produzem. O próximo passo é transformar essas funções em métodos que tornem as relações claras.</p>
+<p>Os exemplos de código deste capítulo estão disponíveis em http://thinkpython2.com/code/Time2.py e as soluções para os exercícios estão em http://thinkpython2.com/code/Point2_soln.py.</p>
+<a class="header" href="17-classes-metodos.html#171---recursos-de-orientação-a-objeto" id="171---recursos-de-orientação-a-objeto"><h2>17.1 - Recursos de orientação a objeto</h2></a>
+<p>Python é uma linguagem de programação orientada a objeto, ou seja, ela oferece recursos de programação orientada a objeto que tem a seguintes características:</p>
+<ul>
+<li>
+<p>Os programas incluem definições de classes e métodos.</p>
+</li>
+<li>
+<p>A maior parte dos cálculos é expressa em termos de operações em objetos.</p>
+</li>
+<li>
+<p>Os objetos muitas vezes representam coisas no mundo real, e os métodos muitas vezes correspondem às formas em que as coisas no mundo real interagem.</p>
+</li>
+</ul>
+<p>Por exemplo, a classe <code>Time</code> definida no Capítulo 16 corresponde à forma como as pessoas registram a hora do dia, e as funções que definimos correspondem aos tipos de coisas que as pessoas fazem com os horários. De forma similar, as classes <code>Point</code> e <code>Rectangle</code> no Capítulo 15 correspondem aos conceitos matemáticos de ponto e retângulo.</p>
+<p>Por enquanto, não aproveitamos os recursos que o Python oferece para programação orientada a objeto. Esses recursos não são estritamente necessários; a maioria deles oferece uma sintaxe alternativa para coisas que já fizemos. No entanto, em muitos casos, a alternativa é mais concisa e representa de forma mais exata a estrutura do programa.</p>
+<p>Por exemplo, em <code>Time1.py</code> não há nenhuma conexão óbvia entre a definição de classe e as definições de função que seguem. Com um pouco de atenção, é evidente que cada função recebe pelo menos um objeto Time como argumento.</p>
+<p>Essa observação é a motivação para usar métodos; um método é uma função associada a determinada classe. Vimos métodos de string, listas, dicionários e tuplas. Neste capítulo definiremos métodos para tipos definidos pelo programador.</p>
+<p>Métodos são semanticamente o mesmo que funções, mas há duas diferenças sintáticas:</p>
+<ul>
+<li>
+<p>Os métodos são definidos dentro de uma definição de classe para tornar clara a relação entre a classe e o método.</p>
+</li>
+<li>
+<p>A sintaxe para invocar um método é diferente da sintaxe para chamar uma função.</p>
+</li>
+</ul>
+<p>Nas próximas seções tomaremos as funções dos dois capítulos anteriores e as transformaremos em métodos. Essa transformação é puramente mecânica; você pode fazê-la seguindo uma série de passos. Se estiver à vontade para fazer a conversão entre uma forma e outra, sempre poderá escolher a melhor forma para contemplar os seus objetivos.</p>
+<a class="header" href="17-classes-metodos.html#172---exibição-de-objetos" id="172---exibição-de-objetos"><h2>17.2 - Exibição de objetos</h2></a>
+<p>No Capítulo 16 definimos uma classe chamada Time em “Time”, na página 231, e você escreveu uma função denominada <code>print_time</code>:</p>
+<pre><code class="language-python">class Time:
+    &quot;&quot;&quot;Represents the time of day.&quot;&quot;&quot;
+
+def print_time(time):
+    print('%.2d:%.2d:%.2d' % (time.hour, time.minute, time.second))
+</code></pre>
+<p>Para chamar esta função, você precisa passar um objeto Time como argumento:</p>
+<pre><code class="language-python">&gt;&gt;&gt; start = Time()
+&gt;&gt;&gt; start.hour = 9
+&gt;&gt;&gt; start.minute = 45
+&gt;&gt;&gt; start.second = 00
+&gt;&gt;&gt; print_time(start)
+09:45:00
+</code></pre>
+<p>Para fazer de <code>print_time</code> um método, tudo o que precisamos fazer é mover a definição da função para dentro da definição da classe. Note a alteração na endentação:</p>
+<pre><code class="language-python">class Time:
+    def print_time(time):
+        print('%.2d:%.2d:%.2d' % (time.hour, time.minute, time.second))
+</code></pre>
+<p>Agora há duas formas de chamar <code>print_time</code>. A primeira forma (e menos comum) é usar a sintaxe de função:</p>
+<pre><code class="language-python">&gt;&gt;&gt; Time.print_time(start)
+09:45:00
+</code></pre>
+<p>Nesse uso da notação de ponto, Time é o nome da classe, e <code>print_time</code> é o nome do método. <code>start</code> é passado como um parâmetro.</p>
+<p>A segunda forma (e mais concisa) é usar a sintaxe de método:</p>
+<pre><code class="language-python">&gt;&gt;&gt; start.print_time()
+09:45:00
+</code></pre>
+<p>Nesse uso da notação de ponto, <code>print_time</code> é o nome do método (novamente), e <code>start</code> é o objeto no qual o método é invocado, que se chama de sujeito. Assim como em uma sentença, onde o sujeito é o foco da escrita, o sujeito de uma invocação de método é o foco do método.</p>
+<p>Dentro do método, o sujeito é atribuído ao primeiro parâmetro, portanto, neste caso, <code>start</code> é atribuído a <code>time</code>.</p>
+<p>Por convenção, o primeiro parâmetro de um método chama-se <code>self</code>, então seria mais comum escrever <code>print_time</code> desta forma:</p>
+<pre><code class="language-python">class Time:
+    def print_time(self):
+        print('%.2d:%.2d:%.2d' % (self.hour, self.minute, self.second))
+</code></pre>
+<p>A razão dessa convenção é uma metáfora implícita:</p>
+<ul>
+<li>
+<p>A sintaxe de uma chamada de função, <code>print_time(start)</code>, sugere que a função é o agente ativo. Ela diz algo como: “Ei, <code>print_time</code>! Aqui está um objeto para você exibir”.</p>
+</li>
+<li>
+<p>Na programação orientada a objeto, os objetos são os agentes ativos. Uma invocação de método <code>como start.print_time()</code> diz: “Ei, <code>start</code>! Por favor, exiba-se”.</p>
+</li>
+</ul>
+<p>Essa mudança de perspectiva pode ser mais polida, mas não é óbvio que seja útil. Nos exemplos que vimos até agora, pode não ser. Porém, às vezes, deslocar a responsabilidade das funções para os objetos permite escrever funções (ou métodos) mais versáteis e facilita a manutenção e reutilização do código.</p>
+<p>Como exercício, reescreva <code>time_to_int</code> (de “Prototipação versus planejamento”, na página 234) como um método. Você pode ficar tentado a reescrever <code>int_to_time</code> como um método também, mas isso não faz muito sentido porque não haveria nenhum objeto sobre o qual invocá-lo.</p>
+<a class="header" href="17-classes-metodos.html#173---outro-exemplo" id="173---outro-exemplo"><h2>17.3 - Outro exemplo</h2></a>
+<p>Aqui está uma versão de increment (de “Modificadores”, na página 233) reescrita como método:</p>
+<pre><code class="language-python"># dentro da classe Time:
+    def increment(self, seconds):
+        seconds += self.time_to_int()
+        return int_to_time(seconds)
+</code></pre>
+<p>Essa versão assume que <code>time_to_int</code> seja escrita como método. Além disso, observe que é uma função pura, não um modificador.</p>
+<p>É assim que eu invocaria increment:</p>
+<pre><code class="language-python">&gt;&gt;&gt; start.print_time()
+09:45:00
+&gt;&gt;&gt; end = start.increment(1337)
+&gt;&gt;&gt; end.print_time()
+10:07:17
+</code></pre>
+<p>O sujeito, start, é atribuído ao primeiro parâmetro, self. O argumento, 1337, é atribuído ao segundo parâmetro, seconds.</p>
+<p>Esse mecanismo pode ser confuso, especialmente se você fizer um erro. Por exemplo, se invocar increment com dois argumentos, recebe:</p>
+<pre><code class="language-python">&gt;&gt;&gt; end = start.increment(1337, 460)
+TypeError: increment() takes 2 positional arguments but 3 were given
+</code></pre>
+<p>A mensagem de erro é inicialmente confusa, porque há só dois argumentos entre parênteses. No entanto, o sujeito também é considerado um argumento, então, somando tudo, são três.</p>
+<p>A propósito, um argumento posicional é o que não tem um nome de parâmetro; isto é, não é um argumento de palavra-chave. Nesta chamada da função:</p>
+<pre><code class="language-python">sketch(parrot, cage, dead=True)
+</code></pre>
+<p>parrot e cage são posicionais, e dead é um argumento de palavra-chave.</p>
+<a class="header" href="17-classes-metodos.html#174---um-exemplo-mais-complicado" id="174---um-exemplo-mais-complicado"><h2>17.4 - Um exemplo mais complicado</h2></a>
+<p>Reescrever <code>is_after</code> (de “Time”, na página 231) é ligeiramente mais complicado, porque ela recebe dois objetos Time como parâmetros. Nesse caso, a convenção é denominar o primeiro parâmetro self e o segundo parâmetro other:</p>
+<pre><code class="language-python"># dentro da classe Time:
+
+    def is_after(self, other):
+        return self.time_to_int() &gt; other.time_to_int()
+</code></pre>
+<p>Para usar este método, você deve invocá-lo para um objeto e passar outro como argumento:</p>
+<pre><code class="language-python">&gt;&gt;&gt; end.is_after(start)
+True
+</code></pre>
+<p>Uma vantagem desta sintaxe é que é quase literal em inglês: “o fim é depois da partida?”.</p>
+<a class="header" href="17-classes-metodos.html#175---método-init" id="175---método-init"><h2>17.5 - Método init</h2></a>
+<p>O método <code>__init__</code> (abreviação da palavra em inglês para “inicialização”) é um método especial, invocado quando um objeto é instanciado. Seu nome completo é <code>__init__</code> (dois caracteres de sublinhado, seguidos de init, e mais dois sublinhados). Um método <code>__init__</code> da classe Time pode ser algo assim:</p>
+<pre><code class="language-python"># dentro da classe Time:
+
+    def __init__(self, hour=0, minute=0, second=0):
+        self.hour = hour
+        self.minute = minute
+        self.second = second
+</code></pre>
+<p>É comum que os parâmetros de <code>__init__</code> tenham os mesmos nomes que os atributos. A instrução</p>
+<pre><code class="language-python">        self.hour = hour
+</code></pre>
+<p>guarda o valor do parâmetro <code>hour</code> como um atributo de <code>self</code>.</p>
+<p>Os parâmetros são opcionais, então, se você chamar Time sem argumentos, recebe os valores padrão:</p>
+<pre><code class="language-python">&gt;&gt;&gt; time = Time()
+&gt;&gt;&gt; time.print_time()
+00:00:00
+</code></pre>
+<p>Se incluir um argumento, ele define hour.</p>
+<pre><code class="language-python">&gt;&gt;&gt; time = Time (9)
+&gt;&gt;&gt; time.print_time()
+09:00:00
+</code></pre>
+<p>Se fornecer dois argumentos, hour e minute serão definidos:</p>
+<pre><code class="language-python">&gt;&gt;&gt; time = Time(9, 45)
+&gt;&gt;&gt; time.print_time()
+09:45:00
+</code></pre>
+<p>E se você fornecer três argumentos, os três valores serão definidos.</p>
+<p>Como exercício, escreva um método init da classe Point que receba x e y como parâmetros opcionais e os relacione aos atributos correspondentes.</p>
+<a class="header" href="17-classes-metodos.html#176---método-__str__" id="176---método-__str__"><h2>17.6 - Método <code>__str__</code></h2></a>
+<p><code>__str__</code> é um método especial, como <code>__init__</code>, usado para retornar uma representação de string de um objeto.</p>
+<p>Por exemplo, aqui está um método str para objetos Time:</p>
+<pre><code class="language-python"># dentro da classe Time:
+
+    def __str__(self):
+        return '%.2d:%.2d:%.2d' % (self.hour, self.minute, self.second)
+</code></pre>
+<p>Ao exibir um objeto com print, o Python invoca o método str:</p>
+<pre><code class="language-python">&gt;&gt;&gt; time = Time(9, 45)
+&gt;&gt;&gt; print(time)
+09:45:00
+</code></pre>
+<p>Quando escrevo uma nova classe, quase sempre começo escrevendo <code>__init__</code>, o que facilita a instanciação de objetos, e <code>__str__</code>, que é útil para a depuração.</p>
+<p>Como exercício, escreva um método str da classe Point. Crie um objeto Point e exiba-o.</p>
+<a class="header" href="17-classes-metodos.html#177---sobrecarga-de-operadores" id="177---sobrecarga-de-operadores"><h2>17.7 - Sobrecarga de operadores</h2></a>
+<p>Ao definir outros métodos especiais, você pode especificar o comportamento de operadores nos tipos definidos pelo programador. Por exemplo, se você definir um método chamado <code>__add__</code> para a classe Time de Time, pode usar o operador + em objetos Time.</p>
+<p>A definição pode ser assim:</p>
+<pre><code class="language-python"># dentro da classe Time:
+
+    def __add__(self, other):
+        seconds = self.time_to_int() + other.time_to_int()
+        return int_to_time(seconds)
+</code></pre>
+<p>Você pode usá-lo assim:</p>
+<pre><code class="language-python">&gt;&gt;&gt; start = Time(9, 45)
+&gt;&gt;&gt; duration = Time(1, 35)
+&gt;&gt;&gt; print(start + duration)
+11:20:00
+</code></pre>
+<p>Ao aplicar o operador + a objetos Time, o Python invoca <code>__add__</code>. Ao exibir o resultado, o Python invoca <code>__str__</code>. Ou seja, há muita coisa acontecendo nos bastidores!</p>
+<p>Alterar o comportamento de um operador para que funcione com tipos definidos pelo programador chama-se sobrecarga de operadores. Para cada operador no Python há um método especial correspondente, como <code>__add__</code>. Para obter mais informações, veja http://docs.python.org/3/reference/datamodel.html#specialnames.</p>
+<p>Como exercício, escreva um método add para a classe Point.</p>
+<a class="header" href="17-classes-metodos.html#178---despacho-por-tipo" id="178---despacho-por-tipo"><h2>17.8 - Despacho por tipo</h2></a>
+<p>Na seção anterior, acrescentamos dois objetos Time, mas você também pode querer acrescentar um número inteiro a um objeto Time. A seguir, veja uma versão de <code>__add__</code>, que verifica o tipo de other e invoca <code>add_time</code> ou increment:</p>
+<pre><code class="language-python"># dentro da classe Time:
+    def __add__(self, other):
+        if isinstance(other, Time):
+            return self.add_time(other)
+        else:
+            return self.increment(other)
+
+    def add_time(self, other):
+        seconds = self.time_to_int() + other.time_to_int()
+        return int_to_time(seconds)
+
+    def increment(self, seconds):
+        seconds += self.time_to_int()
+        return int_to_time(seconds)
+</code></pre>
+<p>A função construída isinstance recebe um valor e um objeto de classe e retorna True se o valor for uma instância da classe.</p>
+<p>Se other for um objeto Time, <code>__add__</code> invoca <code>add_time</code>. Do contrário, assume que o parâmetro seja um número e invoca increment. Essa operação chama-se despacho por tipo porque despacha a operação a métodos diferentes, baseados no tipo dos argumentos.</p>
+<p>Veja exemplos que usam o operador <code>+</code> com tipos diferentes:</p>
+<pre><code class="language-python">&gt;&gt;&gt; start = Time(9, 45)
+&gt;&gt;&gt; duration = Time(1, 35)
+&gt;&gt;&gt; print(start + duration)
+11:20:00
+&gt;&gt;&gt; print(start + 1337)
+10:07:17
+</code></pre>
+<p>Infelizmente, esta implementação da adição não é comutativa. Se o número inteiro for o primeiro operando, você recebe</p>
+<pre><code class="language-python">&gt;&gt;&gt; print(1337 + start)
+TypeError: unsupported operand type(s) for +: 'int' and 'instance'
+</code></pre>
+<p>O problema é que, em vez de pedir ao objeto Time que adicione um número inteiro, o Python está pedindo que um número inteiro adicione um objeto Time, e ele não sabe como fazer isso. Entretanto, há uma solução inteligente para este problema: o método especial <code>__radd__</code>, que significa “adição à direita”. Esse método é invocado quando um objeto Time aparece no lado direito do operador +. Aqui está a definição:</p>
+<pre><code class="language-python"># dentro da classe Time:
+    def __radd__(self, other):
+        return self.__add__(other)
+</code></pre>
+<p>E é assim que ele é usado:</p>
+<pre><code class="language-python">&gt;&gt;&gt; print(1337 + start)
+10:07:17
+</code></pre>
+<p>Como exercício, escreva um método add para Points que funcione com um objeto Point ou com uma tupla:</p>
+<ul>
+<li>
+<p>Se o segundo operando for um Point, o método deve retornar um novo Point cuja coordenada x é a soma das coordenadas x dos operandos, e o mesmo se aplica às coordenadas de y.</p>
+</li>
+<li>
+<p>Se o segundo operando for uma tupla, o método deve adicionar o primeiro elemento da tupla à coordenada de x e o segundo elemento à coordenada de y, retornando um novo Point com o resultado.</p>
+</li>
+</ul>
+<a class="header" href="17-classes-metodos.html#179---polimorfismo" id="179---polimorfismo"><h2>17.9 - Polimorfismo</h2></a>
+<p>O despacho por tipo é útil, mas (felizmente) nem sempre é necessário. Muitas vezes, você pode evitá-lo escrevendo funções que funcionem corretamente para argumentos de tipos diferentes.</p>
+<p>Muitas das funções que escrevemos para strings também funcionam para outros tipos de sequência. Por exemplo, em “Um dicionário como uma coleção de contadores”, na página 163, usamos histogram para contar o número de vezes que cada letra aparece numa palavra:</p>
+<pre><code class="language-python">def histogram(s):
+    d = dict()
+    for c in s:
+        if c not in d:
+            d[c] = 1
+        else:
+            d[c] = d[c] + 1
+    return d
+</code></pre>
+<p>Essa função também funciona com listas, tuplas e até dicionários, desde que os elementos de s sejam hashable, então eles podem ser usados como chaves em d:</p>
+<pre><code class="language-python">&gt;&gt;&gt; t = ['spam', 'egg', 'spam', 'spam', 'bacon', 'spam']
+&gt;&gt;&gt; histogram(t)
+{'bacon': 1, 'egg': 1, 'spam': 4}
+</code></pre>
+<p>As funções que funcionam com vários tipos chamam-se polimórficas. O polimorfismo pode facilitar a reutilização do código. Por exemplo, a função integrada sum, que adiciona os elementos de uma sequência, funciona só se os elementos da sequência forem compatíveis com adição.</p>
+<p>Como os objetos Time oferecem o método add, eles funcionam com sum:</p>
+<pre><code class="language-python">&gt;&gt;&gt; t1 = Time(7, 43)
+&gt;&gt;&gt; t2 = Time(7, 41)
+&gt;&gt;&gt; t3 = Time(7, 37)
+&gt;&gt;&gt; total = sum([t1, t2, t3])
+&gt;&gt;&gt; print(total)
+23:01:00
+</code></pre>
+<p>Em geral, se todas as operações dentro de uma função forem compatíveis com um dado tipo, não haverá problemas.</p>
+<p>O melhor tipo de polimorfismo é o não intencional, quando você descobre que uma função que já escreveu pode ser aplicada a um tipo para o qual ela não tinha planejada.</p>
+<a class="header" href="17-classes-metodos.html#1710---interface-e-implementação" id="1710---interface-e-implementação"><h2>17.10 - Interface e implementação</h2></a>
+<p>Uma das metas do projeto orientado a objeto é facilitar a manutenção do programa, para que você possa mantê-lo funcionando quando outras partes do sistema forem alteradas, e também poder alterar o programa para satisfazer novas condições.</p>
+<p>Um princípio de projeto que ajuda a atingir essa meta é manter as interfaces separadas das implementações. Para objetos, isso quer dizer que os métodos que uma classe oferece não devem depender de como os atributos são representados.</p>
+<p>Por exemplo, neste capítulo desenvolvemos uma classe que representa uma hora do dia. Os métodos fornecidos por esta classe incluem time_to_int, is_after e add_time.</p>
+<p>Podemos implementar esses métodos de várias formas. Os detalhes da implementação dependem de como representamos as horas. Neste capítulo, os atributos de um objeto Time são hour, minute e second.</p>
+<p>Como alternativa, podemos substituir esses atributos por um número inteiro único que represente o número de segundos desde a meia-noite. Essa implementação faria com que alguns métodos, como is_after, fossem mais fáceis de escrever, mas dificultaria o uso de outros métodos.</p>
+<p>Pode acontecer que, depois de implementar uma nova classe, você descubra uma implementação melhor. Se outras partes do programa estiverem usando a sua classe, mudar a interface pode ser trabalhoso e induzir a erros.</p>
+<p>No entanto, se projetou a interface cuidadosamente, pode alterar a implementação sem mudar a interface, e não será preciso mudar outras partes do programa.</p>
+<a class="header" href="17-classes-metodos.html#1711---depuração" id="1711---depuração"><h2>17.11 - Depuração</h2></a>
+<p>É legal acrescentar atributos a objetos em qualquer ponto da execução de um programa, mas se você tiver objetos do mesmo tipo que não têm os mesmos atributos, é fácil cometer erros. É uma boa ideia inicializar todos os atributos de um objeto no método init.</p>
+<p>Caso não tenha certeza se um objeto tem um determinado atributo, você pode usar a função integrada hasattr (ver “Depuração”, na página 236).</p>
+<p>Outra forma de acessar atributos é com a função integrada vars, que recebe um objeto e retorna um dicionário que mapeia os nomes dos atributos (como strings) aos seus valores:</p>
+<pre><code class="language-python">&gt;&gt;&gt; p = Point(3, 4)
+&gt;&gt;&gt; vars(p)
+{'y': 4, 'x': 3}
+</code></pre>
+<p>Para facilitar a depuração, pode ser útil usar esta função:</p>
+<pre><code class="language-python">def print_attributes(obj):
+    for attr in vars(obj):
+        print(attr, getattr(obj, attr))
+</code></pre>
+<p><code>print_attributes</code> atravessa o dicionário e imprime cada nome de atributo e o seu valor correspondente.</p>
+<p>A função integrada getattr recebe um objeto e um nome de atributo (como uma string) e devolve o valor do atributo.</p>
+<a class="header" href="17-classes-metodos.html#1712---glossário" id="1712---glossário"><h2>17.12 - Glossário</h2></a>
+<dl>
+<dt><a id="glos:linguagem orientada a objeto" href="17-classes-metodos.html#termo:linguagem orientada a objeto">linguagem orientada a objeto</a></dt>
+<dd>Linguagem que fornece recursos, como tipos definidos pelo programador e métodos, que facilitam a programação orientada a objeto.</dd>
+<dt><a id="glos:programação orientada a objeto" href="17-classes-metodos.html#termo:programação orientada a objeto">programação orientada a objeto</a></dt>
+<dd>Estilo de programação na qual os dados e as operações que os manipulam são organizadas em classes e métodos.</dd>
+<dt><a id="glos:método" href="17-classes-metodos.html#termo:método">método</a></dt>
+<dd>Função criada dentro de uma definição de classe e invocada em instâncias desta classe.</dd>
+<dt><a id="glos:sujeito" href="17-classes-metodos.html#termo:sujeito">sujeito</a></dt>
+<dd>Objeto sobre o qual um método é invocado.</dd>
+<dt><a id="glos:argumento posicional" href="17-classes-metodos.html#termo:argumento posicional">argumento posicional</a></dt>
+<dd>Argumento que não inclui um nome de parâmetro, portanto não é um argumento de palavra-chave.</dd>
+<dt><a id="glos:sobrecarga de operador" href="17-classes-metodos.html#termo:sobrecarga de operador">sobrecarga de operador</a></dt>
+<dd>Alteração do comportamento de um operador como + para que funcione com um tipo definido pelo programador.</dd>
+<dt><a id="glos:despacho por tipo" href="17-classes-metodos.html#termo:despacho por tipo">despacho por tipo</a></dt>
+<dd>Modelo de programação que invoca funções diferentes dependendo do tipo do operando.</dd>
+<dt><a id="glos:polimórfico" href="17-classes-metodos.html#termo:polimórfico">polimórfico</a></dt>
+<dd>Pertinente a uma função que pode funcionar com mais de um tipo.</dd>
+<dt><a id="glos:ocultamento de informação" href="17-classes-metodos.html#termo:ocultamento de informação">ocultamento de informação</a></dt>
+<dd>Princípio segundo o qual a interface fornecida por um objeto não deve depender da sua implementação, especialmente em relação à representação dos seus atributos.</dd>
+</dl>
+<a class="header" href="17-classes-metodos.html#1713---exercícios" id="1713---exercícios"><h2>17.13 - Exercícios</h2></a>
+<a class="header" href="17-classes-metodos.html#exercício-171" id="exercício-171"><h3>Exercício 17.1</h3></a>
+<p>Baixe o código deste capítulo em http://thinkpython2.com/code/Time2.py. Altere os atributos de Time para que um número inteiro único represente os segundos decorridos desde a meia-noite. Então altere os métodos (e a função int_to_time) para funcionar com a nova implementação. Você não deve modificar o código de teste em main. Ao terminar, a saída deve ser a mesma que antes.</p>
+<p>Solução: http://thinkpython2.com/code/Time2_soln.py.</p>
+<a class="header" href="17-classes-metodos.html#exercício-172" id="exercício-172"><h3>Exercício 17.2</h3></a>
+<p>Este exercício é uma história com moral sobre um dos erros mais comuns e difíceis de encontrar no Python. Escreva uma definição de classe chamada Kangaroo com os seguintes métodos:</p>
+<ol>
+<li>
+<p>Um método <code>__init__</code> que inicialize um atributo chamado <code>pouch_contents</code>  em uma lista vazia.</p>
+</li>
+<li>
+<p>Um método chamado <code>put_in_pouch</code> que receba um objeto de qualquer tipo e o acrescente a <code>pouch_contents</code>.</p>
+</li>
+<li>
+<p>Um método <code>__str__</code> que retorne uma representação de string do objeto Kangaroo e os conteúdos de pouch (bolsa).</p>
+</li>
+</ol>
+<p>Teste o seu código criando dois objetos Kangaroo, atribuindo-os a variáveis chamadas kanga e roo, e então acrescentando roo ao conteúdo da bolsa de kanga.</p>
+<p>Baixe http://thinkpython2.com/code/BadKangaroo.py. Ele contém uma solução para o problema anterior com um defeito bem grande e bem feio. Encontre e corrija o defeito.</p>
+<p>Se não conseguir achar a solução, você pode baixar http://thinkpython2.com/code/GoodKangaroo.py, que explica o problema e demonstra uma solução.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+                            <a rel="prev" href="16-classes-funcoes.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                        
+
+                        
+                            <a rel="next" href="18-heranca.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+                    <a href="16-classes-funcoes.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+                
+
+                
+                    <a href="18-heranca.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+                
+            </nav>
+
+        </div>
+
+
+        <!-- Local fallback for Font Awesome -->
+        <script>
+            if (getComputedStyle(document.querySelector(".fa")).fontFamily !== "FontAwesome") {
+                var link = document.createElement('link');
+                link.rel = 'stylesheet';
+                link.type = 'text/css';
+                link.href = '_FontAwesome/css/font-awesome.css';
+                document.head.insertBefore(link, document.head.firstChild)
+            }
+        </script>
+
+        
+
+        
+
+        
+
+        
+
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS script -->
+        
+
+    </body>
+</html>

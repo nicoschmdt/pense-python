@@ -1,0 +1,9 @@
+[book]
+title = "Pense em Python"
+author = "Allen B. Downey"
+description = "Pense como um cientista da computação"
+multilingual = false
+src = "src"
+
+[build]
+build-dir = "docs"
