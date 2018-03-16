@@ -133,12 +133,12 @@
 </ol>
 <a class="header" href="04-caso-interface/12.html#exercício-42" id="exercício-42"><h3>Exercício 4.2</h3></a>
 <p>Escreva um conjunto de funções adequadamente geral que possa desenhar flores como as da Figura 4.1.</p>
-<p><img src="https://github.com/PenseAllen/PensePython2e/raw/master/fig/tnkp_0401.png" alt="Figura 4.1 – Flores de tartaruga." />
+<p><img src="../fig/tnkp_0401.png" alt="Figura 4.1 – Flores de tartaruga." />
 <br><em>Figura 4.1 – Flores de tartaruga.</em></p>
 <p>Solução: http://thinkpython2.com/code/flower.py, também exige http://thinkpython2.com/code/polygon.py.</p>
 <a class="header" href="04-caso-interface/12.html#exercício-43" id="exercício-43"><h3>Exercício 4.3</h3></a>
 <p>Escreva um conjunto de funções adequadamente geral que possa desenhar formas como as da Figura 4.2.</p>
-<p><img src="https://github.com/PenseAllen/PensePython2e/raw/master/fig/tnkp_0402.png" alt="Figura 4.2 – Tortas de tartaruga." />
+<p><img src="../fig/tnkp_0402.png" alt="Figura 4.2 – Tortas de tartaruga." />
 <br><em>Figura 4.2 – Tortas de tartaruga.</em></p>
 <p>Solução: http://thinkpython2.com/code/pie.py.</p>
 <a class="header" href="04-caso-interface/12.html#exercício-44" id="exercício-44"><h3>Exercício 4.4</h3></a>
@@ -198,6 +198,21 @@
             }
         </script>
 
+        
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            var socket = new WebSocket("ws://localhost:3001");
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload(true); // force reload from server (not from cache)
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
         
 
         

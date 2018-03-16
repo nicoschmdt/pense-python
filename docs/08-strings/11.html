@@ -166,7 +166,7 @@ IndexError: string index out of range
 True
 </code></pre>
 <p>Desta vez, recebemos a resposta certa, mas parece que o loop só foi executado três vezes, o que é suspeito. Para ter uma ideia melhor do que está acontecendo, é útil desenhar um diagrama de estado. Durante a primeira iteração, o frame de <code>is_reverse</code> é mostrado na Figura 8.2.</p>
-<p><img src="https://github.com/PenseAllen/PensePython2e/raw/master/fig/tnkp_0802.png" alt="Figura 8.2 – Diagrama de estado de is_reverse." />
+<p><img src="../fig/tnkp_0802.png" alt="Figura 8.2 – Diagrama de estado de is_reverse." />
 <br><em>8.2 – Diagrama de estado de is_reverse.</em></p>
 <p>Tomei a liberdade de arrumar as variáveis no frame e acrescentei linhas pontilhadas para mostrar que os valores de i e j indicam caracteres em word1 e word2.</p>
 <p>Começando com este diagrama, execute o programa em papel, alterando os valores de i e j durante cada iteração. Encontre e corrija o segundo erro desta função.</p>
@@ -220,6 +220,21 @@ True
             }
         </script>
 
+        
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            var socket = new WebSocket("ws://localhost:3001");
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload(true); // force reload from server (not from cache)
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
         
 
         

@@ -123,7 +123,7 @@
                         <a class="header" href="11-dicionarios/06.html#116---memos" id="116---memos"><h2>11.6 - Memos</h2></a>
 <p>Se usou a função de fibonacci em “Mais um exemplo”, na página 101, pode ter notado que quanto maior o argumento dado mais tempo a função leva para ser executada. Além disso, o tempo de execução aumenta rapidamente.</p>
 <p>Para entender por que, considere a Figura 11.2, que mostra o gráfico de chamada de <code>fibonacci</code> com n=4.</p>
-<p><img src="https://github.com/PenseAllen/PensePython2e/raw/master/fig/tnkp_1102.png" alt="Figura 11.2 – Gráfico de chamada para fibonacci." />
+<p><img src="../fig/tnkp_1102.png" alt="Figura 11.2 – Gráfico de chamada para fibonacci." />
 <br><em>Figura 11.2 – Gráfico de chamada para</em> <code>fibonacci</code>.</p>
 <p>Um gráfico de chamada mostra um conjunto de frames de função, com linhas que unem cada frame aos frames das funções que chama. Na parte de cima do gráfico, <code>fibonacci</code> com <code>n=4</code> chama <code>fibonacci</code> com <code>n=3</code> e <code>n=2</code>. Por sua vez, <code>fibonacci</code> com <code>n=3</code> chama <code>fibonacci</code> com <code>n=2</code> e <code>n=1</code>. E assim por diante.</p>
 <p>Conte quantas vezes <code>fibonacci(0)</code> e <code>fibonacci(1)</code> são chamadas. Essa é uma solução ineficiente para o problema, e piora conforme o argumento se torna maior.</p>
@@ -189,6 +189,21 @@ def fibonacci(n):
             }
         </script>
 
+        
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            var socket = new WebSocket("ws://localhost:3001");
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload(true); // force reload from server (not from cache)
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
         
 
         

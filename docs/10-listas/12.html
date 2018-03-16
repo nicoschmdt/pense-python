@@ -131,7 +131,7 @@ Ela é usada assim:
 ['b', 'c']
 </code></pre>
 <p>O parâmetro t e a variável letters são alias para o mesmo objeto. O diagrama da pilha fica igual ao da Figura 10.5.</p>
-<p><img src="https://github.com/PenseAllen/PensePython2e/raw/master/fig/tnkp_1005.png" alt="Figura 10.5 – Diagrama da pilha: __main__ e delete_head compartilham referências à mesma lista." />
+<p><img src="../fig/tnkp_1005.png" alt="Figura 10.5 – Diagrama da pilha: __main__ e delete_head compartilham referências à mesma lista." />
 <br><em>Figura 10.5 – Diagrama da pilha:</em> <code>__main__</code> <em>e</em> <code>delete_head</code> <em>compartilham referências à mesma lista.</em></p>
 <p>Como a lista é compartilhada por dois frames, desenhei-a entre eles.</p>
 <p>É importante distinguir entre operações que alteram listas e operações que criam novas listas. Por exemplo, o método <code>append</code> altera a lista, mas o operador <code>+</code> cria uma nova lista:</p>
@@ -222,6 +222,21 @@ None
             }
         </script>
 
+        
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            var socket = new WebSocket("ws://localhost:3001");
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload(true); // force reload from server (not from cache)
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
         
 
         

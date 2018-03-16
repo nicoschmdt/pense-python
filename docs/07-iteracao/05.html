@@ -123,7 +123,7 @@
                         <a class="header" href="07-iteracao/05.html#75---raízes-quadradas" id="75---raízes-quadradas"><h2>7.5 - Raízes quadradas</h2></a>
 <p>Loops muitas vezes são usados em programas que calculam resultados numéricos, começando com uma resposta aproximada e melhorando-a iterativamente.</p>
 <p>Por exemplo, uma forma de calcular raízes quadradas é o método de Newton. Suponha que você queira saber a raiz quadrada de a. Se começar com quase qualquer estimativa, x, é possível calcular uma estimativa melhor com a seguinte fórmula:</p>
-<p><img src="https://github.com/PenseAllen/PensePython2e/raw/master/fig/p79f1.png" alt="Fórmula – Raiz quadrada pelo método de Newton." /></p>
+<p><img src="../fig/p79f1.png" alt="Fórmula – Raiz quadrada pelo método de Newton." /></p>
 <pre><code class="language-python">Por exemplo, se a for 4 e x for 3:
 &gt;&gt;&gt; a = 4
 &gt;&gt;&gt; x = 3
@@ -131,7 +131,7 @@
 &gt;&gt;&gt; y
 2.16666666667
 </code></pre>
-<p>O resultado é mais próximo à resposta correta (<img src="https://github.com/PenseAllen/PensePython2e/raw/master/fig/p79f2.png" alt="Fórmula – Raiz quadrada de 4." /> = 2). Se repetirmos o processo com a nova estimativa, chegamos ainda mais perto:</p>
+<p>O resultado é mais próximo à resposta correta (<img src="../fig/p79f2.png" alt="Fórmula – Raiz quadrada de 4." /> = 2). Se repetirmos o processo com a nova estimativa, chegamos ainda mais perto:</p>
 <pre><code class="language-python">&gt;&gt;&gt; x = y
 &gt;&gt;&gt; y = (x + a/x) / 2
 &gt;&gt;&gt; y
@@ -165,7 +165,7 @@
         break
     x = y
 </code></pre>
-<p>Para a maior parte de valores de <code>a</code> funciona bem, mas pode ser perigoso testar a igualdade de um float. Os valores de ponto flutuante são aproximadamente corretos: a maioria dos números racionais, como 1/3, e números irracionais, como <img src="https://github.com/PenseAllen/PensePython2e/raw/master/fig/p80f1.png" alt="Fórmula – Raiz quadrada de 2." />, não podem ser representados exatamente com um float.</p>
+<p>Para a maior parte de valores de <code>a</code> funciona bem, mas pode ser perigoso testar a igualdade de um float. Os valores de ponto flutuante são aproximadamente corretos: a maioria dos números racionais, como 1/3, e números irracionais, como <img src="../fig/p80f1.png" alt="Fórmula – Raiz quadrada de 2." />, não podem ser representados exatamente com um float.</p>
 <p>Em vez de verificar se <code>x</code> e <code>y</code> são exatamente iguais, é mais seguro usar a função integrada <code>abs</code> para calcular o valor absoluto ou magnitude da diferença entre eles:</p>
 <pre><code class="language-python">if abs(y-x) &lt; epsilon:
     break
@@ -221,6 +221,21 @@
             }
         </script>
 
+        
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            var socket = new WebSocket("ws://localhost:3001");
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload(true); // force reload from server (not from cache)
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
         
 
         

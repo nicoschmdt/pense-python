@@ -183,7 +183,7 @@ recurse(3, 0)
     t.bk(length * n)
 </code></pre>
 <a class="header" href="05-cond-recur/14.html#exercício-56" id="exercício-56"><h3>Exercício 5.6</h3></a>
-<p><img src="https://github.com/PenseAllen/PensePython2e/raw/master/fig/tnkp_0502.png" alt="Figura 5.2 – Uma curva de Koch." />
+<p><img src="../fig/tnkp_0502.png" alt="Figura 5.2 – Uma curva de Koch." />
 <br><em>Figura 5.2 – Uma curva de Koch.</em></p>
 <p>A curva de Koch é um fractal que parece com o da Figura 5.2. Para desenhar uma curva de Koch com o comprimento x, tudo o que você tem que fazer é:</p>
 <ol>
@@ -272,6 +272,21 @@ recurse(3, 0)
             }
         </script>
 
+        
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            var socket = new WebSocket("ws://localhost:3001");
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload(true); // force reload from server (not from cache)
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
         
 
         

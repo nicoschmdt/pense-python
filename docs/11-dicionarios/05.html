@@ -143,7 +143,7 @@
 {1: ['a', 'p', 't', 'o'], 2: ['r']}
 </code></pre>
 <p>A Figura 11.1 é um diagrama de estado mostrando hist e inverse. Um dicionário é representado como uma caixa com o tipo dict acima dela e os pares chave-valor no interior. Se os valores forem números inteiros, de ponto flutuante ou strings, desenho-os dentro da caixa, mas normalmente prefiro desenhar listas do lado de fora, para manter o diagrama simples.</p>
-<p><img src="https://github.com/PenseAllen/PensePython2e/raw/master/fig/tnkp_1101.png" alt="Figura 11.1 – Diagrama de estado de um dicionário e seu inverso." />
+<p><img src="../fig/tnkp_1101.png" alt="Figura 11.1 – Diagrama de estado de um dicionário e seu inverso." />
 <br><em>Figura 11.1 – Diagrama de estado de um dicionário e seu inverso.</em></p>
 <p>As listas podem ser valores em um dicionário, como mostra este exemplo, mas não podem ser chaves. Isso é o que acontece se você tentar:</p>
 <pre><code class="language-python">&gt;&gt;&gt; t = [1, 2, 3]
@@ -208,6 +208,21 @@ TypeError: list objects are unhashable
             }
         </script>
 
+        
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            var socket = new WebSocket("ws://localhost:3001");
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload(true); // force reload from server (not from cache)
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
         
 
         

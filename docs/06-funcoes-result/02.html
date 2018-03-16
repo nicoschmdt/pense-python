@@ -124,7 +124,7 @@
 <p>Conforme você escrever funções maiores, pode ser que passe mais tempo as depurando.</p>
 <p>Para lidar com programas cada vez mais complexos, você pode querer tentar usar um processo chamado de desenvolvimento incremental. A meta do desenvolvimento incremental é evitar longas sessões de depuração, acrescentando e testando pequenas partes do código de cada vez.</p>
 <p>Como um exemplo, vamos supor que você queira encontrar a distância entre dois pontos dados pelas coordenadas (x1, y1) e(x2, y2). Pelo teorema de Pitágoras, a distância é:</p>
-<p><img src="https://github.com/PenseAllen/PensePython2e/raw/master/fig/p63f1.png" alt="Fórmula – Distância entre dois pontos." /></p>
+<p><img src="../fig/p63f1.png" alt="Fórmula – Distância entre dois pontos." /></p>
 <p>O primeiro passo é pensar como uma função distance deveria ser no Python. Em outras palavras, quais são as entradas (parâmetros) e qual é a saída (valor de retorno)?</p>
 <p>Nesse caso, as entradas são dois pontos que você pode representar usando quatro números. O valor de retorno é a distância representada por um valor de ponto flutuante.</p>
 <p>Imediatamente, é possível escrever um rascunho da função:</p>
@@ -228,6 +228,21 @@
             }
         </script>
 
+        
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            var socket = new WebSocket("ws://localhost:3001");
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload(true); // force reload from server (not from cache)
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
         
 
         

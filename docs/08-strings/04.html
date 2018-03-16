@@ -129,7 +129,7 @@
 'Python'
 </code></pre>
 <p>O operador <code>[n:m]</code> retorna a parte da string do “enésimo” caractere ao “emésimo” caractere, incluindo o primeiro, mas excluindo o último. Este comportamento é contraintuitivo, porém pode ajudar a imaginar os índices que indicam a parte entre os caracteres, como na Figura 8.1.</p>
-<p><img src="https://github.com/PenseAllen/PensePython2e/raw/master/fig/tnkp_0801.png" alt="Figura 8.1 – Índices de fatias." />
+<p><img src="../fig/tnkp_0801.png" alt="Figura 8.1 – Índices de fatias." />
 <br><em>Figura 8.1 – Índices de fatias.</em></p>
 <p>Se você omitir o primeiro índice (antes dos dois pontos), a fatia começa no início da string. Se omitir o segundo índice, a fatia vai ao fim da string:</p>
 <pre><code class="language-python">&gt;&gt;&gt; fruit = 'banana'
@@ -195,6 +195,21 @@
             }
         </script>
 
+        
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            var socket = new WebSocket("ws://localhost:3001");
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload(true); // force reload from server (not from cache)
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
         
 
         

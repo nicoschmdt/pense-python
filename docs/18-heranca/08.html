@@ -136,7 +136,7 @@
 </li>
 </ul>
 <p>Um diagrama de classe é uma representação gráfica dessas relações. Por exemplo, a Figura 18.2 mostra as relações entre Card, Deck e Hand.</p>
-<p><img src="https://github.com/PenseAllen/PensePython2e/raw/master/fig/tnkp_1802.png" alt="Figura 18.2 – Diagrama de classes." />
+<p><img src="../fig/tnkp_1802.png" alt="Figura 18.2 – Diagrama de classes." />
 <br><em>Figura 18.2 – Diagrama de classes.</em></p>
 <p>A flecha com um triângulo oco representa uma relação IS-A; nesse caso, indica que Hand herda de Deck.</p>
 <p>A ponta de flecha padrão representa uma relação HAS-A; nesse caso, um Deck tem referências a objetos Card.</p>
@@ -193,6 +193,21 @@
             }
         </script>
 
+        
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            var socket = new WebSocket("ws://localhost:3001");
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload(true); // force reload from server (not from cache)
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
         
 
         

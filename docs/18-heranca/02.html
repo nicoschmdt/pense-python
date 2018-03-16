@@ -144,7 +144,7 @@
 Jack of Hearts
 </code></pre>
 <p>A Figura 18.1 é um diagrama do objeto de classe Card e uma instância de Card. Card é um objeto de classe; seu tipo é type. card1 é uma instância de Card, então seu tipo é Card. Para economizar espaço, não incluí o conteúdo de suit_names e rank_names.</p>
-<p><img src="https://github.com/PenseAllen/PensePython2e/raw/master/fig/tnkp_1801.png" alt="Figura 18.1 – Diagrama de objetos: classe Card e card1, uma instância de Card." />
+<p><img src="../fig/tnkp_1801.png" alt="Figura 18.1 – Diagrama de objetos: classe Card e card1, uma instância de Card." />
 <br><em>Figura 18.1 – Diagrama de objetos: classe</em> <code>Card</code> <em>e</em> <code>card1</code>, <em>uma instância de</em> <code>Card</code>.</p>
 
                     </main>
@@ -196,6 +196,21 @@ Jack of Hearts
             }
         </script>
 
+        
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            var socket = new WebSocket("ws://localhost:3001");
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload(true); // force reload from server (not from cache)
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
         
 
         
