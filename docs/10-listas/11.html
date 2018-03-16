@@ -128,7 +128,7 @@
 True
 </code></pre>
 <p>O diagrama de estado ficará igual à Figura 10.4.</p>
-<p><img src="../fig/tnkp_1004.png" alt="Figura 10.4 – Diagrama de estado com duas variáveis associadas à mesma lista." />
+<p><img src="fig/tnkp_1004.png" alt="Figura 10.4 – Diagrama de estado com duas variáveis associadas à mesma lista." />
 <br><em>Figura 10.4 – Diagrama de estado com duas variáveis associadas à mesma lista.</em></p>
 <p>A associação de uma variável com um objeto é chamada de referência. Neste exemplo, há duas referências ao mesmo objeto.</p>
 <p>Um objeto com mais de uma referência tem mais de um nome, então dizemos que o objeto tem um alias.</p>
@@ -193,21 +193,6 @@ b = 'banana'
             }
         </script>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3001");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload(true); // force reload from server (not from cache)
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

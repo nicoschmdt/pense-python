@@ -144,7 +144,7 @@
 <p>A reatribuição de variáveis muitas vezes é útil, mas você deve usá-la com prudência. Se os valores das variáveis mudarem frequentemente, isso pode dificultar a leitura e depuração do código.</p>
 <pre><code class="language-python">Figura 7.1 – Diagrama de estado.
 </code></pre>
-<p><img src="../fig/tnkp_0701.png" alt="Figura 7.1 – Diagrama de estado da variável x." />
+<p><img src="fig/tnkp_0701.png" alt="Figura 7.1 – Diagrama de estado da variável x." />
 <br><em>Figura 7.1 – Diagrama de estado da variável x.</em></p>
 
                     </main>
@@ -196,21 +196,6 @@
             }
         </script>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3001");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload(true); // force reload from server (not from cache)
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

@@ -151,7 +151,7 @@
 <p>Ela deve continuar até que o usuário digite <code>done</code>; então deverá exibir o valor da última expressão avaliada.</p>
 <a class="header" href="07-iteracao/09.html#exercício-73" id="exercício-73"><h3>Exercício 7.3</h3></a>
 <p>O matemático Srinivasa Ramanujan encontrou uma série infinita que pode ser usada para gerar uma aproximação numérica de 1/π:</p>
-<p><img src="../fig/p83f1.png" alt="Fórmula – Aproximação de π pela série de Ramanujan." /></p>
+<p><img src="fig/p83f1.png" alt="Fórmula – Aproximação de π pela série de Ramanujan." /></p>
 <p>Escreva uma função chamada <code>estimate_pi</code> que use esta fórmula para computar e devolver uma estimativa de π. Você deve usar o loop <code>while</code> para calcular os termos da adição até que o último termo seja menor que 1e-15 (que é a notação do Python para <code>10 ** 15</code>). Você pode verificar o resultado comparando-o com <code>math.pi</code>.</p>
 
                     </main>
@@ -203,21 +203,6 @@
             }
         </script>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3001");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload(true); // force reload from server (not from cache)
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

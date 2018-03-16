@@ -148,7 +148,7 @@ False
 True
 </code></pre>
 <p>A Figura 15.3 mostra como fica o diagrama de objeto. Esta operação chama-se cópia superficial porque copia o objeto e qualquer referência que contenha, mas não os objetos integrados.</p>
-<p><img src="../fig/tnkp_1503.png" alt="Figura 15.3 – Diagrama: dois objetos Rectangle compartilhando o mesmo Point." />
+<p><img src="fig/tnkp_1503.png" alt="Figura 15.3 – Diagrama: dois objetos Rectangle compartilhando o mesmo Point." />
 <br><em>Figura 15.3 – Diagrama: dois objetos</em> <code>Rectangle</code> <em>compartilhando o mesmo</em> <code>Point</code>.</p>
 <p>Para a maior parte das aplicações, não é isso que você quer. Nesse exemplo, invocar <code>grow_rectangle</code> em um dos Rectangles não afetaria o outro, mas invocar <code>move_rectangle</code> em qualquer um deles afetaria a ambos! Esse comportamento é confuso e propenso a erros.</p>
 <p>Felizmente, o módulo <code>copy</code> oferece um método chamado <code>deepcopy</code> que copia não só o objeto, mas também os objetos aos quais ele se refere, e os objetos aos quais estes se referem, e assim por diante. Você não se surpreenderá ao descobrir que esta operação se chama cópia profunda.</p>
@@ -210,21 +210,6 @@ box3 e box são objetos completamente separados.
             }
         </script>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3001");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload(true); // force reload from server (not from cache)
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

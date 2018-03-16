@@ -150,7 +150,7 @@ box.corner.y = 0.0
 <p>A expressão <code>box.corner.x</code> significa “Vá ao objeto ao qual <code>box</code> se refere e pegue o atributo denominado <code>corner</code>; então vá a este objeto e pegue o atributo denominado <code>x</code>”.</p>
 <p>A Figura 15.2 mostra o estado deste objeto. Um objeto que é um atributo de outro objeto é integrado.</p>
 <p>A Figura 10.1 mostra o diagrama de estado para cheeses, numbers e empty.</p>
-<p><img src="../fig/tnkp_1502.png" alt="Figura 15.2 – Diagrama de um objeto Rectangle." />
+<p><img src="fig/tnkp_1502.png" alt="Figura 15.2 – Diagrama de um objeto Rectangle." />
 <br><em>Figura 15.2 – Diagrama de um objeto</em> <code>Rectangle</code>.</p>
 
                     </main>
@@ -202,21 +202,6 @@ box.corner.y = 0.0
             }
         </script>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3001");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload(true); // force reload from server (not from cache)
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

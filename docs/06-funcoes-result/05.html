@@ -160,7 +160,7 @@ n! = n·(n − 1)!
 <p>    O valor de retorno, 1, é multiplicado por n, que é 2, e o resultado é devolvido.</p>
 <p>O valor devolvido (2) é multiplicado por n, que é 3, e o resultado, 6, torna-se o valor devolvido pela chamada de função que começou o processo inteiro.</p>
 <p>A Figura 6.1 mostra como é o diagrama da pilha para esta sequência de chamadas de função.</p>
-<p><img src="../fig/tnkp_0601.png" alt="Figura 6.1 – Diagrama da pilha para factorial." />
+<p><img src="fig/tnkp_0601.png" alt="Figura 6.1 – Diagrama da pilha para factorial." />
 <br><em>Figura 6.1 – Diagrama da pilha para factorial.</em></p>
 <p>Os valores devolvidos são mostrados ao serem passados de volta até o alto da pilha. Em cada frame, o valor devolvido é o valor de <code>result</code>, que é o produto de <code>n</code> e <code>recurse</code>.</p>
 <p>No último frame, as variáveis locais recurse e result não existem, porque o ramo que os cria não é executado.</p>
@@ -214,21 +214,6 @@ n! = n·(n − 1)!
             }
         </script>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3001");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload(true); // force reload from server (not from cache)
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

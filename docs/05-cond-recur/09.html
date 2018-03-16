@@ -124,7 +124,7 @@
 <p>Em “Diagrama da pilha”, na página 55, usamos um diagrama da pilha para representar o estado de um programa durante uma chamada de função. O mesmo tipo de diagrama pode ajudar a interpretar uma função recursiva.</p>
 <p>Cada vez que uma função é chamada, o Python cria um frame para conter as variáveis locais e parâmetros da função. Para uma função recursiva, pode haver mais de um frame na pilha ao mesmo tempo.</p>
 <p>A Figura 5.1 mostra um diagrama da pilha para <code>countdown</code> chamado com n = 3.</p>
-<p><img src="../fig/tnkp_0501.png" alt="Figura 5.1 – Diagrama da pilha." />
+<p><img src="fig/tnkp_0501.png" alt="Figura 5.1 – Diagrama da pilha." />
 <br><em>Figura 5.1 – Diagrama da pilha.</em></p>
 <p>Como de hábito, o topo da pilha é o frame de <code>__main__</code>. Está vazio porque não criamos nenhuma variável em <code>__main__</code> nem passamos argumentos a ela.</p>
 <p>Os quatro frames do countdown têm valores diferentes para o parâmetro <code>n</code>. O fundo da pilha, onde <code>n = 0</code>, é chamado caso-base. Ele não faz uma chamada recursiva, então não há mais frames.</p>
@@ -179,21 +179,6 @@
             }
         </script>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3001");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload(true); // force reload from server (not from cache)
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

@@ -157,10 +157,10 @@ b 1
 </code></pre>
 <p>Este loop atravessa as chaves em directory, que são tuplas. Ele atribui os elementos de cada tupla para <code>last</code> e <code>first</code>, e então exibe o nome e número de telefone correspondente.</p>
 <p>Há duas formas de representar tuplas em um diagrama de estado. A versão mais detalhada mostra os índices e elementos como aparecem em uma lista. Por exemplo, a tupla ('Cleese', 'John') apareceria como na Figura 12.1.</p>
-<p><img src="../fig/tnkp_1201.png" alt="Figura 12.1 – Diagrama de estado de uma tupla." />
+<p><img src="fig/tnkp_1201.png" alt="Figura 12.1 – Diagrama de estado de uma tupla." />
 <br><em>Figura 12.1 – Diagrama de estado de uma tupla.</em></p>
 <p>No entanto, em um diagrama maior, você pode querer omitir os detalhes. Por exemplo, um diagrama da lista telefônica poderia ser como o da Figura 12.2.</p>
-<p><img src="../fig/tnkp_1202.png" alt="Figura 12.2 – Diagrama de estado de um dicionário com chaves do tipo tupla." />
+<p><img src="fig/tnkp_1202.png" alt="Figura 12.2 – Diagrama de estado de um dicionário com chaves do tipo tupla." />
 <br><em>Figura 12.2 – Diagrama de estado de um dicionário com chaves do tipo tupla.</em></p>
 <p>Aqui as tuplas são mostradas usando a sintaxe do Python para simplificar o gráfico. O número de telefone no diagrama é a linha de reclamações da BBC, então, por favor, não ligue para lá.</p>
 
@@ -213,21 +213,6 @@ b 1
             }
         </script>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3001");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload(true); // force reload from server (not from cache)
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

@@ -280,7 +280,7 @@ Depois de 32 inserções, o custo total é de 62 unidades, e espero que você es
 
 A Figura 21.1 mostra graficamente como isso funciona. Cada bloco representa uma unidade de trabalho. As colunas mostram o trabalho total para cada inserção na ordem da esquerda para a direita: os primeiros dois adds custam uma unidade, o terceiro custa três unidades etc.
 
-![Figura B.1 – O custo de inserções em uma hashtable.](../fig/tnkp_2101.png)
+![Figura B.1 – O custo de inserções em uma hashtable.](fig/tnkp_2101.png)
 <br>_Figura B.1 – O custo de inserções em uma hashtable._
 
 O trabalho extra de redispersão aparece como uma sequência de torres cada vez mais altas com um aumento de espaço entre elas. Agora, se derrubar as torres, espalhando o custo de alterar o tamanho por todas as inserções, poderá ver graficamente que o custo total depois de n inserções é de 2n − 2.

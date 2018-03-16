@@ -134,7 +134,7 @@ time.minute = 59
 time.second = 30
 </code></pre>
 <p>O diagrama de estado do objeto Time está na Figura 16.1.</p>
-<p><img src="../fig/tnkp_1601.png" alt="Figura 16.1 – Diagrama de um objeto Time." />
+<p><img src="fig/tnkp_1601.png" alt="Figura 16.1 – Diagrama de um objeto Time." />
 <br><em>Figura 16.1 – Diagrama de um objeto</em> <code>Time</code>.</p>
 <p>Como exercício, escreva uma função chamada <code>print_time</code>, que receba um objeto Time e o exiba na forma hour:minute:second. Dica: a sequência de formatação <code>'%.2d'</code> exibe um número inteiro com, pelo menos, dois dígitos, incluindo um zero à esquerda, se for necessário.</p>
 <p>Escreva uma função booleana chamada <code>is_after</code>, que receba dois objetos Time, <code>t1</code> e <code>t2</code>, e devolva <code>True</code> se <code>t1</code> for cronologicamente depois de <code>t2</code> e <code>False</code> se não for. Desafio: não use uma instrução <code>if</code>.</p>
@@ -188,21 +188,6 @@ time.second = 30
             }
         </script>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3001");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload(true); // force reload from server (not from cache)
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         

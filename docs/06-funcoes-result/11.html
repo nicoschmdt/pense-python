@@ -143,7 +143,7 @@ print(c(x, y+3, x+y))
 </code></pre>
 <a class="header" href="06-funcoes-result/11.html#exercício-62" id="exercício-62"><h3>Exercício 6.2</h3></a>
 <p>A função de Ackermann, A(m, n), é definida assim:</p>
-<p><img src="../fig/p72f1.png" alt="Fórmula – Função de Ackermann." /></p>
+<p><img src="fig/p72f1.png" alt="Fórmula – Função de Ackermann." /></p>
 <p>Veja http://en.wikipedia.org/wiki/Ackermann_function. Escreva uma função denominada ack que avalie a função de Ackermann. Use a sua função para avaliar <code>ack(3, 4)</code>, cujo resultado deve ser 125. O que acontece para valores maiores de m e n?</p>
 <p>Solução: http://thinkpython2.com/code/ackermann.py.</p>
 <a class="header" href="06-funcoes-result/11.html#exercício-63" id="exercício-63"><h3>Exercício 6.3</h3></a>
@@ -223,21 +223,6 @@ def middle(word):
             }
         </script>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3001");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload(true); // force reload from server (not from cache)
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         
