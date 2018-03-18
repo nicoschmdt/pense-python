@@ -292,37 +292,37 @@ Você pode baixar minha implementação de `HashMap` em http://thinkpython2.com/
 ## B.5 - Glossário
 
 <dl>
-<dt><a id="glos:análise de algoritmos" href="#termo:análise de algoritmos">análise de algoritmos</a></dt>
+<dt><b>análise de algoritmos</b></dt>
 <dd>Forma de comparar algoritmos quanto às suas exigências de espaço e/ou tempo de execução.</dd>
 
-<dt><a id="glos:modelo de máquina" href="#termo:modelo de máquina">modelo de máquina</a></dt>
+<dt><b>modelo de máquina</b></dt>
 <dd>Representação simplificada de um computador usada para descrever algoritmos.</dd>
 
-<dt><a id="glos:pior caso" href="#termo:pior caso">pior caso</a></dt>
+<dt><b>pior caso</b></dt>
 <dd>Entrada que faz um dado algoritmo rodar mais lentamente (ou exigir mais espaço).</dd>
 
-<dt><a id="glos:termo principal" href="#termo:termo principal">termo principal</a></dt>
+<dt><b>termo principal</b></dt>
 <dd>Em um polinômio, o termo com o expoente mais alto.</dd>
 
-<dt><a id="glos:ponto de desvio" href="#termo:ponto de desvio">ponto de desvio</a></dt>
+<dt><b>ponto de desvio</b></dt>
 <dd>Tamanho do problema em que dois algoritmos exigem o mesmo tempo de execução ou espaço.</dd>
 
-<dt><a id="glos:ordem de crescimento" href="#termo:ordem de crescimento">ordem de crescimento</a></dt>
+<dt><b>ordem de crescimento</b></dt>
 <dd>Conjunto de funções em que todas crescem em uma forma considerada equivalente para os propósitos da análise de algoritmos. Por exemplo, todas as funções que crescem linearmente pertencem à mesma ordem de crescimento.</dd>
 
-<dt><a id="glos:notação Grande-O (Big-Oh notation)" href="#termo:notação Grande-O (Big-Oh notation)">notação Grande-O (Big-Oh notation)</a></dt>
+<dt><b>notação Grande-O (Big-Oh notation)</b></dt>
 <dd>Notação para representar uma ordem de crescimento; por exemplo, O(n) representa o conjunto de funções que crescem linearmente.</dd>
 
-<dt><a id="glos:linear" href="#termo:linear">linear</a></dt>
+<dt><b>linear</b></dt>
 <dd>Algoritmo cujo tempo de execução é proporcional ao tamanho do problema, pelo menos para grandes tamanhos de problema.</dd>
 
-<dt><a id="glos:quadrático" href="#termo:quadrático">quadrático</a></dt>
+<dt><b>quadrático</b></dt>
 <dd>Algoritmo cujo tempo de execução é proporcional a n2, onde n é uma medida de tamanho do problema.</dd>
 
-<dt><a id="glos:busca" href="#termo:busca">busca</a></dt>
+<dt><b>busca</b></dt>
 <dd>Problema de localizar um elemento de uma coleção (como uma lista ou dicionário) ou de decidir que não está presente.</dd>
 
-<dt><a id="glos:hashtable" href="#termo:hashtable">hashtable</a></dt>
+<dt><b>hashtable</b></dt>
 <dd>Estrutura de dados que representa uma coleção de pares chave-valor e executa buscas em tempo constante.</dd>
 </dl>
 

@@ -352,27 +352,27 @@ for x in t:
 <p>Você pode baixar minha implementação de <code>HashMap</code> em http://thinkpython2.com/code/Map.py, mas lembre-se de que não há razão para usá-la; se quiser um mapa, basta usar um dicionário do Python.</p>
 <a class="header" href="apendice-b-analise-de-algoritmos.html#b5---glossário" id="b5---glossário"><h2>B.5 - Glossário</h2></a>
 <dl>
-<dt><a id="glos:análise de algoritmos" href="apendice-b-analise-de-algoritmos.html#termo:análise de algoritmos">análise de algoritmos</a></dt>
+<dt><b>análise de algoritmos</b></dt>
 <dd>Forma de comparar algoritmos quanto às suas exigências de espaço e/ou tempo de execução.</dd>
-<dt><a id="glos:modelo de máquina" href="apendice-b-analise-de-algoritmos.html#termo:modelo de máquina">modelo de máquina</a></dt>
+<dt><b>modelo de máquina</b></dt>
 <dd>Representação simplificada de um computador usada para descrever algoritmos.</dd>
-<dt><a id="glos:pior caso" href="apendice-b-analise-de-algoritmos.html#termo:pior caso">pior caso</a></dt>
+<dt><b>pior caso</b></dt>
 <dd>Entrada que faz um dado algoritmo rodar mais lentamente (ou exigir mais espaço).</dd>
-<dt><a id="glos:termo principal" href="apendice-b-analise-de-algoritmos.html#termo:termo principal">termo principal</a></dt>
+<dt><b>termo principal</b></dt>
 <dd>Em um polinômio, o termo com o expoente mais alto.</dd>
-<dt><a id="glos:ponto de desvio" href="apendice-b-analise-de-algoritmos.html#termo:ponto de desvio">ponto de desvio</a></dt>
+<dt><b>ponto de desvio</b></dt>
 <dd>Tamanho do problema em que dois algoritmos exigem o mesmo tempo de execução ou espaço.</dd>
-<dt><a id="glos:ordem de crescimento" href="apendice-b-analise-de-algoritmos.html#termo:ordem de crescimento">ordem de crescimento</a></dt>
+<dt><b>ordem de crescimento</b></dt>
 <dd>Conjunto de funções em que todas crescem em uma forma considerada equivalente para os propósitos da análise de algoritmos. Por exemplo, todas as funções que crescem linearmente pertencem à mesma ordem de crescimento.</dd>
-<dt><a id="glos:notação Grande-O (Big-Oh notation)" href="apendice-b-analise-de-algoritmos.html#termo:notação Grande-O (Big-Oh notation)">notação Grande-O (Big-Oh notation)</a></dt>
+<dt><b>notação Grande-O (Big-Oh notation)</b></dt>
 <dd>Notação para representar uma ordem de crescimento; por exemplo, O(n) representa o conjunto de funções que crescem linearmente.</dd>
-<dt><a id="glos:linear" href="apendice-b-analise-de-algoritmos.html#termo:linear">linear</a></dt>
+<dt><b>linear</b></dt>
 <dd>Algoritmo cujo tempo de execução é proporcional ao tamanho do problema, pelo menos para grandes tamanhos de problema.</dd>
-<dt><a id="glos:quadrático" href="apendice-b-analise-de-algoritmos.html#termo:quadrático">quadrático</a></dt>
+<dt><b>quadrático</b></dt>
 <dd>Algoritmo cujo tempo de execução é proporcional a n2, onde n é uma medida de tamanho do problema.</dd>
-<dt><a id="glos:busca" href="apendice-b-analise-de-algoritmos.html#termo:busca">busca</a></dt>
+<dt><b>busca</b></dt>
 <dd>Problema de localizar um elemento de uma coleção (como uma lista ou dicionário) ou de decidir que não está presente.</dd>
-<dt><a id="glos:hashtable" href="apendice-b-analise-de-algoritmos.html#termo:hashtable">hashtable</a></dt>
+<dt><b>hashtable</b></dt>
 <dd>Estrutura de dados que representa uma coleção de pares chave-valor e executa buscas em tempo constante.</dd>
 </dl>
 <p>[1] popen foi descartado, ou seja, devemos parar de usá-lo e começar a usar o módulo subprocess. Entretanto, para casos simples, eu considero subprocess mais complicado que o necessário. Então vou continuar usando popen até que o removam.</p>
@@ -427,21 +427,6 @@ for x in t:
             }
         </script>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3001");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload(true); // force reload from server (not from cache)
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         
