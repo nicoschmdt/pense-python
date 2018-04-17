@@ -32,5 +32,3 @@ def circle(t, r):
 ```
 
 Neste ponto, o número de segmentos é um número inteiro próximo a circumference/3, então o comprimento de cada segmento é aproximadamente 3, pequeno o suficiente para que os círculos fiquem bons, mas grandes o suficiente para serem eficientes e aceitáveis para círculos de qualquer tamanho.
-
-<a id="sec:4.7 - Refatoração"></a>

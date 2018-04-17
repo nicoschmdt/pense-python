@@ -5,19 +5,19 @@ Um __programa__ é uma sequência de instruções que especifica como executar u
 Os detalhes parecem diferentes em linguagens diferentes, mas algumas instruções básicas aparecem em quase todas as linguagens:
 
 <dl>
-<dt>entrada</dt>
+<dt><b>entrada</b></dt>
 <dd>Receber dados do teclado, de um arquivo, da rede ou de algum outro dispositivo.</dd>
 
-<dt>saída</dt>
+<dt><b>saída</b></dt>
 <dd>Exibir dados na tela, salvá-los em um arquivo, enviá-los pela rede etc.</dd>
 
-<dt>matemática</dt>
+<dt><b>matemática</b></dt>
 <dd>Executar operações matemáticas básicas como adição e multiplicação.</dd>
 
-<dt>execução condicional</dt>
+<dt><b>execução condicional</b></dt>
 <dd>Verificar a existência de certas condições e executar o código adequado.</dd>
 
-<dt>repetição</dt>
+<dt><b>repetição</b></dt>
 <dd>Executar várias vezes alguma ação, normalmente com algumas variações.</dd>
 </dl>
 

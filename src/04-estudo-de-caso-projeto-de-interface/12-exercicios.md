@@ -6,7 +6,7 @@ Baixe o código deste capítulo no site http://thinkpython2.com/code/polygon.py.
 
 1. Desenhe um diagrama da pilha que mostre o estado do programa enquanto executa circle (bob, radius). Você pode fazer a aritmética à mão ou acrescentar instruções print ao código.
 
-2. A versão de `arc` na seção <a href="#sec:4.7 - Refatoração">4.7 - Refatoração</a> não é muito precisa porque a aproximação linear do círculo está sempre do lado de fora do círculo verdadeiro. Consequentemente, o Turtle acaba ficando alguns píxeis de distância do destino correto. Minha solução mostra um modo de reduzir o efeito deste erro. Leia o código e veja se faz sentido para você. Se desenhar um diagrama, poderá ver como funciona.
+2. A versão de `arc` na seção <a href="04-estudo-de-caso-projeto-de-interface/07-refatoracao.html">4.7 - Refatoração</a> não é muito precisa porque a aproximação linear do círculo está sempre do lado de fora do círculo verdadeiro. Consequentemente, o Turtle acaba ficando alguns píxeis de distância do destino correto. Minha solução mostra um modo de reduzir o efeito deste erro. Leia o código e veja se faz sentido para você. Se desenhar um diagrama, poderá ver como funciona.
 
 ### Exercício 4.2
 

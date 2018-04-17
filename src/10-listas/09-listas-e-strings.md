@@ -43,4 +43,4 @@ Um argumento opcional chamado delimiter especifica quais caracteres podem ser us
 
 Nesse caso, o delimitador é um caractere de espaço, então `join` coloca um espaço entre as palavras. Para concatenar strings sem espaços, você pode usar a string vazia `''`, como delimitador.
 
-<a id="sec:10.10"></a>
+<a href="10-listas/10-objetos-e-valores.html"></a>

@@ -670,21 +670,21 @@ Assistente Editorial: Priscila A. Yoshimatsu</p>
 </ul>
 <a class="header" href="print.html#capítulo-1-a-jornada-do-programa" id="capítulo-1-a-jornada-do-programa"><h1>Capítulo 1: A jornada do programa</h1></a>
 <p>O objetivo deste livro é ensinar a pensar como um cientista da computação. Esta forma de pensar combina algumas das melhores características da matemática, da engenharia e das ciências naturais. Assim como os matemáticos, os cientistas da computação usam linguagens formais para denotar ideias (especificamente operações de computação). Como engenheiros, eles projetam coisas, reunindo componentes em sistemas e avaliando as opções de melhor retorno entre as alternativas à disposição. Como cientistas, observam o comportamento de sistemas complexos, formam hipóteses e testam previsões.</p>
-<p>A habilidade específica mais importante de um cientista da computação é a <a id="termo:resolução de problemas" href="print.html#glos:resolução de problemas">resolução de problemas</a>. Resolução de problemas significa a capacidade de formular problemas, pensar criativamente em soluções e expressar uma solução de forma clara e precisa. Assim, o processo de aprender a programar é uma oportunidade excelente para exercitar a habilidade de resolver problemas. É por isso que este capítulo se chama “A jornada do programa”.</p>
+<p>A habilidade específica mais importante de um cientista da computação é a resolução de problemas. Resolução de problemas significa a capacidade de formular problemas, pensar criativamente em soluções e expressar uma solução de forma clara e precisa. Assim, o processo de aprender a programar é uma oportunidade excelente para exercitar a habilidade de resolver problemas. É por isso que este capítulo se chama “A jornada do programa”.</p>
 <p>Em um nível você aprenderá a programar, uma habilidade útil por si mesma. Em outro nível usará a programação como um meio para um fim. Conforme avançarmos, este fim ficará mais claro.</p>
 <a class="header" href="print.html#a11---o-que-é-um-programa" id="a11---o-que-é-um-programa"><h2>1.1 - O que é um programa?</h2></a>
 <p>Um <strong>programa</strong> é uma sequência de instruções que especifica como executar uma operação de computação. A operação de computação pode ser algo matemático, como solucionar um sistema de equações ou encontrar as raízes de um polinômio, mas também pode ser uma operação de computação simbólica, como a busca e a substituição de textos em um documento; ou algo gráfico, como o processamento de uma imagem ou a reprodução de um vídeo.</p>
 <p>Os detalhes parecem diferentes em linguagens diferentes, mas algumas instruções básicas aparecem em quase todas as linguagens:</p>
 <dl>
-<dt>entrada</dt>
+<dt><b>entrada</b></dt>
 <dd>Receber dados do teclado, de um arquivo, da rede ou de algum outro dispositivo.</dd>
-<dt>saída</dt>
+<dt><b>saída</b></dt>
 <dd>Exibir dados na tela, salvá-los em um arquivo, enviá-los pela rede etc.</dd>
-<dt>matemática</dt>
+<dt><b>matemática</b></dt>
 <dd>Executar operações matemáticas básicas como adição e multiplicação.</dd>
-<dt>execução condicional</dt>
+<dt><b>execução condicional</b></dt>
 <dd>Verificar a existência de certas condições e executar o código adequado.</dd>
-<dt>repetição</dt>
+<dt><b>repetição</b></dt>
 <dd>Executar várias vezes alguma ação, normalmente com algumas variações.</dd>
 </dl>
 <p>Acredite ou não, isto é basicamente tudo o que é preciso saber. Cada programa que você já usou, complicado ou não, é composto de instruções muito parecidas com essas. Podemos então chegar à conclusão de que programar é o processo de quebrar uma tarefa grande e complexa em subtarefas cada vez menores, até que estas sejam simples o suficiente para serem executadas por uma dessas instruções básicas.</p>
@@ -1630,7 +1630,6 @@ def circle(t, r):
     polygon(t, n, length)
 </code></pre>
 <p>Neste ponto, o número de segmentos é um número inteiro próximo a circumference/3, então o comprimento de cada segmento é aproximadamente 3, pequeno o suficiente para que os círculos fiquem bons, mas grandes o suficiente para serem eficientes e aceitáveis para círculos de qualquer tamanho.</p>
-<p><a id="sec:4.7 - Refatoração"></a></p>
 <a class="header" href="print.html#a47---refatoração" id="a47---refatoração"><h2>4.7 - Refatoração</h2></a>
 <p>Quando escrevi circle, pude reutilizar polygon porque um polígono de muitos lados é uma boa aproximação de um círculo. Mas o arc não é tão cooperativo; não podemos usar polygon ou circle para desenhar um arco.</p>
 <p>Uma alternativa é começar com uma cópia de polygon e transformá-la em arc. O resultado poderia ser algo assim:</p>
@@ -1738,7 +1737,7 @@ def arc(t, r, angle):
 <p>Desenhe um diagrama da pilha que mostre o estado do programa enquanto executa circle (bob, radius). Você pode fazer a aritmética à mão ou acrescentar instruções print ao código.</p>
 </li>
 <li>
-<p>A versão de <code>arc</code> na seção <a href="print.html#sec:4.7 - Refatoração">4.7 - Refatoração</a> não é muito precisa porque a aproximação linear do círculo está sempre do lado de fora do círculo verdadeiro. Consequentemente, o Turtle acaba ficando alguns píxeis de distância do destino correto. Minha solução mostra um modo de reduzir o efeito deste erro. Leia o código e veja se faz sentido para você. Se desenhar um diagrama, poderá ver como funciona.</p>
+<p>A versão de <code>arc</code> na seção <a href="04-estudo-de-caso-projeto-de-interface/07-refatoracao.html">4.7 - Refatoração</a> não é muito precisa porque a aproximação linear do círculo está sempre do lado de fora do círculo verdadeiro. Consequentemente, o Turtle acaba ficando alguns píxeis de distância do destino correto. Minha solução mostra um modo de reduzir o efeito deste erro. Leia o código e veja se faz sentido para você. Se desenhar um diagrama, poderá ver como funciona.</p>
 </li>
 </ol>
 <a class="header" href="print.html#exercício-42" id="exercício-42"><h3>Exercício 4.2</h3></a>
@@ -2819,7 +2818,7 @@ Qack
 &gt;&gt;&gt; greeting[0] = 'J'
 TypeError: 'str' object does not support item assignment
 </code></pre>
-<p>O “objeto” neste caso é a string e o “item” é o caractere que você tentou atribuir. Por enquanto, um objeto é a mesma coisa que um valor, mas refinaremos esta definição mais adiante ([Objetos e valores](&lt;a href=&quot;10-listas.md#sec:10.10&quot;), no capítulo 10).</p>
+<p>O “objeto” neste caso é a string e o “item” é o caractere que você tentou atribuir. Por enquanto, um objeto é a mesma coisa que um valor, mas refinaremos esta definição mais adiante ([Objetos e valores](&lt;a href=&quot;10-listas/10-objetos-e-valores.html&quot;), no capítulo 10).</p>
 <p>A razão do erro é que as strings são imutáveis, o que significa que você não pode alterar uma string existente. O melhor que você pode fazer é criar uma string que seja uma variação da original:</p>
 <pre><code class="language-python">&gt;&gt;&gt; greeting = 'Hello, world!'
 &gt;&gt;&gt; new_greeting = 'J' + greeting[1:]
@@ -3455,7 +3454,7 @@ False
 'pining for the fjords'
 </code></pre>
 <p>Nesse caso, o delimitador é um caractere de espaço, então <code>join</code> coloca um espaço entre as palavras. Para concatenar strings sem espaços, você pode usar a string vazia <code>''</code>, como delimitador.</p>
-<p><a id="sec:10.10"></a></p>
+<p><a href="10-listas/10-objetos-e-valores.html"></a></p>
 <a class="header" href="print.html#a1010---objetos-e-valores" id="a1010---objetos-e-valores"><h2>10.10 - Objetos e valores</h2></a>
 <p>Se executarmos essas instruções de atribuição:</p>
 <pre><code class="language-python">a = 'banana'
