@@ -20,5 +20,6 @@ deploy:
     skip-cleanup: true
     github-token: $GITHUB_TOKEN
     local-dir: book
+    fqdn: pense-python.caravela.club
     on:
         branch: master
