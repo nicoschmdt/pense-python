@@ -4,7 +4,7 @@ Se usou a função de fibonacci em “Mais um exemplo”, na página 101, pode t
 
 Para entender por que, considere a Figura 11.2, que mostra o gráfico de chamada de `fibonacci` com n=4.
 
-![Figura 11.2 – Gráfico de chamada para fibonacci.](fig/tnkp_1102.png)
+![Figura 11.2 – Gráfico de chamada para fibonacci.](/fig/tnkp_1102.png)
 <br>_Figura 11.2 – Gráfico de chamada para_ `fibonacci`.
 
 Um gráfico de chamada mostra um conjunto de frames de função, com linhas que unem cada frame aos frames das funções que chama. Na parte de cima do gráfico, `fibonacci` com `n=4` chama `fibonacci` com `n=3` e `n=2`. Por sua vez, `fibonacci` com `n=3` chama `fibonacci` com `n=2` e `n=1`. E assim por diante.

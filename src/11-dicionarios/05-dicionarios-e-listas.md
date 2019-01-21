@@ -31,7 +31,7 @@ Aqui está um exemplo:
 
 A Figura 11.1 é um diagrama de estado mostrando hist e inverse. Um dicionário é representado como uma caixa com o tipo dict acima dela e os pares chave-valor no interior. Se os valores forem números inteiros, de ponto flutuante ou strings, desenho-os dentro da caixa, mas normalmente prefiro desenhar listas do lado de fora, para manter o diagrama simples.
 
-![Figura 11.1 – Diagrama de estado de um dicionário e seu inverso.](fig/tnkp_1101.png)
+![Figura 11.1 – Diagrama de estado de um dicionário e seu inverso.](/fig/tnkp_1101.png)
 <br>_Figura 11.1 – Diagrama de estado de um dicionário e seu inverso._
 
 As listas podem ser valores em um dicionário, como mostra este exemplo, mas não podem ser chaves. Isso é o que acontece se você tentar:

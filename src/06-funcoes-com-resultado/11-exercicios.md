@@ -29,7 +29,7 @@ print(c(x, y+3, x+y))
 
 A função de Ackermann, A(m, n), é definida assim:
 
-![Fórmula – Função de Ackermann.](fig/p72f1.png)
+![Fórmula – Função de Ackermann.](/fig/p72f1.png)
 
 Veja http://en.wikipedia.org/wiki/Ackermann_function. Escreva uma função denominada ack que avalie a função de Ackermann. Use a sua função para avaliar `ack(3, 4)`, cujo resultado deve ser 125. O que acontece para valores maiores de m e n?
 

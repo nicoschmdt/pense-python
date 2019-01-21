@@ -16,7 +16,7 @@ Ela é usada assim:
 
 O parâmetro t e a variável letters são alias para o mesmo objeto. O diagrama da pilha fica igual ao da Figura 10.5.
 
-![Figura 10.5 – Diagrama da pilha: `__main__` e `delete_head` compartilham referências à mesma lista.](fig/tnkp_1005.png)
+![Figura 10.5 – Diagrama da pilha: `__main__` e `delete_head` compartilham referências à mesma lista.](/fig/tnkp_1005.png)
 <br>_Figura 10.5 – Diagrama da pilha:_ `__main__` _e_ `delete_head` _compartilham referências à mesma lista._
 
 Como a lista é compartilhada por dois frames, desenhei-a entre eles.

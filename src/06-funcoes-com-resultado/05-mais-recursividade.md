@@ -66,7 +66,7 @@ O valor devolvido (2) é multiplicado por n, que é 3, e o resultado, 6, torna-s
 
 A Figura 6.1 mostra como é o diagrama da pilha para esta sequência de chamadas de função.
 
-![Figura 6.1 – Diagrama da pilha para factorial.](fig/tnkp_0601.png)
+![Figura 6.1 – Diagrama da pilha para factorial.](/fig/tnkp_0601.png)
 <br>_Figura 6.1 – Diagrama da pilha para factorial._
 
 

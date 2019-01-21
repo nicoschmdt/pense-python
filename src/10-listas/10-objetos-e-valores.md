@@ -9,7 +9,7 @@ b = 'banana'
 
 Sabemos que a e b se referem a uma string, mas não sabemos se elas se referem à mesma string. Há dois estados possíveis, mostrados na Figura 10.2.
 
-![Figura 10.2 – Diagramas de estado possíveis com duas variáveis.](fig/tnkp_1002.png)
+![Figura 10.2 – Diagramas de estado possíveis com duas variáveis.](/fig/tnkp_1002.png)
 <br>_Figura 10.2 – Diagramas de estado possíveis com duas variáveis._
 
 Em um caso, a e b se referem a dois objetos diferentes que têm o mesmo valor. No segundo caso, elas se referem ao mesmo objeto.
@@ -36,7 +36,7 @@ False
 
 Então o diagrama de estado fica igual ao da Figura 10.3.
 
-![Figura 10.3 – Diagrama de estado com variáveis associadas a listas distintas, de mesmo valor.](fig/tnkp_1003.png)
+![Figura 10.3 – Diagrama de estado com variáveis associadas a listas distintas, de mesmo valor.](/fig/tnkp_1003.png)
 <br>_Figura 10.3 – Diagrama de estado com variáveis associadas a listas distintas, de mesmo valor._
 
 Nesse caso, diríamos que as duas listas são equivalentes, porque elas têm os mesmos elementos, mas não idênticas, porque elas não são o mesmo objeto. Se dois objetos forem idênticos, eles também são equivalentes, mas se eles forem equivalentes, não são necessariamente idênticos.

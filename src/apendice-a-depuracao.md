@@ -212,7 +212,7 @@ self.hands[i].addCard(pickedCard)
 
 A versão explícita é mais fácil de ler porque os nomes das variáveis oferecem documentação adicional, e é mais fácil de depurar porque você pode verificar os tipos das variáveis intermediárias e exibir seus valores.
 
-Outro problema que pode ocorrer com grandes expressões é que a ordem da avaliação pode não ser o que você espera. Por exemplo, se estiver traduzindo a expressão ![Fórmula – x / (2 * pi) em notação matemática.](fig/p242f1.png) para o Python, poderia escrever:
+Outro problema que pode ocorrer com grandes expressões é que a ordem da avaliação pode não ser o que você espera. Por exemplo, se estiver traduzindo a expressão ![Fórmula – x / (2 * pi) em notação matemática.](/fig/p242f1.png) para o Python, poderia escrever:
 
 ```python
 y = x / 2 * math.pi

@@ -21,7 +21,7 @@ time.second = 30
 
 O diagrama de estado do objeto Time está na Figura 16.1.
 
-![Figura 16.1 – Diagrama de um objeto Time.](fig/tnkp_1601.png)
+![Figura 16.1 – Diagrama de um objeto Time.](/fig/tnkp_1601.png)
 <br>_Figura 16.1 – Diagrama de um objeto_ `Time`.
 
 Como exercício, escreva uma função chamada `print_time`, que receba um objeto Time e o exiba na forma hour:minute:second. Dica: a sequência de formatação `'%.2d'` exibe um número inteiro com, pelo menos, dois dígitos, incluindo um zero à esquerda, se for necessário.

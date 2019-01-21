@@ -14,7 +14,7 @@ Há vários tipos de relações entre as classes:
 
 Um diagrama de classe é uma representação gráfica dessas relações. Por exemplo, a Figura 18.2 mostra as relações entre Card, Deck e Hand.
 
-![Figura 18.2 – Diagrama de classes.](fig/tnkp_1802.png)
+![Figura 18.2 – Diagrama de classes.](/fig/tnkp_1802.png)
 <br>_Figura 18.2 – Diagrama de classes._
 
 A flecha com um triângulo oco representa uma relação IS-A; nesse caso, indica que Hand herda de Deck.

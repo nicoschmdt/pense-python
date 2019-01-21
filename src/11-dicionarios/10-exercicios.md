@@ -46,7 +46,7 @@ Mas há pelo menos uma palavra que Dan e eu conhecemos, que produz dois homófon
 
 Você pode usar o dicionário do Exercício 11.1 para verificar se uma string está na lista de palavras.
 
-Para verificar se duas palavras são homófonas, você pode usar o Dicionário de pronúncia CMU. Ele pode ser baixado em http://www.speech.cs.cmu.edu/cgi-bin/cmudict ou em http://thinkpython2.com/code/c06d. Você também pode baixar http://thinkpy thon2.com/code/pronounce.py, que tem uma função chamada `read_dictionary`, que lê o dicionário de pronúncia e retorna um dicionário de Python que mapeia cada palavra a uma string que descreve sua pronúncia primária.
+Para verificar se duas palavras são homófonas, você pode usar o Dicionário de pronúncia CMU. Ele pode ser baixado em http://www.speech.cs.cmu.edu/cgi-bin/cmudict ou em http://thinkpython2.com/code/c06d. Você também pode baixar http://thinkpython2.com/code/pronounce.py, que tem uma função chamada `read_dictionary`, que lê o dicionário de pronúncia e retorna um dicionário de Python que mapeia cada palavra a uma string que descreve sua pronúncia primária.
 
 Escreva um programa que liste todas as palavras que resolvem o quebra-cabeça.
 
