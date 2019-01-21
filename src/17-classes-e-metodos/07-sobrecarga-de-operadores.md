@@ -24,6 +24,6 @@ Você pode usá-lo assim:
 
 Ao aplicar o operador + a objetos Time, o Python invoca `__add__`. Ao exibir o resultado, o Python invoca `__str__`. Ou seja, há muita coisa acontecendo nos bastidores!
 
-Alterar o comportamento de um operador para que funcione com tipos definidos pelo programador chama-se sobrecarga de operadores. Para cada operador no Python há um método especial correspondente, como `__add__`. Para obter mais informações, veja http://docs.python.org/3/reference/datamodel.html\#specialnames.
+Alterar o comportamento de um operador para que funcione com tipos definidos pelo programador chama-se sobrecarga de operadores. Para cada operador no Python há um método especial correspondente, como `__add__`. Para obter mais informações, veja [http://docs.python.org/3/reference/datamodel.html\#specialnames](http://docs.python.org/3/reference/datamodel.html\#specialnames).
 
 Como exercício, escreva um método add para a classe Point.

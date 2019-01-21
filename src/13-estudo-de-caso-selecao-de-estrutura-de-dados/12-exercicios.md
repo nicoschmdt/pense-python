@@ -20,4 +20,4 @@ Se você traçar o log de f contra o log de r, terá uma linha reta com uma elev
 
 Escreva um programa que leia um texto em um arquivo, conte as frequências das palavras e exiba uma linha para cada palavra, em ordem descendente da frequência, com log de f e log de r. Use o programa gráfico de sua escolha para traçar os resultados e verifique se formam uma linha reta. Você pode estimar o valor de s?
 
-Solução: http://thinkpython2.com/code/zipf.py. Para executar a minha solução, você vai precisar do módulo de gráficos `matplotlib`. Se você instalou o Anaconda, já tem o `matplotlib`; se não tiver, é preciso instalá-lo.
+Solução: [http://thinkpython2.com/code/zipf.py](http://thinkpython2.com/code/zipf.py). Para executar a minha solução, você vai precisar do módulo de gráficos `matplotlib`. Se você instalou o Anaconda, já tem o `matplotlib`; se não tiver, é preciso instalá-lo.

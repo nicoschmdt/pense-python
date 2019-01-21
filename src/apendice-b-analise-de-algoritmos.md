@@ -2,11 +2,11 @@
 
 Este apêndice é um excerto editado de Think Complexity, por Allen B. Downey, também publicado pela O’Reilly Media (2012). Depois de ler este livro aqui, pode ser uma boa ideia lê-lo também.
 
-Análise de algoritmos é um ramo da Ciência da Computação que estuda o desempenho de algoritmos, especialmente suas exigências de tempo de execução e requisitos de espaço. Veja http://en.wikipedia.org/wiki/Analysis_of_algorithms.
+Análise de algoritmos é um ramo da Ciência da Computação que estuda o desempenho de algoritmos, especialmente suas exigências de tempo de execução e requisitos de espaço. Veja [http://en.wikipedia.org/wiki/Analysis_of_algorithms](http://en.wikipedia.org/wiki/Analysis_of_algorithms).
 
 A meta prática da análise de algoritmos é prever o desempenho de algoritmos diferentes para guiar decisões de projeto.
 
-Durante a campanha presidencial dos Estados Unidos de 2008, pediram ao candidato Barack Obama para fazer uma entrevista de emprego improvisada quando visitou a Google. O diretor executivo, Eric Schmidt, brincou, pedindo a ele “a forma mais eficiente de classificar um milhão de números inteiros de 32 bits”. Aparentemente, Obama tinha sido alertado porque respondeu na hora: “Creio que a ordenação por bolha (bubble sort) não seria a escolha certa”. Veja http://bit.ly/1MpIwTf.
+Durante a campanha presidencial dos Estados Unidos de 2008, pediram ao candidato Barack Obama para fazer uma entrevista de emprego improvisada quando visitou a Google. O diretor executivo, Eric Schmidt, brincou, pedindo a ele “a forma mais eficiente de classificar um milhão de números inteiros de 32 bits”. Aparentemente, Obama tinha sido alertado porque respondeu na hora: “Creio que a ordenação por bolha (bubble sort) não seria a escolha certa”. Veja [http://bit.ly/1MpIwTf](http://bit.ly/1MpIwTf).
 
 Isso é verdade: a ordenação por bolha é conceitualmente simples, mas lenta para grandes conjuntos de dados. A resposta que Schmidt procurava provavelmente é “ordenação radix” (radix sort) (http://en.wikipedia.org/wiki/Radix_sort)[2].
 
@@ -68,7 +68,7 @@ Para os termos logarítmicos, a base do logaritmo não importa; a alteração de
 
 ### Exercício B.1
 
-Leia a página da Wikipédia sobre a notação Grande-O (Big-Oh notation) em http://en.wikipedia.org/wiki/Big_O_notation e responda às seguintes perguntas:
+Leia a página da Wikipédia sobre a notação Grande-O (Big-Oh notation) em [http://en.wikipedia.org/wiki/Big_O_notation](http://en.wikipedia.org/wiki/Big_O_notation) e responda às seguintes perguntas:
 
 1. Qual é a ordem de crescimento de n3 + n2? E de 1000000n3 + n2? Ou de n3 + 1000000n2?
 
@@ -130,7 +130,7 @@ O desempenho de dicionários é um dos milagres menores da ciência da computaç
 
 ### Exercício B.2
 
-Leia a página da Wikipédia sobre algoritmos de ordenação em http://en.wikipedia.org/wiki/Sorting\_algorithm e responda às seguintes perguntas:
+Leia a página da Wikipédia sobre algoritmos de ordenação em [http://en.wikipedia.org/wiki/Sorting\_algorithm](http://en.wikipedia.org/wiki/Sorting\_algorithm) e responda às seguintes perguntas:
 
 1. O que é um “tipo de comparação”? Qual é a melhor opção nos casos de pior cenário de ordem de crescimento para um tipo de comparação? Qual é a melhor opção nos casos de pior cenário de ordem de crescimento para qualquer algoritmo de ordenação?
 
@@ -280,14 +280,14 @@ Depois de 32 inserções, o custo total é de 62 unidades, e espero que você es
 
 A Figura 21.1 mostra graficamente como isso funciona. Cada bloco representa uma unidade de trabalho. As colunas mostram o trabalho total para cada inserção na ordem da esquerda para a direita: os primeiros dois adds custam uma unidade, o terceiro custa três unidades etc.
 
-![Figura B.1 – O custo de inserções em uma hashtable.](/fig/tnkp_2101.png)
+![Figura B.1 – O custo de inserções em uma hashtable](/fig/tnkp_2101.png).
 <br>_Figura B.1 – O custo de inserções em uma hashtable._
 
 O trabalho extra de redispersão aparece como uma sequência de torres cada vez mais altas com um aumento de espaço entre elas. Agora, se derrubar as torres, espalhando o custo de alterar o tamanho por todas as inserções, poderá ver graficamente que o custo total depois de n inserções é de 2n − 2.
 
 Uma característica importante deste algoritmo é que quando alteramos o tamanho da HashTable, ela cresce geometricamente; isto é, multiplicamos o tamanho por uma constante. Se você aumentar o tamanho aritmeticamente – somando um número fixo de cada vez – o tempo médio por add é linear.
 
-Você pode baixar minha implementação de `HashMap` em http://thinkpython2.com/code/Map.py, mas lembre-se de que não há razão para usá-la; se quiser um mapa, basta usar um dicionário do Python.
+Você pode baixar minha implementação de `HashMap` em [http://thinkpython2.com/code/Map.py](http://thinkpython2.com/code/Map.py), mas lembre-se de que não há razão para usá-la; se quiser um mapa, basta usar um dicionário do Python.
 
 ## B.5 - Glossário
 

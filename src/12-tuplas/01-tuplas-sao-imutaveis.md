@@ -75,7 +75,7 @@ Como tuplas são imutáveis, você não pode alterar os elementos, mas pode subs
 
 
 ```python
->>> t = ('A',) + t[1:]
+>>> t = ('A') + t[1:]
 >>> t
 ('A', 'b', 'c', 'd', 'e')
 ```

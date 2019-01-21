@@ -32,4 +32,4 @@ Em algumas outras linguagens, o ^ é usado para a exponenciação, mas no Python
 4
 ```
 
-Não abordarei operadores bitwise neste livro, mas você pode ler sobre eles em http://wiki.python.org/moin/BitwiseOperators.
+Não abordarei operadores bitwise neste livro, mas você pode ler sobre eles em [http://wiki.python.org/moin/BitwiseOperators](http://wiki.python.org/moin/BitwiseOperators).

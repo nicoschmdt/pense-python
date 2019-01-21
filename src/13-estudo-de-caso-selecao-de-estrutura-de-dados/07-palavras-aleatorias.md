@@ -28,4 +28,4 @@ Uma alternativa é:
 
 Escreva um programa que use este algoritmo para escolher uma palavra aleatória do livro.
 
-Solução: http://thinkpython2.com/code/analyze_book3.py.
+Solução: [http://thinkpython2.com/code/analyze_book3.py](http://thinkpython2.com/code/analyze_book3.py).

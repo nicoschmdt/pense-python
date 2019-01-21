@@ -2,9 +2,9 @@
 
 ### Exercício 12.1
 
-Escreva uma função chamada `most_frequent` que receba uma string e exiba as letras em ordem decrescente de frequência. Encontre amostras de texto de vários idiomas diferentes e veja como a frequência das letras varia entre os idiomas. Compare seus resultados com as tabelas em http://en.wikipedia.org/wiki/Letter_frequencies.
+Escreva uma função chamada `most_frequent` que receba uma string e exiba as letras em ordem decrescente de frequência. Encontre amostras de texto de vários idiomas diferentes e veja como a frequência das letras varia entre os idiomas. Compare seus resultados com as tabelas em [http://en.wikipedia.org/wiki/Letter_frequencies](http://en.wikipedia.org/wiki/Letter_frequencies).
 
-Solução: http://thinkpython2.com/code/most_frequent.py.
+Solução: [http://thinkpython2.com/code/most_frequent.py](http://thinkpython2.com/code/most_frequent.py).
 
 ### Exercício 12.2
 
@@ -27,13 +27,13 @@ Mais anagramas!
 
 3. No Scrabble, um “bingo” é quando você joga todas as sete peças na sua estante, junto com uma peça no tabuleiro, para formar uma palavra de oito letras. Que coleção de oito letras forma o maior número possível de bingos? Dica: há sete.
 
-Solução: http://thinkpython2.com/code/anagram_sets.py.
+Solução: [http://thinkpython2.com/code/anagram_sets.py](http://thinkpython2.com/code/anagram_sets.py).
 
 ### Exercício 12.3
 
 Duas palavras formam um “par de metátese” se você puder transformar uma na outra trocando duas letras, por exemplo, “converse” e “conserve”. Escreva um programa que descubra todos os pares de metátese no dicionário. Dica: não teste todos os pares de palavras e não teste todas as trocas possíveis.
 
-Solução: http://thinkpython2.com/code/metathesis.py. Crédito: este exercício foi inspirado por um exemplo em http://puzzlers.org.
+Solução: [http://thinkpython2.com/code/metathesis.py](http://thinkpython2.com/code/metathesis.py). Crédito: este exercício foi inspirado por um exemplo em [http://puzzlers.org](http://puzzlers.org).
 
 ### Exercício 12.4
 
@@ -57,4 +57,4 @@ Este exercício é um pouco mais desafiador que a maioria, então aqui estão al
 
 4. Para melhorar o desempenho do seu programa, você pode querer memorizar as palavras conhecidas por serem redutíveis.
 
-Solução: http://thinkpython2.com/code/reducible.py.
+Solução: [http://thinkpython2.com/code/reducible.py](http://thinkpython2.com/code/reducible.py).

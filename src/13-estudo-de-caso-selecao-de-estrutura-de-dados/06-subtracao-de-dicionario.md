@@ -36,8 +36,8 @@ Algumas dessas palavras são nomes e possessivos. Os outros, como “rencontre�
 
 ### Exercício 13.6
 
-O Python fornece uma estrutura de dados chamada `set`, que fornece muitas operações de conjunto. Você pode ler sobre elas em “Conjuntos”, na página 274, ou ler a documentação em http://docs.python.org/3/library/stdtypes.html#types-set.
+O Python fornece uma estrutura de dados chamada `set`, que fornece muitas operações de conjunto. Você pode ler sobre elas em “Conjuntos”, na página 274, ou ler a documentação em [http://docs.python.org/3/library/stdtypes.html#types-set](http://docs.python.org/3/library/stdtypes.html#types-set).
 
 Escreva um programa que use a subtração de conjuntos para encontrar palavras no livro que não estão na lista de palavras.
 
-Solução: http://thinkpython2.com/code/analyze_book2.py.
+Solução: [http://thinkpython2.com/code/analyze_book2.py](http://thinkpython2.com/code/analyze_book2.py).

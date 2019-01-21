@@ -4,7 +4,7 @@ Loops muitas vezes são usados em programas que calculam resultados numéricos, 
 
 Por exemplo, uma forma de calcular raízes quadradas é o método de Newton. Suponha que você queira saber a raiz quadrada de a. Se começar com quase qualquer estimativa, x, é possível calcular uma estimativa melhor com a seguinte fórmula:
 
-![Fórmula – Raiz quadrada pelo método de Newton.](/fig/p79f1.png)
+![Fórmula – Raiz quadrada pelo método de Newton](/fig/p79f1.png).
 
 ```python
 Por exemplo, se a for 4 e x for 3:
@@ -14,7 +14,7 @@ Por exemplo, se a for 4 e x for 3:
 >>> y
 2.16666666667
 ```
-O resultado é mais próximo à resposta correta (![Fórmula – Raiz quadrada de 4.](/fig/p79f2.png) = 2). Se repetirmos o processo com a nova estimativa, chegamos ainda mais perto:
+O resultado é mais próximo à resposta correta (![Fórmula – Raiz quadrada de 4](/fig/p79f2.png). = 2). Se repetirmos o processo com a nova estimativa, chegamos ainda mais perto:
 
 ```python
 >>> x = y
@@ -58,7 +58,7 @@ while True:
     x = y
 ```
 
-Para a maior parte de valores de `a` funciona bem, mas pode ser perigoso testar a igualdade de um float. Os valores de ponto flutuante são aproximadamente corretos: a maioria dos números racionais, como 1/3, e números irracionais, como ![Fórmula – Raiz quadrada de 2.](/fig/p80f1.png), não podem ser representados exatamente com um float.
+Para a maior parte de valores de `a` funciona bem, mas pode ser perigoso testar a igualdade de um float. Os valores de ponto flutuante são aproximadamente corretos: a maioria dos números racionais, como 1/3, e números irracionais, como ![Fórmula – Raiz quadrada de 2](/fig/p80f1.png)., não podem ser representados exatamente com um float.
 
 Em vez de verificar se `x` e `y` são exatamente iguais, é mais seguro usar a função integrada `abs` para calcular o valor absoluto ou magnitude da diferença entre eles:
 

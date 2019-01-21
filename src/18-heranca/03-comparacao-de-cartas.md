@@ -1,6 +1,6 @@
 ## 18.3 - Comparação de cartas
 
-Para tipos integrados, há operadores relacionais (`<`, `>`, `==` etc.) que comparam valores e determinam quando um é maior, menor ou igual a outro. Para tipos definidos pelo programador, podemos ignorar o comportamento dos operadores integrados fornecendo um método denominado `__lt__`, que representa “menos que”.
+Para tipos integrados, há operadores relacionais (`<`, `>`, `==` etc) que comparam valores e determinam quando um é maior, menor ou igual a outro. Para tipos definidos pelo programador, podemos ignorar o comportamento dos operadores integrados fornecendo um método denominado `__lt__`, que representa “menos que”.
 
 `__lt__` recebe dois parâmetros, `self` e `other`, e `True` se self for estritamente menor que `other`.
 

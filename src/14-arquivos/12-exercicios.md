@@ -6,15 +6,15 @@ Escreva uma função chamada sed que receba como argumentos uma string-padrão, 
 
 Se ocorrer um erro durante a abertura, leitura, escrita ou fechamento dos arquivos, seu programa deve capturar a exceção, exibir uma mensagem de erro e encerrar.
 
-Solução: http://thinkpython2.com/code/sed.py.
+Solução: [http://thinkpython2.com/code/sed.py](http://thinkpython2.com/code/sed.py).
 
 ### Exercício 14.2
 
-Se você baixar minha solução do Exercício 12.2 em http://thinkpython2.com/code/anagram_sets.py, verá que ela cria um dicionário que mapeia uma string ordenada de letras à lista de palavras que podem ser soletradas com aquelas letras. Por exemplo, `'opst'` mapeia à lista `['opts', 'post', 'pots', 'spot', 'stop', 'tops']`.
+Se você baixar minha solução do Exercício 12.2 em [http://thinkpython2.com/code/anagram_sets.py](http://thinkpython2.com/code/anagram_sets.py), verá que ela cria um dicionário que mapeia uma string ordenada de letras à lista de palavras que podem ser soletradas com aquelas letras. Por exemplo, `'opst'` mapeia à lista `['opts', 'post', 'pots', 'spot', 'stop', 'tops']`.
 
 Escreva um módulo que importe `anagram_sets` e forneça duas novas funções: `store_anagrams` deve guardar o dicionário de anagramas em uma “prateleira” (objeto criado pelo módulo `sheve`); `read_anagrams` deve procurar uma palavra e devolver uma lista dos seus anagramas.
 
-Solução: http://thinkpython2.com/code/anagram_db.py.
+Solução: [http://thinkpython2.com/code/anagram_db.py](http://thinkpython2.com/code/anagram_db.py).
 
 ### Exercício 14.3
 
@@ -26,4 +26,4 @@ Em uma grande coleção de arquivos MP3 pode haver mais de uma cópia da mesma m
 
 3. Para conferir o resultado, você pode usar o comando Unix `diff`.
 
-Solução: http://thinkpython2.com/code/find\_duplicates.py.
+Solução: [http://thinkpython2.com/code/find\_duplicates.py](http://thinkpython2.com/code/find\_duplicates.py).

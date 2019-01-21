@@ -29,11 +29,11 @@ print(c(x, y+3, x+y))
 
 A função de Ackermann, A(m, n), é definida assim:
 
-![Fórmula – Função de Ackermann.](/fig/p72f1.png)
+![Fórmula – Função de Ackermann](/fig/p72f1.png).
 
-Veja http://en.wikipedia.org/wiki/Ackermann_function. Escreva uma função denominada ack que avalie a função de Ackermann. Use a sua função para avaliar `ack(3, 4)`, cujo resultado deve ser 125. O que acontece para valores maiores de m e n?
+Veja [http://en.wikipedia.org/wiki/Ackermann_function](http://en.wikipedia.org/wiki/Ackermann_function). Escreva uma função denominada ack que avalie a função de Ackermann. Use a sua função para avaliar `ack(3, 4)`, cujo resultado deve ser 125. O que acontece para valores maiores de m e n?
 
-Solução: http://thinkpython2.com/code/ackermann.py.
+Solução: [http://thinkpython2.com/code/ackermann.py](http://thinkpython2.com/code/ackermann.py).
 
 ### Exercício 6.3
 
@@ -56,7 +56,7 @@ Veremos como funcionam no Capítulo 8.
 
 2. Escreva uma função chamada `is_palindrome` que receba uma string como argumento e retorne True se for um palíndromo e False se não for. Lembre-se de que você pode usar a função integrada len para verificar o comprimento de uma string.
 
-Solução: http://thinkpython2.com/code/palindrome_soln.py.
+Solução: [http://thinkpython2.com/code/palindrome_soln.py](http://thinkpython2.com/code/palindrome_soln.py).
 
 ### Exercício 6.4
 

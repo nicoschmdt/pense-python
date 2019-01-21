@@ -1,6 +1,6 @@
 ## 13.3 - Histograma de palavras
 
-É uma boa ideia tentar fazer os exercícios anteriores antes de continuar. Você pode baixar minha solução em http://thinkpython2.com/code/analyze_book1.py. Também vai precisar de http://thinkpython2.com/code/emma.txt.
+É uma boa ideia tentar fazer os exercícios anteriores antes de continuar. Você pode baixar minha solução em [http://thinkpython2.com/code/analyze_book1.py](http://thinkpython2.com/code/analyze_book1.py). Também vai precisar de [http://thinkpython2.com/code/emma.txt](http://thinkpython2.com/code/emma.txt).
 
 Aqui está um programa que lê um arquivo e constrói um histograma das palavras no arquivo:
 
@@ -28,7 +28,7 @@ Este programa lê `emma.txt`, que contém o texto de _Emma_, de Jane Austen.
 
 `process_file` faz o loop pelas linhas do arquivo, passando-as uma a uma para `process_line`. O histograma hist está sendo usado como um acumulador.
 
-`process_line` usa o método de string replace para substituir hifens por espaços antes de usar split para quebrar a linha em uma lista de strings. Ele atravessa a lista de palavras e usa strip e lower para retirar a pontuação e converter tudo em letras minúsculas. (Dizer que as strings “são convertidas” é uma forma simples de explicar a coisa; lembre-se de que as strings são imutáveis, então métodos como strip e lower retornam novas strings.)
+`process_line` usa o método de string replace para substituir hifens por espaços antes de usar split para quebrar a linha em uma lista de strings. Ele atravessa a lista de palavras e usa strip e lower para retirar a pontuação e converter tudo em letras minúsculas. (Dizer que as strings “são convertidas” é uma forma simples de explicar a coisa; lembre-se de que as strings são imutáveis, então métodos como strip e lower retornam novas strings)
 
 Finalmente, `process_line` atualiza o histograma, criando um novo item ou incrementando um existente.
 

@@ -48,6 +48,6 @@ Cada vez que passa pelo loop, o programa produz o valor de `n` e então verifica
 
 Como `n` às vezes aumenta e às vezes diminui, não há nenhuma prova óbvia de que `n` chegará eventualmente a 1, ou que o programa terminará. Para alguns valores de `n`, podemos provar o término. Por exemplo, se o valor inicial for uma potência de dois, `n` será par cada vez que passar pelo loop até que chegue a 1. O exemplo anterior termina com uma sequência assim, que inicia com 16.
 
-A questão difícil é se podemos provar que este programa termina para todos os valores positivos de `n`. Por enquanto, ninguém foi capaz de comprovar ou refutar isso! (Veja http://en.wikipedia.org/wiki/Collatz\_conjecture.)
+A questão difícil é se podemos provar que este programa termina para todos os valores positivos de `n`. Por enquanto, ninguém foi capaz de comprovar ou refutar isso! (Veja [http://en.wikipedia.org/wiki/Collatz\_conjecture](http://en.wikipedia.org/wiki/Collatz\_conjecture).)
 
 Como um exercício, reescreva a função print\_n de “Recursividade”, na página 81, usando a iteração em vez da recursividade.

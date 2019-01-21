@@ -45,7 +45,7 @@ A seguir, as mãos possíveis no pôquer, em ordem crescente de valor e ordem de
 <dd>Três cartas com o mesmo valor.</dd>
 
 <dt>sequência</dt>
-<dd>Cinco cartas com valores em sequência (os ases podem ser altos ou baixos, então Ace-2-3-4-5 é uma sequência, assim como 10-Jack-Queen-King-Ace, mas Queen-King-Ace-2-3 não é.)</dd>
+<dd>Cinco cartas com valores em sequência (os ases podem ser altos ou baixos, então Ace-2-3-4-5 é uma sequência, assim como 10-Jack-Queen-King-Ace, mas Queen-King-Ace-2-3 não é)</dd>
 
 <dt>flush</dt>
 <dd>Cinco cartas com o mesmo naipe.</dd>
@@ -63,7 +63,7 @@ A seguir, as mãos possíveis no pôquer, em ordem crescente de valor e ordem de
 
 A meta desses exercícios é estimar a probabilidade de ter estas várias mãos.
 
-1. Baixe os seguintes arquivos de http://thinkpython2.com/code:
+1. Baixe os seguintes arquivos de [http://thinkpython2.com/code:](http://thinkpython2.com/code:)
 
  * `Card.py`: Versão completa das classes Card, Deck e Hand deste capítulo.
 
@@ -77,6 +77,6 @@ A meta desses exercícios é estimar a probabilidade de ter estas várias mãos.
 
 5. Quando se convencer de que os seus métodos de classificação estão funcionando, o próximo passo deve ser estimar as probabilidades de várias mãos. Escreva uma função em PokerHand.py que embaralhe cartas, divida-as em mãos, classifique as mãos e conte o número de vezes em que várias classificações aparecem.
 
-6. Exiba uma tabela das classificações e suas probabilidades. Execute seu programa com números cada vez maiores de mãos até que os valores de saída convirjam a um grau razoável de exatidão. Compare seus resultados com os valores em http://en.wikipedia.org/wiki/Hand_rankings.
+6. Exiba uma tabela das classificações e suas probabilidades. Execute seu programa com números cada vez maiores de mãos até que os valores de saída convirjam a um grau razoável de exatidão. Compare seus resultados com os valores em [http://en.wikipedia.org/wiki/Hand_rankings](http://en.wikipedia.org/wiki/Hand_rankings).
 
-Solução: http://thinkpython2.com/code/PokerHandSoln.py.
+Solução: [http://thinkpython2.com/code/PokerHandSoln.py](http://thinkpython2.com/code/PokerHandSoln.py).

@@ -20,7 +20,7 @@ As strings nas instruções de exibição são limitadas por aspas duplas. As as
 
 Todas as aspas (simples e duplas) devem ser “aspas retas”, normalmente encontradas ao lado do Enter no teclado. “Aspas curvas”, como as desta oração, não são legais no Python.
 
-Se digitar uma definição de função no modo interativo, o interpretador exibe pontos (...) para mostrar que a definição não está completa:
+Se digitar uma definição de função no modo interativo, o interpretador exibe pontos (..) para mostrar que a definição não está completa:
 
 ```python
 >>> def print_lyrics():

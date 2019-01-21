@@ -4,7 +4,7 @@ Os capítulos anteriores demonstram um plano de desenvolvimento que poderíamos 
 
 Mas, às vezes, é menos óbvio quais objetos você precisa e como eles devem interagir. Nesse caso é necessário um plano de desenvolvimento diferente. Da mesma forma em que descobrimos interfaces de função por encapsulamento e generalização, podemos descobrir interfaces de classe por encapsulamento de dados.
 
-A análise de Markov, de “Análise de Markov”, na página 200, apresenta um bom exemplo. Se baixar o meu código em http://thinkpython2.com/code/markov.py, você vai ver que ele usa duas variáveis globais – suffix\_map e prefix – que são lidas e escritas a partir de várias funções.
+A análise de Markov, de “Análise de Markov”, na página 200, apresenta um bom exemplo. Se baixar o meu código em [http://thinkpython2.com/code/markov.py](http://thinkpython2.com/code/markov.py), você vai ver que ele usa duas variáveis globais – suffix\_map e prefix – que são lidas e escritas a partir de várias funções.
 
 ```python
 suffix_map = {}
@@ -27,7 +27,7 @@ Em seguida, transformamos as funções em métodos. Por exemplo, aqui está proc
 ```python
 def process_word(self, word, order=2):
     if len(self.prefix) < order:
-        self.prefix += (word,)
+        self.prefix += (word)
         return
     try:
         self.suffix_map[self.prefix].append(word)
@@ -50,6 +50,6 @@ Este exemplo sugere um plano de desenvolvimento para projetar objetos e métodos
 
 4. Transforme as funções associadas em métodos da nova classe.
 
-Como exercício, baixe o meu código de Markov de http://thinkpython2.com/code/markov.py e siga os passos descritos acima para encapsular as variáveis globais como atributos de uma nova classe chamada Markov.
+Como exercício, baixe o meu código de Markov de [http://thinkpython2.com/code/markov.py](http://thinkpython2.com/code/markov.py) e siga os passos descritos acima para encapsular as variáveis globais como atributos de uma nova classe chamada Markov.
 
-Solução: http://thinkpython2.com/code/Markov.py (observe o M maiúsculo).
+Solução: [http://thinkpython2.com/code/Markov.py](http://thinkpython2.com/code/Markov.py) (observe o M maiúsculo).

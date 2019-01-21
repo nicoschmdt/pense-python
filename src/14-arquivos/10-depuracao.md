@@ -20,4 +20,4 @@ Isso pode ser útil para a depuração.
 
 Outro problema que você pode ter é que sistemas diferentes usam caracteres diferentes para indicar o fim de uma linha. Alguns sistemas usam newline, representado por `\n`. Outros usam um caractere de retorno, representado por `\r`. Alguns usam ambos. Se mover arquivos entre sistemas diferentes, essas inconsistências podem causar problemas.
 
-Para a maior parte dos sistemas há aplicações para converter de um formato a outro. Você pode encontrá-los (e ler mais sobre o assunto) em http://en.wikipedia.org/wiki/Newline. Ou, é claro, você pode escrever um por conta própria.
+Para a maior parte dos sistemas há aplicações para converter de um formato a outro. Você pode encontrá-los (e ler mais sobre o assunto) em [http://en.wikipedia.org/wiki/Newline](http://en.wikipedia.org/wiki/Newline). Ou, é claro, você pode escrever um por conta própria.

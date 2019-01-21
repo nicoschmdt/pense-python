@@ -49,4 +49,4 @@ __c)__ Uma vez que o seu programa esteja funcionando, você pode querer tentar u
 
 Crédito: este estudo de caso é baseado em um exemplo de Kernighan and Pike, The Practice of Programming, Addison-Wesley, 1999.
 
-É uma boa ideia tentar fazer este exercício antes de continuar; depois você pode baixar a minha solução em http://thinkpython2.com/code/markov.py. Também vai precisar de http://thinkpython2.com/code/emma.txt.
+É uma boa ideia tentar fazer este exercício antes de continuar; depois você pode baixar a minha solução em [http://thinkpython2.com/code/markov.py](http://thinkpython2.com/code/markov.py). Também vai precisar de [http://thinkpython2.com/code/emma.txt](http://thinkpython2.com/code/emma.txt).

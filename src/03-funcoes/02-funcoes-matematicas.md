@@ -27,7 +27,7 @@ O objeto de módulo contém as funções e variáveis definidas no módulo. Para
 
 O primeiro exemplo usa math.log10 para calcular a proporção de sinal e de ruído em decibéis (assumindo que signal\_power e noise\_power tenham sido definidos). O módulo matemático também oferece a função log, que calcula logaritmos de base e.
 
-O segundo exemplo encontra o seno de radians. O nome da variável indica que sin e outras funções trigonométricas (cos, tan etc.) recebem argumentos em radianos. Para converter graus em radianos, divida por 180 e multiplique por π:
+O segundo exemplo encontra o seno de radians. O nome da variável indica que sin e outras funções trigonométricas (cos, tan etc) recebem argumentos em radianos. Para converter graus em radianos, divida por 180 e multiplique por π:
 
 
 ```python

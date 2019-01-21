@@ -20,7 +20,7 @@ Sua primeira escolha pode ser uma lista, pois é fácil acrescentar e retirar el
 
 ```python
 def shift(prefix, word):
-    return prefix[1:] + (word,)
+    return prefix[1:] + (word)
 ```
 
 `shift` recebe uma tupla de palavras, prefix, e uma string, word, e forma uma nova tupla que tem todas as palavras em prefix, exceto a primeira e word adicionada no final.

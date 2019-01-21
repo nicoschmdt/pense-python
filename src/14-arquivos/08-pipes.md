@@ -28,7 +28,7 @@ None
 
 O valor de retorno é o status final do processo `ls`; `None` significa que terminou normalmente (sem erros).
 
-Por exemplo, a maior parte dos sistemas Unix oferece um comando chamado `md5sum`, que lê o conteúdo de um arquivo e calcula uma assinatura digital. Você pode ler sobre o MD5 em http://en.wikipedia.org/wiki/Md5. Este comando fornece uma forma eficiente de verificar se dois arquivos têm o mesmo conteúdo. A probabilidade de dois conteúdos diferentes produzirem a mesma assinatura digital é muito pequena (isto é, muito pouco provável que aconteça antes do colapso do universo).
+Por exemplo, a maior parte dos sistemas Unix oferece um comando chamado `md5sum`, que lê o conteúdo de um arquivo e calcula uma assinatura digital. Você pode ler sobre o MD5 em [http://en.wikipedia.org/wiki/Md5](http://en.wikipedia.org/wiki/Md5). Este comando fornece uma forma eficiente de verificar se dois arquivos têm o mesmo conteúdo. A probabilidade de dois conteúdos diferentes produzirem a mesma assinatura digital é muito pequena (isto é, muito pouco provável que aconteça antes do colapso do universo).
 
 Você pode usar um pipe para executar o `md5sum` do Python e receber o resultado:
 

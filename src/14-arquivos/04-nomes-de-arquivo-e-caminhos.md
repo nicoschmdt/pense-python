@@ -64,4 +64,4 @@ def walk(dirname):
 
 `os.path.join` recebe um diretório e um nome de arquivo e os une em um caminho completo.
 
-O módulo `os` fornece uma função chamada `walk`, que é semelhante, só que mais versátil. Como exercício, leia a documentação e use-a para exibir os nomes dos arquivos em um diretório dado e seus subdiretórios. Você pode baixar minha solução em http://thinkpython2.com/code/walk.py.
+O módulo `os` fornece uma função chamada `walk`, que é semelhante, só que mais versátil. Como exercício, leia a documentação e use-a para exibir os nomes dos arquivos em um diretório dado e seus subdiretórios. Você pode baixar minha solução em [http://thinkpython2.com/code/walk.py](http://thinkpython2.com/code/walk.py).

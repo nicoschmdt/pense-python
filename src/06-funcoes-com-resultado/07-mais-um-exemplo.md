@@ -1,6 +1,6 @@
 ## 6.7 - Mais um exemplo
 
-Depois do factorial, o exemplo mais comum de uma função matemática definida recursivamente é fibonacci, que tem a seguinte definição (ver http://en.wikipedia.org/wiki/Fibonacci_number):
+Depois do factorial, o exemplo mais comum de uma função matemática definida recursivamente é fibonacci, que tem a seguinte definição (ver [http://en.wikipedia.org/wiki/Fibonacci_number](http://en.wikipedia.org/wiki/Fibonacci_number)):
 
 ```
 fibonacci(0) = 0

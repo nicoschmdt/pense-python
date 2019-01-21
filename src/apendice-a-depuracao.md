@@ -153,7 +153,7 @@ Pode ser que o objeto seja none porque você se esqueceu de retornar um valor de
 
 O índice que você está usando para acessar uma lista, string ou tupla é maior que o seu comprimento menos um. Imediatamente antes do local do erro, acrescente uma instrução print para exibir o valor do índice e o comprimento do array. O array é do tamanho certo? O índice tem o valor certo?
 
-O depurador do Python (pdb) é útil para rastrear exceções porque permite examinar o estado do programa imediatamente antes do erro. Você pode ler sobre o pdb em https://docs.python.org/3/library/pdb.html.
+O depurador do Python (pdb) é útil para rastrear exceções porque permite examinar o estado do programa imediatamente antes do erro. Você pode ler sobre o pdb em [https://docs.python.org/3/library/pdb.html](https://docs.python.org/3/library/pdb.html).
 
 ### A.2.4 - Acrescentei tantas instruções print que fui inundado pelos resultados
 
@@ -212,7 +212,7 @@ self.hands[i].addCard(pickedCard)
 
 A versão explícita é mais fácil de ler porque os nomes das variáveis oferecem documentação adicional, e é mais fácil de depurar porque você pode verificar os tipos das variáveis intermediárias e exibir seus valores.
 
-Outro problema que pode ocorrer com grandes expressões é que a ordem da avaliação pode não ser o que você espera. Por exemplo, se estiver traduzindo a expressão ![Fórmula – x / (2 * pi) em notação matemática.](/fig/p242f1.png) para o Python, poderia escrever:
+Outro problema que pode ocorrer com grandes expressões é que a ordem da avaliação pode não ser o que você espera. Por exemplo, se estiver traduzindo a expressão ![Fórmula – x / (2 * pi) em notação matemática](/fig/p242f1.png). para o Python, poderia escrever:
 
 ```python
 y = x / 2 * math.pi

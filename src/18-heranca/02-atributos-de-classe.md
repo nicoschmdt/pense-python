@@ -36,5 +36,5 @@ Jack of Hearts
 
 A Figura 18.1 é um diagrama do objeto de classe Card e uma instância de Card. Card é um objeto de classe; seu tipo é type. card1 é uma instância de Card, então seu tipo é Card. Para economizar espaço, não incluí o conteúdo de suit_names e rank_names.
 
-![Figura 18.1 – Diagrama de objetos: classe Card e card1, uma instância de Card.](/fig/tnkp_1801.png)
+![Figura 18.1 – Diagrama de objetos: classe Card e card1, uma instância de Card](/fig/tnkp_1801.png).
 <br>_Figura 18.1 – Diagrama de objetos: classe_ `Card` _e_ `card1`, _uma instância de_ `Card`.

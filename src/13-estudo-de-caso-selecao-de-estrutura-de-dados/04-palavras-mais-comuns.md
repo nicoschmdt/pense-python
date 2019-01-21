@@ -38,4 +38,4 @@ was     2400
 she     2364
 ```
 
-Este código pode ser simplificado usando o parâmetro `key` da função `sort`. Se tiver curiosidade, pode ler sobre ele em https://wiki.python.org/moin/HowTo/Sorting.
+Este código pode ser simplificado usando o parâmetro `key` da função `sort`. Se tiver curiosidade, pode ler sobre ele em [https://wiki.python.org/moin/HowTo/Sorting](https://wiki.python.org/moin/HowTo/Sorting).

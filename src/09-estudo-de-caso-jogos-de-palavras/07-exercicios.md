@@ -8,7 +8,7 @@ Dê uma palavra com três letras duplas consecutivas. Vou dar exemplos de palavr
 
 Escreva um programa que a encontre.
 
-Solução: http://thinkpython2.com/code/cartalk1.py.
+Solução: [http://thinkpython2.com/code/cartalk1.py](http://thinkpython2.com/code/cartalk1.py).
 
 ### Exercício 9.8
 
@@ -24,7 +24,7 @@ Aqui está outro quebra-cabeça do programa Car Talk (http://www.cartalk.com/con
 
 Escreva um programa Python que teste todos os números de seis dígitos e imprima qualquer número que satisfaça essas condições.
 
-Solução: http://thinkpython2.com/code/cartalk2.py.
+Solução: [http://thinkpython2.com/code/cartalk2.py](http://thinkpython2.com/code/cartalk2.py).
 
 ### Exercício 9.9
 

@@ -4,7 +4,7 @@ O plano de desenvolvimento que estou demonstrando chama-se “protótipo e corre
 
 Esta abordagem pode ser eficaz, especialmente se você ainda não tem uma compreensão profunda do problema. Porém, as correções incrementais podem gerar código que se complica desnecessariamente (pois trata de muitos casos especiais) e pouco confiáveis (já que é difícil saber se todos os erros foram encontrados).
 
-Uma alternativa é o desenvolvimento planejado, no qual a compreensão de alto nível do problema pode facilitar muito a programação. Neste caso, descobre-se que um objeto Time é, na verdade, um número de três dígitos na base 60 (veja http://en.wikipedia.org/wiki/Sexagesimal)! O atributo second é a “coluna de unidades”, o atributo minute é a “coluna dos 60”, e o atributo hour é a “coluna do 3.600”.
+Uma alternativa é o desenvolvimento planejado, no qual a compreensão de alto nível do problema pode facilitar muito a programação. Neste caso, descobre-se que um objeto Time é, na verdade, um número de três dígitos na base 60 (veja [http://en.wikipedia.org/wiki/Sexagesimal](http://en.wikipedia.org/wiki/Sexagesimal))! O atributo second é a “coluna de unidades”, o atributo minute é a “coluna dos 60”, e o atributo hour é a “coluna do 3.600”.
 
 Quando escrevemos `add_time` e `increment`, estávamos na verdade fazendo adições na base 60, e por isso transportávamos os resultados de uma coluna à seguinte.
 

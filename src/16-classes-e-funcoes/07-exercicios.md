@@ -1,6 +1,6 @@
 ## 16.7 - Exercícios
 
-Os exemplos de código deste capítulo estão disponíveis em http://thinkpython2.com/code/Time1.py; as soluções para os exercícios estão disponíveis em http://thinkpython2.com/code/Time1_soln.py.
+Os exemplos de código deste capítulo estão disponíveis em [http://thinkpython2.com/code/Time1.py](http://thinkpython2.com/code/Time1.py); as soluções para os exercícios estão disponíveis em [http://thinkpython2.com/code/Time1_soln.py](http://thinkpython2.com/code/Time1_soln.py).
 
 ### Exercício 16.1
 
@@ -10,7 +10,7 @@ Então use `mul_time` para escrever uma função que receba um objeto `Time` rep
 
 ### Exercício 16.2
 
-O módulo `datetime` fornece objetos `time` que são semelhantes aos objetos `Time` deste capítulo, mas ele oferece um grande conjunto de métodos e operadores. Leia a documentação em http://docs.python.org/3/library/datetime.html.
+O módulo `datetime` fornece objetos `time` que são semelhantes aos objetos `Time` deste capítulo, mas ele oferece um grande conjunto de métodos e operadores. Leia a documentação em [http://docs.python.org/3/library/datetime.html](http://docs.python.org/3/library/datetime.html).
 
 1. Use o módulo `datetime` para escrever um programa que receba a data atual e exiba o dia da semana.
 

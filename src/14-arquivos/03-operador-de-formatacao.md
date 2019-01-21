@@ -48,4 +48,4 @@ TypeError: %d format: a number is required, not str
 
 No primeiro exemplo não há elementos suficientes; no segundo, o elemento é do tipo incorreto.
 
-Para obter mais informações sobre o operador de formato, veja https://docs.python.org/3/library/stdtypes.html#printf-style-string-formatting. Você pode ler sobre uma alternativa mais eficiente, o método de formatação de strings, em https://docs.python.org/3/library/stdtypes.html#str.format.
+Para obter mais informações sobre o operador de formato, veja [https://docs.python.org/3/library/stdtypes.html#printf-style-string-formatting](https://docs.python.org/3/library/stdtypes.html#printf-style-string-formatting). Você pode ler sobre uma alternativa mais eficiente, o método de formatação de strings, em [https://docs.python.org/3/library/stdtypes.html#str.format](https://docs.python.org/3/library/stdtypes.html#str.format).
