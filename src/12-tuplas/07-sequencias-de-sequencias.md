@@ -8,10 +8,10 @@ Para começar com o óbvio, as strings são mais limitadas que outras sequência
 
 As listas são mais comuns que as tuplas, principalmente porque são mutáveis. Mas há alguns casos em que você pode preferir tuplas:
 
-1. Em alguns contextos, como em uma instrução `return`, é sintaticamente mais simples criar uma tupla que uma lista.
+1. Em alguns contextos, como em uma instrução `return`, é sintaticamente mais simples criar uma [tupla](09-glossario.md#tupla) que uma lista.
 
 2. Se quiser usar uma sequência como uma chave de dicionário, é preciso usar um tipo imutável como uma tupla ou string.
 
 3. Se estiver passando uma sequência como um argumento a uma função, usar tuplas reduz o potencial de comportamento inesperado devido a alias.
 
-Como tuplas são imutáveis, elas não fornecem métodos como `sort` e `reverse`, que alteram listas existentes. Porém, o Python fornece a função integrada `sorted`, que recebe qualquer sequência e retorna uma nova lista com os mesmos elementos ordenados, e `reversed`, que recebe uma sequência e retorna um iterador que percorre a lista em ordem reversa.
+Como tuplas são imutáveis, elas não fornecem métodos como `sort` e `reverse`, que alteram listas existentes. Porém, o Python fornece a função integrada `sorted`, que recebe qualquer sequência e retorna uma nova lista com os mesmos elementos ordenados, e `reversed`, que recebe uma sequência e retorna um [iterador](09-glossario.md#iterador) que percorre a lista em ordem reversa.

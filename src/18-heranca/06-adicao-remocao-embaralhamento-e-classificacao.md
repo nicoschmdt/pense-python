@@ -20,7 +20,7 @@ Para adicionar uma carta, podemos usar o método de lista append:
         self.cards.append(card)
 ```
 
-Um método como esse, que usa outro método sem dar muito trabalho, às vezes é chamado de folheado. A metáfora vem do trabalho em madeira, onde o folheado é uma camada fina de madeira de boa qualidade colada à superfície de uma madeira mais barata para melhorar a aparência.
+Um método como esse, que usa outro método sem dar muito trabalho, às vezes é chamado de [folheado](11-glossario.md#folheado). A metáfora vem do trabalho em madeira, onde o folheado é uma camada fina de madeira de boa qualidade colada à superfície de uma madeira mais barata para melhorar a aparência.
 
 Nesse caso, `add_card` é um método “fino” que expressa uma operação de lista em termos adequados a baralhos. Ele melhora a aparência ou interface da implementação.
 

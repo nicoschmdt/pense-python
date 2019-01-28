@@ -1,6 +1,6 @@
 ## 14.4 - Nomes de arquivo e caminhos
 
-Os arquivos são organizados em diretórios (também chamados de “pastas”). Cada programa em execução tem um “diretório atual”, que é o diretório-padrão da maior parte das operações. Por exemplo, quando você abre um arquivo de leitura, Python o procura no diretório atual.
+Os arquivos são organizados em diretórios (também chamados de “pastas”). Cada programa em execução tem um “[diretório](11-glossario.md#diretório) atual”, que é o diretório-padrão da maior parte das operações. Por exemplo, quando você abre um arquivo de leitura, Python o procura no diretório atual.
 
 O módulo `os` fornece funções para trabalhar com arquivos e diretórios (“os” é a abreviação de “sistema operacional” em inglês). `os.getcwd` devolve o nome do diretório atual:
 
@@ -14,11 +14,11 @@ O módulo `os` fornece funções para trabalhar com arquivos e diretórios (“o
 
 `cwd` é a abreviação de “diretório de trabalho atual” em inglês. O resultado neste exemplo é `/home/dinsdale`, que é o diretório-padrão de um usuário chamado “dinsdale”.
 
-Uma string como `'/home/dinsdale'`, que identifica um arquivo ou diretório, é chamada de caminho (path).
+Uma string como `'/home/dinsdale'`, que identifica um arquivo ou diretório, é chamada de [caminho](11-glossario.md#caminho) (path).
 
-Um nome de arquivo simples, como `memo.txt`, também é considerado um caminho, mas é um caminho relativo, porque se relaciona ao diretório atual. Se o diretório atual é `/home/dinsdale`, o nome de arquivo `memo.txt` se referiria a `/home/dinsdale/memo.txt`.
+Um nome de arquivo simples, como `memo.txt`, também é considerado um caminho, mas é um [caminho relativo](11-glossario.md#caminho-relativo), porque se relaciona ao diretório atual. Se o diretório atual é `/home/dinsdale`, o nome de arquivo `memo.txt` se referiria a `/home/dinsdale/memo.txt`.
 
-Um caminho que começa com `/` não depende do diretório atual; isso é chamado de caminho absoluto. Para encontrar o caminho absoluto para um arquivo, você pode usar `os.path.abspath`:
+Um caminho que começa com `/` não depende do diretório atual; isso é chamado de [caminho absoluto](11-glossario.md#caminho-absoluto). Para encontrar o caminho absoluto para um arquivo, você pode usar `os.path.abspath`:
 
 ```python
 >>> os.path.abspath('memo.txt')

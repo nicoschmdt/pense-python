@@ -21,7 +21,7 @@ Para chamar esta função, você precisa passar um objeto Time como argumento:
 09:45:00
 ```
 
-Para fazer de `print_time` um método, tudo o que precisamos fazer é mover a definição da função para dentro da definição da classe. Note a alteração na endentação:
+Para fazer de `print_time` um [método](12-glossario.md#método), tudo o que precisamos fazer é mover a definição da função para dentro da definição da classe. Note a alteração na endentação:
 
 ```python
 class Time:
@@ -45,7 +45,7 @@ A segunda forma (e mais concisa) é usar a sintaxe de método:
 09:45:00
 ```
 
-Nesse uso da notação de ponto, `print_time` é o nome do método (novamente), e `start` é o objeto no qual o método é invocado, que se chama de sujeito. Assim como em uma sentença, onde o sujeito é o foco da escrita, o sujeito de uma invocação de método é o foco do método.
+Nesse uso da notação de ponto, `print_time` é o nome do método (novamente), e `start` é o objeto no qual o método é invocado, que se chama de [sujeito](12-glossario.md#sujeito). Assim como em uma sentença, onde o sujeito é o foco da escrita, o sujeito de uma invocação de método é o foco do método.
 
 Dentro do método, o sujeito é atribuído ao primeiro parâmetro, portanto, neste caso, `start` é atribuído a `time`.
 
@@ -61,7 +61,7 @@ A razão dessa convenção é uma metáfora implícita:
 
 * A sintaxe de uma chamada de função, `print_time(start)`, sugere que a função é o agente ativo. Ela diz algo como: “Ei, `print_time`! Aqui está um objeto para você exibir”.
 
-* Na programação orientada a objeto, os objetos são os agentes ativos. Uma invocação de método `como start.print_time()` diz: “Ei, `start`! Por favor, exiba-se”.
+* Na [programação orientada a objeto](12-glossario.md#programação-orientada a objeto), os objetos são os agentes ativos. Uma invocação de método `como start.print_time()` diz: “Ei, `start`! Por favor, exiba-se”.
 
 Essa mudança de perspectiva pode ser mais polida, mas não é óbvio que seja útil. Nos exemplos que vimos até agora, pode não ser. Porém, às vezes, deslocar a responsabilidade das funções para os objetos permite escrever funções (ou métodos) mais versáteis e facilita a manutenção e reutilização do código.
 

@@ -1,6 +1,6 @@
 ## 10.12 - Argumentos de listas
 
-Ao passar uma lista a uma função, a função recebe uma referência à lista. Se a função alterar a lista, quem faz a chamada vê a mudança. Por exemplo, delete\_head remove o primeiro elemento de uma lista:
+Ao passar uma [lista](14-glossario.md#lista) a uma função, a função recebe uma [referência](14-glossario.md#referência) à lista. Se a função alterar a lista, quem faz a chamada vê a mudança. Por exemplo, delete\_head remove o primeiro [elemento](14-glossario.md#elemento) de uma lista:
 
 
 
@@ -14,7 +14,7 @@ Ela é usada assim:
 ['b', 'c']
 ```
 
-O parâmetro t e a variável letters são alias para o mesmo objeto. O diagrama da pilha fica igual ao da Figura 10.5.
+O parâmetro t e a variável letters são [alias](14-glossario.md#alias) para o mesmo [objeto](14-glossario.md#objeto). O diagrama da pilha fica igual ao da Figura 10.5.
 
 ![Figura 10.5 – Diagrama da pilha: `__main__` e `delete_head` compartilham referências à mesma lista](/fig/tnkp_1005.png).
 <br>_Figura 10.5 – Diagrama da pilha:_ `__main__` _e_ `delete_head` _compartilham referências à mesma lista._

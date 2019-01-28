@@ -1,6 +1,6 @@
 ## 5.10 - Recursividade infinita
 
-Se a recursividade nunca atingir um caso-base, continua fazendo chamadas recursivas para sempre, e o programa nunca termina. Isso é conhecido como recursividade infinita e geralmente não é uma boa ideia. Aqui está um programa mínimo com recursividade infinita:
+Se a [recursividade](13-glossario.md#recursividade) nunca atingir um [caso-base](13-glossario.md#caso-base), continua fazendo chamadas recursivas para sempre, e o programa nunca termina. Isso é conhecido como [recursividade infinita](13-glossario.md#recursividade-infinita) e geralmente não é uma boa ideia. Aqui está um programa mínimo com recursividade infinita:
 
 ```python
 def recurse():

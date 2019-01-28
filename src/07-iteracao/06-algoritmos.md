@@ -1,6 +1,6 @@
 ## 7.6 - Algoritmos
 
-O método de Newton é um exemplo de um algoritmo: um processo mecânico para resolver uma categoria de problemas (neste caso, calcular raízes quadradas).
+O método de Newton é um exemplo de um [algoritmo](08-glossario.md#algoritmo): um processo mecânico para resolver uma categoria de problemas (neste caso, calcular raízes quadradas).
 
 Para entender o que é um algoritmo, pode ser útil começar com algo que não é um algoritmo. Quando aprendeu a multiplicar números de um dígito, você provavelmente memorizou a tabuada. Ou seja, você memorizou 100 soluções específicas. Este tipo de conhecimento não é algorítmico.
 

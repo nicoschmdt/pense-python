@@ -1,4 +1,4 @@
-## 1.1 - O que é um programa?
+## 1.1 - O que é um [programa](08-glossario.md#programa)?
 
 Um __programa__ é uma sequência de instruções que especifica como executar uma operação de computação. A operação de computação pode ser algo matemático, como solucionar um sistema de equações ou encontrar as raízes de um polinômio, mas também pode ser uma operação de computação simbólica, como a busca e a substituição de textos em um documento; ou algo gráfico, como o processamento de uma imagem ou a reprodução de um vídeo.
 

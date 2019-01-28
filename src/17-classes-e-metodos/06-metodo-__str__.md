@@ -1,6 +1,6 @@
 ## 17.6 - Método `__str__`
 
-`__str__` é um método especial, como `__init__`, usado para retornar uma representação de string de um objeto.
+`__str__` é um [método](12-glossario.md#método) especial, como `__init__`, usado para retornar uma representação de string de um objeto.
 
 Por exemplo, aqui está um método str para objetos Time:
 

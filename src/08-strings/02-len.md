@@ -18,7 +18,7 @@ Para obter a última letra de uma string, pode parecer uma boa ideia tentar algo
 IndexError: string index out of range
 ```
 
-A razão de haver um IndexError aqui é que não há nenhuma letra em 'banana' com o índice 6. Como a contagem inicia no zero, as seis letras são numeradas de 0 a 5. Para obter o último caractere, você deve subtrair 1 de length:
+A razão de haver um IndexError aqui é que não há nenhuma letra em 'banana' com o [índice](12-glossario.md#índice) 6. Como a contagem inicia no zero, as seis letras são numeradas de 0 a 5. Para obter o último caractere, você deve subtrair 1 de length:
 
 
 ```python

@@ -12,7 +12,7 @@ else:
         print('x is greater than y')
 ```
 
-A condicional exterior contém dois ramos. O primeiro ramo contém uma instrução simples. O segundo ramo contém outra instrução if, que tem outros dois ramos próprios. Esses dois ramos são instruções simples, embora pudessem ser instruções condicionais também.
+A condicional exterior contém dois ramos. O primeiro [ramo](13-glossario.md#ramo) contém uma instrução simples. O segundo ramo contém outra instrução if, que tem outros dois ramos próprios. Esses dois ramos são instruções simples, embora pudessem ser instruções condicionais também.
 
 Embora a endentação das instruções evidencie a estrutura das condicionais, condicionais aninhadas são difíceis de ler rapidamente. É uma boa ideia evitá-las quando for possível.
 
@@ -31,7 +31,7 @@ if 0 < x and x < 10:
     print('x is a positive single-digit number.')
 ```
 
-Para este tipo de condição, o Python oferece uma opção mais concisa:
+Para este tipo de [condição](13-glossario.md#condição), o Python oferece uma opção mais concisa:
 
 ```python
 if 0 < x < 10:

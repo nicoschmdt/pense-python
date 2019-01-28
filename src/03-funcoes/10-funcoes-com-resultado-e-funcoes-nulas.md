@@ -2,7 +2,7 @@
 
 Algumas funções que usamos, como as funções matemáticas, devolvem resultados; por falta de um nome melhor, vou chamá-las de funções com resultados. Outras funções, como print\_twice, executam uma ação, mas não devolvem um valor. Elas são chamadas de funções nulas.
 
-Quando você chama uma função com resultado, quase sempre quer fazer algo com o resultado; por exemplo, você pode atribui-lo a uma variável ou usá-la como parte de uma expressão:
+Quando você chama uma [função](13-glossario.md#função) com resultado, quase sempre quer fazer algo com o resultado; por exemplo, você pode atribui-lo a uma variável ou usá-la como parte de uma expressão:
 
 ```python
 x = math.cos(radians)
@@ -16,7 +16,7 @@ Quando você chama uma função no modo interativo, o Python exibe o resultado:
 2.2360679774997898
 ```
 
-Mas em um script, se você chamar uma função com resultado e mais nada, o valor de retorno é perdido para sempre!
+Mas em um script, se você chamar uma [função com resultado](13-glossario.md#função-com resultado) e mais nada, o [valor de retorno](13-glossario.md#valor-de retorno) é perdido para sempre!
 
 ```python
 math.sqrt(5)
@@ -24,7 +24,7 @@ math.sqrt(5)
 
 Este script calcula a raiz quadrada de 5, mas como não armazena ou exibe o resultado, não é muito útil.
 
-As funções nulas podem exibir algo na tela ou ter algum outro efeito, mas não têm um valor de retorno. Se você atribuir o resultado a uma variável, recebe um valor especial chamado None:
+As funções nulas podem exibir algo na tela ou ter algum outro efeito, mas não têm um valor de retorno. Se você atribuir o resultado a uma variável, recebe um valor especial chamado [None](13-glossario.md#None):
 
 ```python
 >>> result = print_twice('Bing')

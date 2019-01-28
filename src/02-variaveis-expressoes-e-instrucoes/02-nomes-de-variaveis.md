@@ -1,12 +1,12 @@
 ## 2.2 - Nomes de variáveis
 
-Os programadores geralmente escolhem nomes significativos para as suas variáveis – eles documentam o uso da variável.
+Os programadores geralmente escolhem nomes significativos para as suas variáveis – eles documentam o uso da [variável](09-glossario.md#variável).
 
 Nomes de variáveis podem ser tão longos quanto você queira. Podem conter tanto letras como números, mas não podem começar com um número. É legal usar letras maiúsculas, mas a convenção é usar apenas letras minúsculas para nomes de variáveis.
 
 O caractere de sublinhar (\_) pode aparecer em um nome. Muitas vezes é usado em nomes com várias palavras, como your\_name ou airspeed\_of\_unladen\_swallow.
 
-Se você der um nome ilegal a uma variável, recebe um erro de sintaxe:
+Se você der um nome ilegal a uma variável, recebe um [erro de sintaxe](09-glossario.md#erro-de sintaxe):
 
 ```
 >>> 76trombones = 'big parade'

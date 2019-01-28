@@ -1,6 +1,6 @@
 ## 3.4 - Como acrescentar novas funções
 
-Por enquanto, só usamos funções que vêm com o Python, mas também é possível acrescentar novas funções. Uma definição de função especifica o nome de uma nova função e a sequência de instruções que são executadas quando a função é chamada.
+Por enquanto, só usamos funções que vêm com o Python, mas também é possível acrescentar novas funções. Uma definição de [função](13-glossario.md#função) especifica o nome de uma nova função e a sequência de instruções que são executadas quando a função é chamada.
 
 Aqui está um exemplo:
 
@@ -10,11 +10,11 @@ def print_lyrics():
     print("I sleep all night and I work all day.")
 ```
 
-`def` é uma palavra-chave que indica uma definição de função. O nome da função é `print_lyrics`. As regras para nomes de função são as mesmas que as das variáveis: letras, números e sublinhado são legais, mas o primeiro caractere não pode ser um número. Não podemos usar uma palavra-chave como nome de uma função e devemos evitar ter uma variável e uma função com o mesmo nome.
+`def` é uma palavra-chave que indica uma [definição de função](13-glossario.md#definição-de função). O nome da função é `print_lyrics`. As regras para nomes de função são as mesmas que as das variáveis: letras, números e sublinhado são legais, mas o primeiro caractere não pode ser um número. Não podemos usar uma palavra-chave como nome de uma função e devemos evitar ter uma variável e uma função com o mesmo nome.
 
 Os parênteses vazios depois do nome indicam que esta função não usa argumentos.
 
-A primeira linha da definição de função chama-se cabeçalho; o resto é chamado de corpo. O cabeçalho precisa terminar em dois pontos e o corpo precisa ser endentado. Por convenção, a endentação sempre é de quatro espaços. O corpo pode conter qualquer número de instruções.
+A primeira linha da definição de função chama-se [cabeçalho](13-glossario.md#cabeçalho); o resto é chamado de [corpo](13-glossario.md#corpo). O cabeçalho precisa terminar em dois pontos e o corpo precisa ser endentado. Por convenção, a endentação sempre é de quatro espaços. O corpo pode conter qualquer número de instruções.
 
 As strings nas instruções de exibição são limitadas por aspas duplas. As aspas simples e as aspas duplas fazem a mesma coisa; a maior parte das pessoas usa aspas simples apenas nos casos em que aspas simples (que também são apóstrofes) aparecem na string.
 

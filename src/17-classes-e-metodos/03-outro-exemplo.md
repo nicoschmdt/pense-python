@@ -1,6 +1,6 @@
 ## 17.3 - Outro exemplo
 
-Aqui está uma versão de increment (de “Modificadores”, na página 233) reescrita como método:
+Aqui está uma versão de increment (de “Modificadores”, na página 233) reescrita como [método](12-glossario.md#método):
 
 ```python
 # dentro da classe Time:
@@ -21,7 +21,7 @@ Essa versão assume que `time_to_int` seja escrita como método. Além disso, ob
 10:07:17
 ```
 
-O sujeito, start, é atribuído ao primeiro parâmetro, self. O argumento, 1337, é atribuído ao segundo parâmetro, seconds.
+O [sujeito](12-glossario.md#sujeito), start, é atribuído ao primeiro parâmetro, self. O argumento, 1337, é atribuído ao segundo parâmetro, seconds.
 
 Esse mecanismo pode ser confuso, especialmente se você fizer um erro. Por exemplo, se invocar increment com dois argumentos, recebe:
 
@@ -32,7 +32,7 @@ TypeError: increment() takes 2 positional arguments but 3 were given
 
 A mensagem de erro é inicialmente confusa, porque há só dois argumentos entre parênteses. No entanto, o sujeito também é considerado um argumento, então, somando tudo, são três.
 
-A propósito, um argumento posicional é o que não tem um nome de parâmetro; isto é, não é um argumento de palavra-chave. Nesta chamada da função:
+A propósito, um [argumento posicional](12-glossario.md#argumento-posicional) é o que não tem um nome de parâmetro; isto é, não é um argumento de palavra-chave. Nesta chamada da função:
 
 ```python
 sketch(parrot, cage, dead=True)

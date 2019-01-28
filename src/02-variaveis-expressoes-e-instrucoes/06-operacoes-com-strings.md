@@ -1,6 +1,6 @@
 ## 2.6 - Operações com strings
 
-Em geral, não é possível executar operações matemáticas com strings, mesmo se elas parecerem números, então coisas assim são ilegais:
+Em geral, não é possível [executar](09-glossario.md#executar) operações matemáticas com strings, mesmo se elas parecerem números, então coisas assim são ilegais:
 
 ```
 '2'-'1'    'eggs'/'easy'    'third'*'a charm'

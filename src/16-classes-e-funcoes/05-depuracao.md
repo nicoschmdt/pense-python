@@ -4,7 +4,7 @@ Um objeto `Time` é bem formado se os valores de `minute` e `second` estiverem e
 
 Requisitos como esses chamam-se invariáveis porque sempre devem ser verdadeiros. Para dizer de outra forma, se não forem verdadeiros, algo deu errado.
 
-Escrever código para verificar requisitos invariáveis pode ajudar a descobrir erros e encontrar suas causas. Por exemplo, você pode ter uma função como valid\_time, que receba um objeto Time e retorne False se ele violar um requisito invariável:
+Escrever código para verificar requisitos invariáveis pode ajudar a descobrir erros e encontrar suas causas. Por exemplo, você pode ter uma função como valid\_time, que receba um objeto Time e retorne False se ele violar um requisito [invariável](06-glossario.md#invariável):
 
 ```python
 def valid_time(time):

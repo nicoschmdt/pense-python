@@ -2,7 +2,7 @@
 
 ### Exercício 15.1
 
-1. Escreva uma definição para uma classe denominada `Circle`, com os atributos center e radius, onde center é um objeto `Point` e radius é um número.
+1. Escreva uma definição para uma [classe](08-glossario.md#classe) denominada `Circle`, com os atributos center e radius, onde center é um objeto `Point` e radius é um número.
 
 2. Instancie um objeto `Circle`, que represente um círculo com o centro em 150, 100 e raio 75.
 

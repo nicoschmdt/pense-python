@@ -1,6 +1,6 @@
 ## 10.8 - Como excluir elementos
 
-Há várias formas de excluir elementos de uma lista. Se souber o índice do elemento que procura, você pode usar `pop`:
+Há várias formas de excluir elementos de uma [lista](14-glossario.md#lista). Se souber o índice do [elemento](14-glossario.md#elemento) que procura, você pode usar `pop`:
 
 ```python
 >>> t = ['a', 'b', 'c']

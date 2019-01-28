@@ -1,6 +1,6 @@
 ## 8.11 - Depuração
 
-Ao usar índices para atravessar os valores em uma sequência, é complicado acertar o começo e o fim da travessia. Aqui está uma função que supostamente compara duas palavras e retorna True se uma das palavras for o reverso da outra, mas contém dois erros:
+Ao usar índices para [atravessar](12-glossario.md#atravessar) os valores em uma [sequência](12-glossario.md#sequência), é complicado acertar o começo e o fim da travessia. Aqui está uma função que supostamente compara duas palavras e retorna True se uma das palavras for o reverso da outra, mas contém dois erros:
 
 ```python
 def is_reverse(word1, word2):
@@ -50,7 +50,7 @@ Agora quando executo o programa novamente, recebo mais informação:
 IndexError: string index out of range
 ```
 
-Na primeira vez que o programa passar pelo loop, o valor de j é 4, que está fora do intervalo da string 'pots'. O índice do último caractere é 3, então o valor inicial de j deve ser len(word2)-1.
+Na primeira vez que o programa passar pelo loop, o valor de j é 4, que está fora do intervalo da string 'pots'. O [índice](12-glossario.md#índice) do último caractere é 3, então o valor inicial de j deve ser len(word2)-1.
 
 Se corrigir esse erro e executar o programa novamente, recebo:
 

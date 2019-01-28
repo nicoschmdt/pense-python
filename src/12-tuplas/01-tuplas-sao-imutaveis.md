@@ -1,6 +1,6 @@
 ## 12.1 - Tuplas são imutáveis
 
-Uma tupla é uma sequência de valores. Os valores podem ser de qualquer tipo, e podem ser indexados por números inteiros, portanto, nesse sentido, as tuplas são muito parecidas com as listas. A diferença importante é que as tuplas são imutáveis.
+Uma [tupla](09-glossario.md#tupla) é uma sequência de valores. Os valores podem ser de qualquer tipo, e podem ser indexados por números inteiros, portanto, nesse sentido, as tuplas são muito parecidas com as listas. A diferença importante é que as tuplas são imutáveis.
 
 Sintaticamente, uma tupla é uma lista de valores separados por vírgulas:
 

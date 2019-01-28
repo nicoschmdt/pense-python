@@ -9,7 +9,7 @@ Reescrever `is_after` (de “Time”, na página 231) é ligeiramente mais compl
         return self.time_to_int() > other.time_to_int()
 ```
 
-Para usar este método, você deve invocá-lo para um objeto e passar outro como argumento:
+Para usar este [método](12-glossario.md#método), você deve invocá-lo para um objeto e passar outro como argumento:
 
 ```python
 >>> end.is_after(start)

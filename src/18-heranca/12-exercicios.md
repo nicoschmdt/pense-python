@@ -2,7 +2,7 @@
 
 ### Exercício 18.1
 
-Para o seguinte programa, desenhe um diagrama de classe UML que mostre estas classes e as relações entre elas.
+Para o seguinte programa, desenhe um [diagrama de classe](11-glossario.md#diagrama-de classe) UML que mostre estas classes e as relações entre elas.
 
 ```python
 class PingPongParent:

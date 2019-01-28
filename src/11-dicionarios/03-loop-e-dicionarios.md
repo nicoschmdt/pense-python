@@ -1,6 +1,6 @@
 ## 11.3 - Loop e dicionários
 
-Se usar um dicionário em uma instrução `for`, ela percorre as chaves do dicionário. Por exemplo, `print_hist` exibe cada chave e o valor correspondente:
+Se usar um [dicionário](09-glossario.md#dicionário) em uma instrução `for`, ela percorre as chaves do dicionário. Por exemplo, `print_hist` exibe cada [chave](09-glossario.md#chave) e o [valor](09-glossario.md#valor) correspondente:
 
 ```python
 def print_hist(h):

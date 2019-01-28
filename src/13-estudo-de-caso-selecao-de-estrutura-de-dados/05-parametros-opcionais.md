@@ -10,7 +10,7 @@ def print_most_common(hist, num=10):
         print(word, freq, sep='\\t')
 ```
 
-O primeiro parâmetro é necessário; o segundo é opcional. O valor padrão de `num` é 10.
+O primeiro parâmetro é necessário; o segundo é opcional. O [valor padrão](11-glossario.md#valor-padrão) de `num` é 10.
 
 Se você só fornecer um argumento:
 

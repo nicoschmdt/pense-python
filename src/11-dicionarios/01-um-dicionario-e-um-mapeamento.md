@@ -1,8 +1,8 @@
-## 11.1 - Um dicionário é um mapeamento
+## 11.1 - Um [dicionário](09-glossario.md#dicionário) é um [mapeamento](09-glossario.md#mapeamento)
 
 Um dicionário se parece com uma lista, mas é mais geral. Em uma lista, os índices têm que ser números inteiros; em um dicionário, eles podem ser de (quase) qualquer tipo.
 
-Um dicionário contém uma coleção de índices, que se chamam chaves e uma coleção de valores. Cada chave é associada com um único valor. A associação de uma chave e um valor chama-se par chave-valor ou item.
+Um dicionário contém uma coleção de índices, que se chamam chaves e uma coleção de valores. Cada [chave](09-glossario.md#chave) é associada com um único [valor](09-glossario.md#valor). A associação de uma chave e um valor chama-se [par chave-valor](09-glossario.md#par-chave-valor) ou [item](09-glossario.md#item).
 
 Em linguagem matemática, um dicionário representa um mapeamento de chaves a valores, para que você possa dizer que cada chave “mostra o mapa a” um valor. Como exemplo, vamos construir um dicionário que faz o mapa de palavras do inglês ao espanhol, portanto as chaves e os valores são todos strings.
 
@@ -83,6 +83,6 @@ Para ver se algo aparece como um valor em um dicionário, você pode usar o mét
 True
 ```
 
-O operador `in` usa algoritmos diferentes para listas e dicionários. Para listas, ele procura os elementos da lista em ordem, como descrito em “Busca”, na página 123. Conforme a lista torna-se mais longa, o tempo de busca também fica proporcionalmente mais longo.
+O operador `in` usa algoritmos diferentes para listas e dicionários. Para listas, ele procura os elementos da lista em ordem, como descrito em “Busca”, na página 123. Conforme a lista torna-se mais longa, o tempo de [busca](09-glossario.md#busca) também fica proporcionalmente mais longo.
 
-Para dicionários, o Python usa um algoritmo chamado hashtable (tabela de dispersão), que tem uma propriedade notável: o operador `in` leva praticamente o mesmo tempo na busca, não importa quantos itens estejam no dicionário. Eu explico como isso é possível em “Hashtables”, na página 302, mas a explicação pode não fazer sentido até que você tenha lido mais alguns capítulos.
+Para dicionários, o Python usa um algoritmo chamado [hashtable](09-glossario.md#hashtable) (tabela de dispersão), que tem uma propriedade notável: o operador `in` leva praticamente o mesmo tempo na busca, não importa quantos itens estejam no dicionário. Eu explico como isso é possível em “Hashtables”, na página 302, mas a explicação pode não fazer sentido até que você tenha lido mais alguns capítulos.

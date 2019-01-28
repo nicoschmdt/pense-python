@@ -2,7 +2,7 @@
 
 Por enquanto, falamos sobre os elementos de um programa – variáveis, expressões e instruções – de forma isolada, mas não sobre como combiná-los.
 
-Uma das características mais úteis das linguagens de programação é a sua capacidade de usar pequenos blocos de montar para compor programas. Por exemplo, o argumento de uma função pode ser qualquer tipo de expressão, inclusive operadores aritméticos:
+Uma das características mais úteis das linguagens de programação é a sua capacidade de usar pequenos blocos de montar para compor programas. Por exemplo, o [argumento](13-glossario.md#argumento) de uma [função](13-glossario.md#função) pode ser qualquer tipo de expressão, inclusive operadores aritméticos:
 
 
 ```python

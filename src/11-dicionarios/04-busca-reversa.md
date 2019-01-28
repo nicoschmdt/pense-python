@@ -1,8 +1,8 @@
 ## 11.4 - Busca reversa
 
-Considerando um dicionário `d` e uma chave `k`, é fácil encontrar o valor correspondente `v = d [k]`. Esta operação chama-se busca.
+Considerando um [dicionário](09-glossario.md#dicionário) `d` e uma [chave](09-glossario.md#chave) `k`, é fácil encontrar o [valor](09-glossario.md#valor) correspondente `v = d [k]`. Esta operação chama-se [busca](09-glossario.md#busca).
 
-Mas e se você tiver `v` e quiser encontrar `k`? Você tem dois problemas: em primeiro lugar, pode haver mais de uma chave que esteja mapeada ao valor `v`. Dependendo da aplicação, quem sabe você pode escolher um, ou talvez tenha de fazer uma lista que contenha todos eles. Em segundo lugar, não há sintaxe simples para fazer uma busca reversa; é preciso procurar.
+Mas e se você tiver `v` e quiser encontrar `k`? Você tem dois problemas: em primeiro lugar, pode haver mais de uma chave que esteja mapeada ao valor `v`. Dependendo da aplicação, quem sabe você pode escolher um, ou talvez tenha de fazer uma lista que contenha todos eles. Em segundo lugar, não há sintaxe simples para fazer uma [busca reversa](09-glossario.md#busca-reversa); é preciso procurar.
 
 Aqui está uma função que recebe um valor e retorna a primeira chave mapeada ao valor dado:
 
@@ -39,7 +39,7 @@ LookupError
 
 O efeito causado por você ao apresentar uma exceção é igual ao causado pelo Python quando faz o mesmo: ele exibe um traceback e uma mensagem de erro.
 
-A instrução raise pode receber uma mensagem de erro detalhada como argumento opcional. Por exemplo:
+A [instrução raise](09-glossario.md#instrução-raise) pode receber uma mensagem de erro detalhada como argumento opcional. Por exemplo:
 
 ```python
 >>> raise LookupError('value does not appear in the dictionary')

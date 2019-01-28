@@ -2,9 +2,9 @@
 
 ### Exercício 11.1
 
-Escreva uma função que leia as palavras em words.txt e guarde-as como chaves em um dicionário. Não importa quais são os valores. Então você pode usar o operador in como uma forma rápida de verificar se uma string está no dicionário.
+Escreva uma função que leia as palavras em words.txt e guarde-as como chaves em um [dicionário](09-glossario.md#dicionário). Não importa quais são os valores. Então você pode usar o operador in como uma forma rápida de verificar se uma string está no dicionário.
 
-Se fez o Exercício 10.10, você pode comparar a velocidade desta implementação com o operador in de listas e a busca por bisseção.
+Se fez o Exercício 10.10, você pode comparar a velocidade desta [implementação](09-glossario.md#implementação) com o operador in de listas e a [busca](09-glossario.md#busca) por bisseção.
 
 ### Exercício 11.2
 

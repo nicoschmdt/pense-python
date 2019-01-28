@@ -4,7 +4,7 @@ Você pode baixar as soluções para estes exercícios em [http://thinkpython2.c
 
 ### Exercício 10.1
 
-Escreva uma função chamada `nested_sum` que receba uma lista de listas de números inteiros e adicione os elementos de todas as listas aninhadas. Por exemplo:
+Escreva uma função chamada `nested_sum` que receba uma [lista](14-glossario.md#lista) de listas de números inteiros e adicione os elementos de todas as listas aninhadas. Por exemplo:
 
 ```python
 >>> t = [[1, 2], [3], [4, 5, 6]]
@@ -14,7 +14,7 @@ Escreva uma função chamada `nested_sum` que receba uma lista de listas de núm
 
 ### Exercício 10.2
 
-Escreva uma função chamada cumsum que receba uma lista de números e retorne a soma cumulativa; isto é, uma nova lista onde o i-ésimo elemento é a soma dos primeiros i+1 elementos da lista original. Por exemplo:
+Escreva uma função chamada cumsum que receba uma lista de números e retorne a soma cumulativa; isto é, uma nova lista onde o i-ésimo [elemento](14-glossario.md#elemento) é a soma dos primeiros i+1 elementos da lista original. Por exemplo:
 
 ```python
 >>> t = [1, 2, 3]

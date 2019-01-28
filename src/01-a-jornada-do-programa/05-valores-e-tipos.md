@@ -1,10 +1,10 @@
 ## 1.5 - Valores e tipos
 
-Um valor é uma das coisas básicas com as quais um programa trabalha, como uma letra ou um número. Alguns valores que vimos até agora foram 2, 42.0 e 'Hello, World!'.
+Um [valor](08-glossario.md#valor) é uma das coisas básicas com as quais um [programa](08-glossario.md#programa) trabalha, como uma letra ou um número. Alguns valores que vimos até agora foram 2, 42.0 e 'Hello, World!'.
 
-Esses valores pertencem a tipos diferentes: 2 é um número inteiro, 42.0 é um número de ponto flutuante e 'Hello, World!' é uma string, assim chamada porque as letras que contém estão em uma sequência em cadeia.
+Esses valores pertencem a tipos diferentes: 2 é um número [inteiro](08-glossario.md#inteiro), 42.0 é um número de [ponto flutuante](08-glossario.md#ponto-flutuante) e 'Hello, World!' é uma [string](08-glossario.md#string), assim chamada porque as letras que contém estão em uma sequência em cadeia.
 
-Se não tiver certeza sobre qual é o tipo de certo valor, o interpretador pode dizer isso a você:
+Se não tiver certeza sobre qual é o [tipo](08-glossario.md#tipo) de certo valor, o [interpretador](08-glossario.md#interpretador) pode dizer isso a você:
 
 ```python
 >>> type(2)

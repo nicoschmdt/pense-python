@@ -1,4 +1,4 @@
-## 10.1 - Uma lista é uma sequência
+## 10.1 - Uma [lista](14-glossario.md#lista) é uma sequência
 
 Como uma string, uma lista é uma sequência de valores. Em uma string, os valores são caracteres; em uma lista, eles podem ser de qualquer tipo. Os valores em uma lista são chamados de elementos, ou, algumas vezes, de itens.
 
@@ -15,7 +15,7 @@ O primeiro exemplo é uma lista de quatro números inteiros. O segundo é uma li
 ['spam', 2.0, 5, [10, 20]]
 ```
 
-Uma lista dentro de outra lista é uma lista aninhada.
+Uma lista dentro de outra lista é uma [lista aninhada](14-glossario.md#lista-aninhada).
 
 Uma lista que não contém elementos é chamada de lista vazia; você pode criar uma com colchetes vazios [].
 

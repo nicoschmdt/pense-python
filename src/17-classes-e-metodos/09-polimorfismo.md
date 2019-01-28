@@ -1,6 +1,6 @@
 ## 17.9 - Polimorfismo
 
-O despacho por tipo é útil, mas (felizmente) nem sempre é necessário. Muitas vezes, você pode evitá-lo escrevendo funções que funcionem corretamente para argumentos de tipos diferentes.
+O [despacho por tipo](12-glossario.md#despacho-por tipo) é útil, mas (felizmente) nem sempre é necessário. Muitas vezes, você pode evitá-lo escrevendo funções que funcionem corretamente para argumentos de tipos diferentes.
 
 Muitas das funções que escrevemos para strings também funcionam para outros tipos de sequência. Por exemplo, em “Um dicionário como uma coleção de contadores”, na página 163, usamos histogram para contar o número de vezes que cada letra aparece numa palavra:
 
@@ -24,7 +24,7 @@ Essa função também funciona com listas, tuplas e até dicionários, desde que
 ```
 As funções que funcionam com vários tipos chamam-se polimórficas. O polimorfismo pode facilitar a reutilização do código. Por exemplo, a função integrada sum, que adiciona os elementos de uma sequência, funciona só se os elementos da sequência forem compatíveis com adição.
 
-Como os objetos Time oferecem o método add, eles funcionam com sum:
+Como os objetos Time oferecem o [método](12-glossario.md#método) add, eles funcionam com sum:
 
 ```python
 >>> t1 = Time(7, 43)

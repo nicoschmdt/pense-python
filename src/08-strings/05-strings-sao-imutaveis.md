@@ -5,10 +5,10 @@
 ```python
 >>> greeting = 'Hello, world!'
 >>> greeting[0] = 'J'
-TypeError: 'str' object does not support item assignment
+TypeError: 'str' object does not support [item](12-glossario.md#item) assignment
 ```
 
-O “objeto” neste caso é a string e o “item” é o caractere que você tentou atribuir. Por enquanto, um objeto é a mesma coisa que um valor, mas refinaremos esta definição mais adiante ([Objetos e valores](../10-listas/10-objetos-e-valores.md), no capítulo 10).
+O “[objeto](12-glossario.md#objeto)” neste caso é a string e o “item” é o caractere que você tentou atribuir. Por enquanto, um objeto é a mesma coisa que um valor, mas refinaremos esta definição mais adiante ([Objetos e valores](../10-listas/10-objetos-e-valores.md), no capítulo 10).
 
 A razão do erro é que as strings são imutáveis, o que significa que você não pode alterar uma string existente. O melhor que você pode fazer é criar uma string que seja uma variação da original:
 
@@ -19,4 +19,4 @@ A razão do erro é que as strings são imutáveis, o que significa que você n�
 'Jello, world!'
 ```
 
-Esse exemplo concatena uma nova primeira letra a uma fatia de `greeting`. Não tem efeito sobre a string original.
+Esse exemplo concatena uma nova primeira letra a uma [fatia](12-glossario.md#fatia) de `greeting`. Não tem efeito sobre a string original.

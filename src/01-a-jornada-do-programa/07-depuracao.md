@@ -1,8 +1,8 @@
 ## 1.7 - Depuração
 
-Os programadores erram. Por um capricho do destino, erros de programação são chamados de bugs (insetos) e o processo de rastreá-los chama-se depuração (debugging).
+Os programadores erram. Por um capricho do destino, erros de programação são chamados de bugs (insetos) e o processo de rastreá-los chama-se [depuração](08-glossario.md#depuração) (debugging).
 
-Programar, e especialmente fazer a depuração, às vezes traz emoções fortes. Se tiver dificuldade com certo bug, você pode ficar zangado, desesperado ou constrangido.
+Programar, e especialmente fazer a depuração, às vezes traz emoções fortes. Se tiver dificuldade com certo [bug](08-glossario.md#bug), você pode ficar zangado, desesperado ou constrangido.
 
 Há evidências de que as pessoas respondem naturalmente a computadores como se fossem pessoas. Quando funcionam bem, pensamos neles como parceiros da equipe, e quando são teimosos ou grosseiros, respondemos a eles do mesmo jeito que fazemos com pessoas grosseiras e teimosas (Reeves e Nass, [_The Media Equation: How People Treat Computers, Television, and New Media Like Real People and Places_](https://en.wikipedia.org/wiki/The_Media_Equation) — _A equação da mídia: como as pessoas tratam os computadores, a televisão e as novas mídias como se fossem pessoas e lugares reais_).
 

@@ -1,8 +1,8 @@
 ## 14.8 - Pipes
 
-A maior parte dos sistemas operacionais fornece uma interface de linha de comando, conhecida como shell. Shells normalmente fornecem comandos para navegar nos sistemas de arquivos e executar programas. Por exemplo, em Unix você pode alterar diretórios com `cd`, exibir o conteúdo de um diretório com `ls` e abrir um navegador web digitando (por exemplo) `firefox`.
+A maior parte dos sistemas operacionais fornece uma interface de linha de comando, conhecida como [shell](11-glossario.md#shell). Shells normalmente fornecem comandos para navegar nos sistemas de arquivos e executar programas. Por exemplo, em Unix você pode alterar diretórios com `cd`, exibir o conteúdo de um [diretório](11-glossario.md#diretório) com `ls` e abrir um navegador web digitando (por exemplo) `firefox`.
 
-Qualquer programa que possa ser aberto no shell também pode ser aberto no Python usando um objeto pipe, que representa um programa em execução.
+Qualquer programa que possa ser aberto no shell também pode ser aberto no Python usando um [objeto pipe](11-glossario.md#objeto-pipe), que representa um programa em execução.
 
 Por exemplo, o comando Unix `ls -l` normalmente exibe o conteúdo do diretório atual no formato longo. Você pode abrir ls com `os.popen[1]`:
 

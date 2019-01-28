@@ -1,6 +1,6 @@
 ## 19.6 - Contadores
 
-Um contador é como um conjunto, exceto que se um elemento aparecer mais de uma vez, o contador registra quantas vezes ele aparece. Se tiver familiaridade com a ideia matemática de um multiconjunto (multiset), um contador é uma forma natural de representar um multiconjunto.
+Um contador é como um conjunto, exceto que se um elemento aparecer mais de uma vez, o contador registra quantas vezes ele aparece. Se tiver familiaridade com a ideia matemática de um [multiconjunto](10-glossario.md#multiconjunto) (multiset), um contador é uma forma natural de representar um multiconjunto.
 
 Contadores são definidos em um módulo padrão chamado `collections`, portanto é preciso importá-lo. Você pode inicializar um contador com uma string, lista ou alguma outra coisa que seja compatível com iteração:
 

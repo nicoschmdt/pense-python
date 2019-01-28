@@ -1,8 +1,8 @@
 ## 3.7 - Parâmetros e argumentos
 
-Algumas funções que vimos exigem argumentos. Por exemplo, ao chamar math.sin, você usa um número como argumento. Algumas funções exigem mais de um argumento: o math.pow exige dois, a base e o expoente.
+Algumas funções que vimos exigem argumentos. Por exemplo, ao chamar math.sin, você usa um número como [argumento](13-glossario.md#argumento). Algumas funções exigem mais de um argumento: o math.pow exige dois, a base e o expoente.
 
-Dentro da função, os argumentos são atribuídos a variáveis chamadas parâmetros. Aqui está a definição de uma função que precisa de um argumento:
+Dentro da [função](13-glossario.md#função), os argumentos são atribuídos a variáveis chamadas parâmetros. Aqui está a definição de uma função que precisa de um argumento:
 
 
 ```python
@@ -11,7 +11,7 @@ def print_twice(bruce):
     print(bruce)
 ```
 
-Esta função atribui o argumento a um parâmetro chamado bruce. Quando a função é chamada, ela exibe o valor do parâmetro (seja qual for) duas vezes.
+Esta função atribui o argumento a um [parâmetro](13-glossario.md#parâmetro) chamado bruce. Quando a função é chamada, ela exibe o valor do parâmetro (seja qual for) duas vezes.
 
 Esta função funciona com qualquer valor que possa ser exibido:
 
@@ -27,7 +27,7 @@ Spam
 3.14159265359
 ```
 
-As mesmas regras de composição usadas para funções integradas também são aplicadas a funções definidas pelos programadores, então podemos usar qualquer tipo de expressão como argumento para `print_twice`:
+As mesmas regras de [composição](13-glossario.md#composição) usadas para funções integradas também são aplicadas a funções definidas pelos programadores, então podemos usar qualquer tipo de expressão como argumento para `print_twice`:
 
 
 ```python

@@ -1,6 +1,6 @@
 # Capítulo 18: Herança
 
-O termo mais associado com a programação orientada a objeto é herança. A herança é a capacidade de definir uma nova classe que seja uma versão modificada de uma classe existente. Neste capítulo demonstrarei a herança usando classes que representam jogos de cartas, baralhos e mãos de pôquer.
+O termo mais associado com a programação orientada a objeto é [herança](11-glossario.md#herança). A herança é a capacidade de definir uma nova classe que seja uma versão modificada de uma classe existente. Neste capítulo demonstrarei a herança usando classes que representam jogos de cartas, baralhos e mãos de pôquer.
 
 Se você não joga pôquer, pode ler sobre ele em [http://en.wikipedia.org/wiki/Poker](http://en.wikipedia.org/wiki/Poker), mas não é necessário; vou dizer tudo o que precisa saber para os exercícios.
 

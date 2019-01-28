@@ -1,6 +1,6 @@
 ## 7.3 - Instrução while
 
-Os computadores muitas vezes são usados para automatizar tarefas repetitivas. A repetição de tarefas idênticas ou semelhantes sem fazer erros é algo que os computadores fazem bem e as pessoas não. Em um programa de computador, a repetição também é chamada de iteração.
+Os computadores muitas vezes são usados para automatizar tarefas repetitivas. A repetição de tarefas idênticas ou semelhantes sem fazer erros é algo que os computadores fazem bem e as pessoas não. Em um programa de computador, a repetição também é chamada de [iteração](08-glossario.md#iteração).
 
 Já vimos duas funções, `countdown` e `print_n`, que se repetem usando recursividade. Como a iteração é bem comum, o Python fornece recursos de linguagem para facilitá-la. Um deles é a instrução `for` que vimos em “Repetição simples”, na página 65. Voltaremos a isso mais adiante.
 
@@ -26,7 +26,7 @@ Mais formalmente, aqui está o fluxo de execução para uma instrução while:
 
 Este tipo de fluxo chama-se loop (laço), porque o terceiro passo faz um loop de volta ao topo.
 
-O corpo do loop deve mudar o valor de uma ou mais variáveis para que, a certa altura, a condição fique falsa e o loop termine. Senão o loop vai se repetir para sempre, o que é chamado de loop infinito. Uma fonte infindável de divertimento para cientistas da computação é a observação das instruções no xampu, “Faça espuma, enxágue, repita”, que são parte de um loop infinito.
+O corpo do loop deve mudar o valor de uma ou mais variáveis para que, a certa altura, a condição fique falsa e o loop termine. Senão o loop vai se repetir para sempre, o que é chamado de [loop infinito](08-glossario.md#loop-infinito). Uma fonte infindável de divertimento para cientistas da computação é a observação das instruções no xampu, “Faça espuma, enxágue, repita”, que são parte de um loop infinito.
 
 No caso de countdown, podemos provar que o loop termina: se `n` for zero ou negativo, o loop nunca é executado. Senão, `n` fica cada vez menor ao passar pelo loop, até eventualmente chegar a 0.
 

@@ -7,11 +7,11 @@ O argumento de `write` tem que ser uma string, então, se quisermos inserir outr
 >>> fout.write(str(x))
 ```
 
-Uma alternativa é usar o operador de formatação, `%`. Quando aplicado a números inteiros, `%` é o operador de módulo. No entanto, quando o primeiro operando é uma string, `%` é o operador de formatação.
+Uma alternativa é usar o [operador de formatação](11-glossario.md#operador-de formatação), `%`. Quando aplicado a números inteiros, `%` é o operador de módulo. No entanto, quando o primeiro operando é uma string, `%` é o operador de formatação.
 
-O primeiro operando é a string de formatação, que contém uma ou várias sequências de formatação que especificam como o segundo operando deve ser formatado. O resultado é uma string.
+O primeiro operando é a [string de formatação](11-glossario.md#string-de formatação), que contém uma ou várias sequências de formatação que especificam como o segundo operando deve ser formatado. O resultado é uma string.
 
-Por exemplo, a sequência de formatação '%d' significa que o segundo operando deve ser formatado como um número inteiro decimal:
+Por exemplo, a [sequência de formatação](11-glossario.md#sequência-de formatação) '%d' significa que o segundo operando deve ser formatado como um número inteiro decimal:
 
 ```python
 >>> camels = 42

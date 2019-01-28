@@ -1,6 +1,6 @@
 ## 16.2 - Funções puras
 
-Nas próximas seções, vamos escrever duas funções que adicionam valores de tempo. Elas demonstram dois tipos de funções: funções puras e modificadores. Também demonstram um plano de desenvolvimento que chamarei de protótipo e correção, que é uma forma de atacar um problema complexo começando com um protótipo simples e lidando com as complicações de forma incremental.
+Nas próximas seções, vamos escrever duas funções que adicionam valores de tempo. Elas demonstram dois tipos de funções: funções puras e modificadores. Também demonstram um plano de desenvolvimento que chamarei de [protótipo e correção](06-glossario.md#protótipo-e correção), que é uma forma de atacar um problema complexo começando com um protótipo simples e lidando com as complicações de forma incremental.
 
 Aqui está um protótipo simples de `add_time`:
 
@@ -13,7 +13,7 @@ def add_time(t1, t2):
     return sum
 ```
 
-A função cria um novo objeto `Time`, inicializa seus atributos e retorna uma referência ao novo objeto. A função pura é chamada assim porque não altera nenhum dos objetos passados a ela como argumentos; além disso, ela não tem efeitos, como exibir um valor ou receber entradas de usuário, apenas retorna um valor.
+A função cria um novo objeto `Time`, inicializa seus atributos e retorna uma referência ao novo objeto. A [função pura](06-glossario.md#função-pura) é chamada assim porque não altera nenhum dos objetos passados a ela como argumentos; além disso, ela não tem efeitos, como exibir um valor ou receber entradas de usuário, apenas retorna um valor.
 
 Para testar esta função, criarei objetos `Time`: `start`, que contém o tempo de início de um filme, como _Monty Python e o cálice sagrado_, e `duration`, que contém o tempo de execução do filme, que é de 1 hora e 35 minutos.
 

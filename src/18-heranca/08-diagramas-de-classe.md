@@ -2,7 +2,7 @@
 
 Por enquanto vimos diagramas de pilha, que mostram o estado de um programa e diagramas de objeto, que mostram os atributos de um objeto e seus valores. Esses diagramas representam um retrato da execução de um programa, então eles mudam no decorrer da execução do programa.
 
-Eles também são altamente detalhados; para alguns objetivos, detalhados demais. Um diagrama de classe é uma representação mais abstrata da estrutura de um programa. Em vez de mostrar objetos individuais, ele mostra classes e as relações entre elas.
+Eles também são altamente detalhados; para alguns objetivos, detalhados demais. Um [diagrama de classe](11-glossario.md#diagrama-de classe) é uma representação mais abstrata da estrutura de um programa. Em vez de mostrar objetos individuais, ele mostra classes e as relações entre elas.
 
 Há vários tipos de relações entre as classes:
 
@@ -10,18 +10,18 @@ Há vários tipos de relações entre as classes:
 
 * Uma classe pode herdar de outra. Esta relação chama-se IS-A (é um), com a ideia de “um Hand é um tipo de Deck”.
 
-* Uma classe pode depender de outra no sentido de que os objetos em uma classe possam receber objetos na segunda classe como parâmetros ou usar esses objetos como parte de um cálculo. Este tipo de relação chama-se dependência.
+* Uma classe pode depender de outra no sentido de que os objetos em uma classe possam receber objetos na segunda classe como parâmetros ou usar esses objetos como parte de um cálculo. Este tipo de relação chama-se [dependência](11-glossario.md#dependência).
 
 Um diagrama de classe é uma representação gráfica dessas relações. Por exemplo, a Figura 18.2 mostra as relações entre Card, Deck e Hand.
 
 ![Figura 18.2 – Diagrama de classes](/fig/tnkp_1802.png).
 <br>_Figura 18.2 – Diagrama de classes._
 
-A flecha com um triângulo oco representa uma relação IS-A; nesse caso, indica que Hand herda de Deck.
+A flecha com um triângulo oco representa uma [relação IS-A](11-glossario.md#relação-IS-A); nesse caso, indica que Hand herda de Deck.
 
-A ponta de flecha padrão representa uma relação HAS-A; nesse caso, um Deck tem referências a objetos Card.
+A ponta de flecha padrão representa uma [relação HAS-A](11-glossario.md#relação-HAS-A); nesse caso, um Deck tem referências a objetos Card.
 
-A estrela __*__  perto da ponta de flecha indica a multiplicidade; ela indica quantos Cards um Deck tem. Uma multiplicidade pode ser um número simples como 52, um intervalo como 5..7 ou uma estrela, que indica que um Deck pode ter qualquer número de Cards.
+A estrela __*__  perto da ponta de flecha indica a [multiplicidade](11-glossario.md#multiplicidade); ela indica quantos Cards um Deck tem. Uma multiplicidade pode ser um número simples como 52, um intervalo como 5..7 ou uma estrela, que indica que um Deck pode ter qualquer número de Cards.
 
 Não há nenhuma dependência neste diagrama. Elas normalmente apareceriam com uma flecha tracejada. Ou, se houver muitas dependências, às vezes elas são omitidas.
 

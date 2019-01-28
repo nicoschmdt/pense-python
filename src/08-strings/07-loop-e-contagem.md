@@ -11,8 +11,8 @@ for letter in word:
 print(count)
 ```
 
-Este programa demonstra outro padrão de computação chamado contador. A variável `count` é inicializada com 0 e então incrementada cada vez que um a é encontrado. Ao sair do loop, `count` contém o resultado – o número total de letras `'a'`.
+Este programa demonstra outro padrão de computação chamado [contador](12-glossario.md#contador). A variável `count` é inicializada com 0 e então incrementada cada vez que um a é encontrado. Ao sair do loop, `count` contém o resultado – o número total de letras `'a'`.
 
 Como exercício, encapsule este código em uma função denominada `count` e generalize-o para que aceite a string e a letra como argumentos.
 
-Então reescreva a função para que, em vez de atravessar a string, ela use a versão de três parâmetros do find da seção anterior.
+Então reescreva a função para que, em vez de [atravessar](12-glossario.md#atravessar) a string, ela use a versão de três parâmetros do find da seção anterior.

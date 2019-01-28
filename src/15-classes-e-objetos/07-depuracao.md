@@ -1,6 +1,6 @@
 ## 15.7 - Depuração
 
-Ao começar a trabalhar com objetos, provavelmente você encontrará algumas novas exceções. Se tentar acessar um atributo que não existe, recebe um `AttributeError`:
+Ao começar a trabalhar com objetos, provavelmente você encontrará algumas novas exceções. Se tentar acessar um [atributo](08-glossario.md#atributo) que não existe, recebe um `AttributeError`:
 
 ```python
 >>> p = Point()
@@ -17,7 +17,7 @@ Se não estiver certo sobre o tipo que um objeto é, pode perguntar:
 <class '__main__.Point'>
 ```
 
-Você também pode usar `isinstance` para verificar se um objeto é uma instância de uma classe:
+Você também pode usar `isinstance` para verificar se um objeto é uma [instância](08-glossario.md#instância) de uma [classe](08-glossario.md#classe):
 
 ```python
 >>> isinstance(p, Point)

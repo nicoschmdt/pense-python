@@ -2,7 +2,7 @@
 
 Às vezes é útil uma função alterar os objetos que recebe como parâmetros. Nesse caso, as mudanças são visíveis a quem chama a função. As funções que fazem isso chamam-se modificadores.
 
-`increment`, que acrescenta um dado número de segundos a um objeto `Time`, pode ser escrita naturalmente como um modificador. Aqui está um primeiro esboço:
+`increment`, que acrescenta um dado número de segundos a um objeto `Time`, pode ser escrita naturalmente como um [modificador](06-glossario.md#modificador). Aqui está um primeiro esboço:
 
 ```python
 def increment(time, seconds):

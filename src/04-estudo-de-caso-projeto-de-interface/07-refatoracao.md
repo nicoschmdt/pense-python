@@ -15,7 +15,7 @@ def arc(t, r, angle):
         t.lt(step_angle)
 ```
 
-A segunda metade desta função parece com a do polygon, mas não é possível reutilizar o polygon sem mudar a interface. Poderíamos generalizar polygon para receber um ângulo como um terceiro argumento, mas então polygon não seria mais um nome adequado! Em vez disso, vamos chamar a função mais geral de polyline:
+A segunda metade desta função parece com a do polygon, mas não é possível reutilizar o polygon sem mudar a [interface](11-glossario.md#interface). Poderíamos generalizar polygon para receber um ângulo como um terceiro argumento, mas então polygon não seria mais um nome adequado! Em vez disso, vamos chamar a função mais geral de polyline:
 
 ```python
 def polyline(t, n, length, angle):
@@ -45,6 +45,6 @@ def circle(t, r):
     arc(t, r, 360)
 ```
 
-Este processo – recompor um programa para melhorar interfaces e facilitar a reutilização do código – é chamado de refatoração. Neste caso, notamos que houve código semelhante em arc e polygon, então nós o “fatoramos” no polyline.
+Este processo – recompor um programa para melhorar interfaces e facilitar a reutilização do código – é chamado de [refatoração](11-glossario.md#refatoração). Neste caso, notamos que houve código semelhante em arc e polygon, então nós o “fatoramos” no polyline.
 
 Se tivéssemos planejado, poderíamos ter escrito polyline primeiro e evitado a refatoração, mas muitas vezes não sabemos o suficiente já no início de um projeto para projetar todas as interfaces. Quando começarmos a escrever código, entenderemos melhor o problema. Às vezes, a refatoração é um sinal de que aprendemos algo.

@@ -23,6 +23,6 @@ def avoids(word, forbidden):
 
 A função quase pode ser lida como uma frase em inglês: “word evita forbidden se não houver nenhuma letra proibida em word”.
 
-Usar `any` com uma expressão geradora é eficiente porque ela retorna imediatamente se encontrar um valor True, então não é preciso avaliar a sequência inteira.
+Usar `any` com uma [expressão geradora](10-glossario.md#expressão-geradora) é eficiente porque ela retorna imediatamente se encontrar um valor True, então não é preciso avaliar a sequência inteira.
 
 O Python oferece outra função integrada, `all`, que retorna True se todos os elementos da sequência forem True. Como exercício, use all para reescrever `uses_all` de “Busca”, na página 136.

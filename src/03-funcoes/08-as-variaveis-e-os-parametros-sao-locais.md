@@ -1,6 +1,6 @@
 ## 3.8 - As variáveis e os parâmetros são locais
 
-Quando você cria uma variável dentro de uma função, ela é local, ou seja, ela só existe dentro da função. Por exemplo:
+Quando você cria uma variável dentro de uma [função](13-glossario.md#função), ela é local, ou seja, ela só existe dentro da função. Por exemplo:
 
 
 ```python

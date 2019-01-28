@@ -8,11 +8,11 @@ A documentação usa uma sintaxe que pode ser confusa. Por exemplo, em `find(sub
 
 ### Exercício 8.2
 
-Há um método de string chamado `count`, que é semelhante à função em “Loop e contagem”, na página 123. Leia a documentação deste método e escreva uma invocação que conte o número de letras `'a'` em 'banana'.
+Há um método de string chamado `count`, que é semelhante à função em “Loop e contagem”, na página 123. Leia a documentação deste método e escreva uma [invocação](12-glossario.md#invocação) que conte o número de letras `'a'` em 'banana'.
 
 ### Exercício 8.3
 
-Uma fatia de string pode receber um terceiro índice que especifique o “tamanho do passo”; isto é, o número de espaços entre caracteres sucessivos. Um tamanho de passo 2 significa tomar um caractere e outro não; 3 significa tomar um e dois não etc.
+Uma [fatia](12-glossario.md#fatia) de string pode receber um terceiro [índice](12-glossario.md#índice) que especifique o “tamanho do passo”; isto é, o número de espaços entre caracteres sucessivos. Um tamanho de passo 2 significa tomar um caractere e outro não; 3 significa tomar um e dois não etc.
 
 ```python
 >>> fruit = 'banana'
