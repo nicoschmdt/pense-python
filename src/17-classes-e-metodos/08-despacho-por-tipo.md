@@ -21,7 +21,7 @@ Na seção anterior, acrescentamos dois objetos Time, mas você também pode que
 
 A função construída isinstance recebe um valor e um objeto de classe e retorna True se o valor for uma instância da classe.
 
-Se other for um objeto Time, `__add__` invoca `add_time`. Do contrário, assume que o parâmetro seja um número e invoca increment. Essa operação chama-se despacho por tipo porque despacha a operação a métodos diferentes, baseados no tipo dos argumentos.
+Se other for um objeto Time, `__add__` invoca `add_time`. Do contrário, assume que o parâmetro seja um número e invoca increment. Essa operação chama-se [despacho por tipo](12-glossario.md#despacho-por tipo) porque despacha a operação a métodos diferentes, baseados no tipo dos argumentos.
 
 Veja exemplos que usam o operador `+` com tipos diferentes:
 
@@ -41,7 +41,7 @@ Infelizmente, esta implementação da adição não é comutativa. Se o número 
 TypeError: unsupported operand type(s) for +: 'int' and 'instance'
 ```
 
-O problema é que, em vez de pedir ao objeto Time que adicione um número inteiro, o Python está pedindo que um número inteiro adicione um objeto Time, e ele não sabe como fazer isso. Entretanto, há uma solução inteligente para este problema: o método especial `__radd__`, que significa “adição à direita”. Esse método é invocado quando um objeto Time aparece no lado direito do operador +. Aqui está a definição:
+O problema é que, em vez de pedir ao objeto Time que adicione um número inteiro, o Python está pedindo que um número inteiro adicione um objeto Time, e ele não sabe como fazer isso. Entretanto, há uma solução inteligente para este problema: o [método](12-glossario.md#método) especial `__radd__`, que significa “adição à direita”. Esse método é invocado quando um objeto Time aparece no lado direito do operador +. Aqui está a definição:
 
 ```python
 # dentro da classe Time:

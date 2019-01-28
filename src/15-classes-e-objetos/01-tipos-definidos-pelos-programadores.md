@@ -14,7 +14,7 @@ Há várias formas para representar pontos no Python:
 
 Criar um tipo é mais complicado que outras opções, mas tem vantagens que logo ficarão evidentes.
 
-Um tipo definido pelo programador também é chamado de classe. Uma definição de classe pode ser assim:
+Um tipo definido pelo programador também é chamado de [classe](08-glossario.md#classe). Uma definição de classe pode ser assim:
 
 ```python
 class Point:
@@ -23,7 +23,7 @@ class Point:
 
 O cabeçalho indica que a nova classe se chama `Point`. O corpo é uma docstring que explica para que a classe serve. Você pode definir variáveis e métodos dentro de uma definição de classe, mas voltaremos a isso depois.
 
-Definir uma classe denominada `Point` cria um objeto de classe:
+Definir uma classe denominada `Point` cria um [objeto de classe](08-glossario.md#objeto-de classe):
 
 ```python
 >>> Point
@@ -43,7 +43,7 @@ O objeto de classe é como uma fábrica para criar objetos. Para criar um `Point
 
 O valor de retorno é uma referência a um objeto `Point`, ao qual atribuímos blank.
 
-Criar um objeto chama-se instanciação, e o objeto é uma instância da classe.
+Criar um objeto chama-se instanciação, e o objeto é uma [instância](08-glossario.md#instância) da classe.
 
 Quando você exibe uma instância, o Python diz a que classe ela pertence e onde está armazenada na memória (o prefixo o 0x significa que o número seguinte está em formato hexadecimal).
 

@@ -1,6 +1,6 @@
 ## 15.2 - Atributos
 
-Você pode atribuir valores a uma instância usando a notação de ponto:
+Você pode atribuir valores a uma [instância](08-glossario.md#instância) usando a notação de ponto:
 
 ```python
 >>> blank.x = 3.0
@@ -11,12 +11,12 @@ Essa sintaxe é semelhante à usada para selecionar uma variável de um módulo,
 
 Em inglês, quando é um substantivo, a palavra “AT-trib-ute” é pronunciada com ênfase na primeira sílaba, ao contrário de “a-TRIB-ute”, que é um verbo.
 
-O diagrama seguinte mostra o resultado dessas atribuições. Um diagrama de estado que mostra um objeto e seus atributos chama-se diagrama de objeto; veja a Figura 15.1.
+O diagrama seguinte mostra o resultado dessas atribuições. Um diagrama de estado que mostra um objeto e seus atributos chama-se [diagrama de objeto](08-glossario.md#diagrama-de objeto); veja a Figura 15.1.
 
 ![Figura 15.1 – Diagrama de um objeto Point](/fig/tnkp_1501.png).
 <br>_Figura 15.1 – Diagrama de um objeto_ `Point`.
 
-A variável blank refere-se a um objeto `Point`, que contém dois atributos. Cada atributo refere-se a um número de ponto flutuante.
+A variável blank refere-se a um objeto `Point`, que contém dois atributos. Cada [atributo](08-glossario.md#atributo) refere-se a um número de ponto flutuante.
 
 Você pode ler o valor de um atributo usando a mesma sintaxe:
 

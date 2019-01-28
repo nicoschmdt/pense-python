@@ -11,7 +11,7 @@ def square(t, length):
 square(bob, 100)
 ```
 
-Acrescentar um parâmetro a uma função chama-se generalização porque ele torna a função mais geral: na versão anterior, o quadrado é sempre do mesmo tamanho; nesta versão, pode ser de qualquer tamanho.
+Acrescentar um parâmetro a uma função chama-se [generalização](11-glossario.md#generalização) porque ele torna a função mais geral: na versão anterior, o quadrado é sempre do mesmo tamanho; nesta versão, pode ser de qualquer tamanho.
 
 O próximo passo também é uma generalização. Em vez de desenhar quadrados, polygon desenha polígonos regulares com qualquer número de lados. Aqui está uma solução:
 

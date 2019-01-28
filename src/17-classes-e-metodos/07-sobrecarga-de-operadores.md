@@ -1,6 +1,6 @@
 ## 17.7 - Sobrecarga de operadores
 
-Ao definir outros métodos especiais, você pode especificar o comportamento de operadores nos tipos definidos pelo programador. Por exemplo, se você definir um método chamado `__add__` para a classe Time de Time, pode usar o operador + em objetos Time.
+Ao definir outros métodos especiais, você pode especificar o comportamento de operadores nos tipos definidos pelo programador. Por exemplo, se você definir um [método](12-glossario.md#método) chamado `__add__` para a classe Time de Time, pode usar o operador + em objetos Time.
 
 A definição pode ser assim:
 

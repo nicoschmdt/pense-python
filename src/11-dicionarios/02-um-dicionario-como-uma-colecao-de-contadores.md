@@ -1,4 +1,4 @@
-## 11.2 - Um dicionário como uma coleção de contadores
+## 11.2 - Um [dicionário](09-glossario.md#dicionário) como uma coleção de contadores
 
 Suponha que você receba uma string e queira contar quantas vezes cada letra aparece nela. Há vários modos de fazer isso:
 
@@ -6,11 +6,11 @@ Suponha que você receba uma string e queira contar quantas vezes cada letra apa
 
 2. Você pode criar uma lista com 26 elementos. Então pode converter cada caractere em um número (com a função integrada ord), usar o número como índice na lista e incrementar o respectivo contador.
 
-3. Você pode criar um dicionário com caracteres como chaves e contadores como valores correspondentes. Na primeira vez que visse um caractere, você acrescentaria um item ao dicionário. Depois disso, incrementaria o valor de um item existente.
+3. Você pode criar um dicionário com caracteres como chaves e contadores como valores correspondentes. Na primeira vez que visse um caractere, você acrescentaria um [item](09-glossario.md#item) ao dicionário. Depois disso, incrementaria o [valor](09-glossario.md#valor) de um item existente.
 
 Cada uma dessas opções executa o mesmo cálculo, mas o implementa de forma diferente.
 
-Uma implementação é um modo de executar um cálculo; algumas implementações são melhores que outras. Por exemplo, uma vantagem da implementação de dicionários é que não precisamos saber de antemão quais letras aparecem na string e só é preciso criar espaço para as letras que realmente venham a aparecer.
+Uma [implementação](09-glossario.md#implementação) é um modo de executar um cálculo; algumas implementações são melhores que outras. Por exemplo, uma vantagem da implementação de dicionários é que não precisamos saber de antemão quais letras aparecem na string e só é preciso criar espaço para as letras que realmente venham a aparecer.
 
 O código poderia ser assim:
 
@@ -27,7 +27,7 @@ def histogram(s):
 
 O nome da função é `histogram`, um termo estatístico para uma coleção de contadores (ou frequências).
 
-A primeira linha da função cria um dicionário vazio. O loop for atravessa a string. Cada vez que passa pelo loop, se o caractere c não estiver no dicionário, criamos um item com a chave c e o valor inicial 1 (pois já vimos esta letra uma vez). Se o c já estiver no dicionário, incrementamos d [c].
+A primeira linha da função cria um dicionário vazio. O loop for atravessa a string. Cada vez que passa pelo loop, se o caractere c não estiver no dicionário, criamos um item com a [chave](09-glossario.md#chave) c e o valor inicial 1 (pois já vimos esta letra uma vez). Se o c já estiver no dicionário, incrementamos d [c].
 
 Funciona assim:
 

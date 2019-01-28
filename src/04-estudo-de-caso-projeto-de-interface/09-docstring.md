@@ -1,6 +1,6 @@
-## 4.9 - docstring
+## 4.9 - [docstring](11-glossario.md#docstring)
 
-Uma docstring é uma string no início de uma função que explica a interface (“doc” é uma abreviação para “documentação”). Aqui está um exemplo:
+Uma docstring é uma string no início de uma função que explica a [interface](11-glossario.md#interface) (“doc” é uma abreviação para “documentação”). Aqui está um exemplo:
 
 ```python
 def polyline(t, n, length, angle):

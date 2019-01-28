@@ -11,6 +11,6 @@ A Figura 5.1 mostra um diagrama da pilha para `countdown` chamado com n = 3.
 
 Como de hábito, o topo da pilha é o frame de `__main__`. Está vazio porque não criamos nenhuma variável em `__main__` nem passamos argumentos a ela.
 
-Os quatro frames do countdown têm valores diferentes para o parâmetro `n`. O fundo da pilha, onde `n = 0`, é chamado caso-base. Ele não faz uma chamada recursiva, então não há mais frames.
+Os quatro frames do countdown têm valores diferentes para o parâmetro `n`. O fundo da pilha, onde `n = 0`, é chamado [caso-base](13-glossario.md#caso-base). Ele não faz uma chamada recursiva, então não há mais frames.
 
 Como exercício, desenhe um diagrama da pilha para `print_n` chamado com `s = 'Hello'` e `n = 2`. Então escreva uma função chamada `do_n` que tome um objeto de função e um número `n` como argumentos e que chame a respectiva função `n` vezes.

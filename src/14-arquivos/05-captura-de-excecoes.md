@@ -14,7 +14,7 @@ Se não tiver permissão para acessar um arquivo:
 PermissionError: [Errno 13] Permission denied: '/etc/passwd'
 ```
 
-E se tentar abrir um diretório para leitura, recebe
+E se tentar abrir um [diretório](11-glossario.md#diretório) para leitura, recebe
 
 ```python
 >>> fin = open('/home')
@@ -34,4 +34,4 @@ except:
 
 O Python começa executando a cláusula `try`. Se tudo for bem, ele ignora a cláusula `except` e prossegue. Se ocorrer uma exceção, o programa sai da cláusula `try` e executa a cláusula `except`.
 
-Lidar com exceções usando uma instrução `try` chama-se capturar uma exceção. Neste exemplo, a cláusula `except` exibe uma mensagem de erro que não é muito útil. Em geral, a captura de uma exceção oferece a oportunidade de corrigir o problema ou tentar novamente, ou, ao menos, de terminar o programa adequadamente.
+Lidar com exceções usando uma instrução `try` chama-se [capturar](11-glossario.md#capturar) uma exceção. Neste exemplo, a cláusula `except` exibe uma mensagem de erro que não é muito útil. Em geral, a captura de uma exceção oferece a oportunidade de corrigir o problema ou tentar novamente, ou, ao menos, de terminar o programa adequadamente.

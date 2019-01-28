@@ -45,7 +45,7 @@ E então você está de volta ao `__main__`. Então a saída completa será assi
 Blastoff!
 ```
 
-Uma função que chama a si mesma é dita recursiva; o processo para executá-la é a recursividade.
+Uma função que chama a si mesma é dita recursiva; o processo para executá-la é a [recursividade](13-glossario.md#recursividade).
 
 Como em outro exemplo, podemos escrever uma função que exiba uma string n vezes:
 

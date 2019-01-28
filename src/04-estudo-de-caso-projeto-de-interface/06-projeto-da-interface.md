@@ -1,4 +1,4 @@
-## 4.6 - Projeto da interface
+## 4.6 - Projeto da [interface](11-glossario.md#interface)
 
 O próximo passo é escrever circle, que recebe um raio r, como parâmetro. Aqui está uma solução simples que usa o polygon para desenhar um polígono de 50 lados:
 

@@ -1,6 +1,6 @@
 ## 12.5 - Listas e tuplas
 
-`zip` é uma função integrada que recebe duas ou mais sequências e devolve uma lista de tuplas onde cada tupla contém um elemento de cada sequência. O nome da função tem a ver com o zíper, que se junta e encaixa duas carreiras de dentes.
+`zip` é uma função integrada que recebe duas ou mais sequências e devolve uma lista de tuplas onde cada [tupla](09-glossario.md#tupla) contém um elemento de cada sequência. O nome da função tem a ver com o zíper, que se junta e encaixa duas carreiras de dentes.
 
 Este exemplo encaixa uma string e uma lista:
 
@@ -22,7 +22,7 @@ O resultado é um objeto `zip` que sabe como percorrer os pares. O uso mais comu
 ('c', 2)
 ```
 
-Um objeto `zip` é um tipo de iterador, ou seja, qualquer objeto que percorre ou itera sobre uma sequência. Iteradores são semelhantes a listas em alguns aspectos, mas, ao contrário de listas, não é possível usar um índice para selecionar um elemento de um iterador.
+Um objeto `zip` é um tipo de [iterador](09-glossario.md#iterador), ou seja, qualquer objeto que percorre ou itera sobre uma sequência. Iteradores são semelhantes a listas em alguns aspectos, mas, ao contrário de listas, não é possível usar um índice para selecionar um elemento de um iterador.
 
 Se quiser usar operadores e métodos de lista, você pode usar um objeto `zip` para fazer uma lista:
 

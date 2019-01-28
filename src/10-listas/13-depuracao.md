@@ -23,7 +23,7 @@ O uso descuidado de listas (e de outros objetos mutáveis) pode levar a longas h
 
 2. Escolha o termo e fique com ele.
 
-        Parte do problema com listas é que há muitas formas de fazer coisas com elas. Por exemplo, para remover um elemento de uma lista você pode usar pop, remove, del ou até uma atribuição de fatia.
+        Parte do problema com listas é que há muitas formas de fazer coisas com elas. Por exemplo, para remover um [elemento](14-glossario.md#elemento) de uma [lista](14-glossario.md#lista) você pode usar pop, remove, del ou até uma atribuição de fatia.
 
         Para adicionar um elemento você pode usar o método append ou o operador +. Assumindo que t é uma lista e x é um elemento da lista, isto está correto:
 
@@ -40,7 +40,7 @@ O uso descuidado de listas (e de outros objetos mutáveis) pode levar a longas h
 
         Experimente cada um desses exemplos no modo interativo para conferir se você entendeu o que fazem. Note que apenas o último causa um erro de tempo de execução; os outros três são legais, mas eles fazem a coisa errada.
 
-3. Faça cópias para evitar o uso de alias.
+3. Faça cópias para evitar o uso de [alias](14-glossario.md#alias).
 
         Se quiser usar um método como sort, que altera o argumento, mas precisa manter a lista original, você pode fazer uma cópia:
 

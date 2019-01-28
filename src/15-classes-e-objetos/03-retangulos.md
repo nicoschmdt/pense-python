@@ -1,6 +1,6 @@
 ## 15.3 - Retângulos
 
-Às vezes, é óbvio quais deveriam ser os atributos de um objeto, mas outras é preciso decidir entre as possibilidades. Por exemplo, vamos supor que você esteja criando uma classe para representar retângulos. Que atributos usaria para especificar a posição e o tamanho de um retângulo? Você pode ignorar ângulo; para manter as coisas simples, suponha que o retângulo seja vertical ou horizontal.
+Às vezes, é óbvio quais deveriam ser os atributos de um objeto, mas outras é preciso decidir entre as possibilidades. Por exemplo, vamos supor que você esteja criando uma [classe](08-glossario.md#classe) para representar retângulos. Que atributos usaria para especificar a posição e o tamanho de um retângulo? Você pode ignorar ângulo; para manter as coisas simples, suponha que o retângulo seja vertical ou horizontal.
 
 Há duas possibilidades, no mínimo:
 
@@ -21,7 +21,7 @@ class Rectangle:
 
 A docstring lista os atributos: width e height são números; corner é um objeto `Point` que especifica o canto inferior esquerdo.
 
-Para representar um retângulo, você tem que instanciar um objeto `Rectangle` e atribuir valores aos atributos:
+Para representar um retângulo, você tem que [instanciar](08-glossario.md#instanciar) um objeto `Rectangle` e atribuir valores aos atributos:
 
 ```python
 box = Rectangle()
@@ -32,7 +32,7 @@ box.corner.x = 0.0
 box.corner.y = 0.0
 ```
 
-A expressão `box.corner.x` significa “Vá ao objeto ao qual `box` se refere e pegue o atributo denominado `corner`; então vá a este objeto e pegue o atributo denominado `x`”.
+A expressão `box.corner.x` significa “Vá ao objeto ao qual `box` se refere e pegue o [atributo](08-glossario.md#atributo) denominado `corner`; então vá a este objeto e pegue o atributo denominado `x`”.
 
 A Figura 15.2 mostra o estado deste objeto. Um objeto que é um atributo de outro objeto é integrado.
 

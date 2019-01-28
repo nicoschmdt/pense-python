@@ -10,7 +10,7 @@ Solução: [http://thinkpython2.com/code/Time2_soln.py](http://thinkpython2.com/
 
 Este exercício é uma história com moral sobre um dos erros mais comuns e difíceis de encontrar no Python. Escreva uma definição de classe chamada Kangaroo com os seguintes métodos:
 
-1. Um método `__init__` que inicialize um atributo chamado `pouch_contents`  em uma lista vazia.
+1. Um [método](12-glossario.md#método) `__init__` que inicialize um atributo chamado `pouch_contents`  em uma lista vazia.
 
 2. Um método chamado `put_in_pouch` que receba um objeto de qualquer tipo e o acrescente a `pouch_contents`.
 

@@ -2,7 +2,7 @@
 
 Para os exercícios deste capítulo vamos usar uma lista de palavras em inglês. Há muitas listas de palavras disponíveis na internet, mas a mais conveniente ao nosso propósito é uma das listas de palavras disponibilizadas em domínio público por Grady Ward como parte do projeto lexical Moby (ver [http://wikipedia.org/wiki/Moby\_Project](http://wikipedia.org/wiki/Moby\_Project)). É uma lista de 113.809 palavras cruzadas oficiais; isto é, as palavras que se consideram válidas em quebra-cabeças de palavras cruzadas e outros jogos de palavras. Na coleção Moby, o nome do arquivo é 113809of.fic; você pode baixar uma cópia, com um nome mais simples como words.txt, de [http://thinkpython2.com/code/words.txt](http://thinkpython2.com/code/words.txt).
 
-Este arquivo está em texto simples, então você pode abri-lo com um editor de texto, mas também pode lê-lo no Python. A função integrada open recebe o nome do arquivo como um parâmetro e retorna um objeto de arquivo que você pode usar para ler o arquivo.
+Este arquivo está em texto simples, então você pode abri-lo com um editor de texto, mas também pode lê-lo no Python. A função integrada open recebe o nome do arquivo como um parâmetro e retorna um [objeto de arquivo](06-glossario.md#objeto-de arquivo) que você pode usar para ler o arquivo.
 
 ```python
 >>> fin = open('words.txt')

@@ -38,7 +38,7 @@ def absolute_value(x):
 
 Como essas instruções return estão em uma condicional alternativa, apenas uma é executada.
 
-Logo que uma instrução de retorno seja executada, a função termina sem executar nenhuma instrução subsequente. Qualquer código que apareça depois de uma instrução return, ou em qualquer outro lugar que o fluxo da execução não atinja, é chamado de código morto.
+Logo que uma instrução de retorno seja executada, a função termina sem executar nenhuma instrução subsequente. Qualquer código que apareça depois de uma instrução return, ou em qualquer outro lugar que o fluxo da execução não atinja, é chamado de [código morto](10-glossario.md#código-morto).
 
 Em uma função com resultado, é uma boa ideia garantir que cada caminho possível pelo programa atinja uma instrução return. Por exemplo:
 

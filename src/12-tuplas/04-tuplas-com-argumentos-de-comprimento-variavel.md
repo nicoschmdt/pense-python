@@ -1,6 +1,6 @@
 ## 12.4 - Tuplas com argumentos de comprimento variável
 
-As funções podem receber um número variável de argumentos. Um nome de parâmetro que comece com `*` reúne vários argumentos em uma tupla. Por exemplo, `printall` recebe qualquer número de argumentos e os exibe:
+As funções podem receber um número variável de argumentos. Um nome de parâmetro que comece com `*` reúne vários argumentos em uma [tupla](09-glossario.md#tupla). Por exemplo, `printall` recebe qualquer número de argumentos e os exibe:
 
 ```python
 def printall(*args):

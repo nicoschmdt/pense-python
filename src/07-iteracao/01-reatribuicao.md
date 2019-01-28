@@ -13,7 +13,7 @@ Pode ser que você já tenha descoberto que é permitido fazer mais de uma atrib
 
 A primeira vez que exibimos x, seu valor é 5; na segunda vez, seu valor é 7.
 
-A Figura 7.1 mostra que a reatribuição parece um diagrama de estado.
+A Figura 7.1 mostra que a [reatribuição](08-glossario.md#reatribuição) parece um diagrama de estado.
 
 Neste ponto quero tratar de uma fonte comum de confusão. Como o Python usa o sinal de igual (=) para atribuição, é tentador interpretar uma afirmação como a = b como uma proposição matemática de igualdade; isto é, a declaração de que a e b são iguais. Mas esta é uma interpretação equivocada.
 

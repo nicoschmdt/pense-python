@@ -2,7 +2,7 @@
 
 Caso o objetivo de dividir um programa em funções não esteja claro, saiba que na verdade há várias razões:
 
-* Criar uma nova função dá a oportunidade de nomear um grupo de instruções, o que deixa o seu programa mais fácil de ler e de depurar.
+* Criar uma nova [função](13-glossario.md#função) dá a oportunidade de nomear um grupo de instruções, o que deixa o seu programa mais fácil de ler e de depurar.
 
 * As funções podem tornar um programa menor, eliminando o código repetitivo. Depois, se fizer alguma alteração, basta fazê-la em um lugar só.
 

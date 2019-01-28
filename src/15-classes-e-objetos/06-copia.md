@@ -37,14 +37,14 @@ False
 True
 ```
 
-A Figura 15.3 mostra como fica o diagrama de objeto. Esta operação chama-se cópia superficial porque copia o objeto e qualquer referência que contenha, mas não os objetos integrados.
+A Figura 15.3 mostra como fica o [diagrama de objeto](08-glossario.md#diagrama-de objeto). Esta operação chama-se [cópia superficial](08-glossario.md#cópia-superficial) porque copia o objeto e qualquer referência que contenha, mas não os objetos integrados.
 
 ![Figura 15.3 – Diagrama: dois objetos Rectangle compartilhando o mesmo Point](/fig/tnkp_1503.png).
 <br>_Figura 15.3 – Diagrama: dois objetos_ `Rectangle` _compartilhando o mesmo_ `Point`.
 
 Para a maior parte das aplicações, não é isso que você quer. Nesse exemplo, invocar `grow_rectangle` em um dos Rectangles não afetaria o outro, mas invocar `move_rectangle` em qualquer um deles afetaria a ambos! Esse comportamento é confuso e propenso a erros.
 
-Felizmente, o módulo `copy` oferece um método chamado `deepcopy` que copia não só o objeto, mas também os objetos aos quais ele se refere, e os objetos aos quais estes se referem, e assim por diante. Você não se surpreenderá ao descobrir que esta operação se chama cópia profunda.
+Felizmente, o módulo `copy` oferece um método chamado `deepcopy` que copia não só o objeto, mas também os objetos aos quais ele se refere, e os objetos aos quais estes se referem, e assim por diante. Você não se surpreenderá ao descobrir que esta operação se chama [cópia profunda](08-glossario.md#cópia-profunda).
 
 ```python
 >>> box3 = copy.deepcopy(box)

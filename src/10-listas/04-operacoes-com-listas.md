@@ -10,7 +10,7 @@ O operador `+` concatena listas:
 [1, 2, 3, 4, 5, 6]
 ```
 
-O operador `*` repete a lista um dado número de vezes:
+O operador `*` repete a [lista](14-glossario.md#lista) um dado número de vezes:
 
 ```python
 >>> [0] * 4

@@ -1,6 +1,6 @@
 ## 17.5 - Método init
 
-O método `__init__` (abreviação da palavra em inglês para “inicialização”) é um método especial, invocado quando um objeto é instanciado. Seu nome completo é `__init__` (dois caracteres de sublinhado, seguidos de init, e mais dois sublinhados). Um método `__init__` da classe Time pode ser algo assim:
+O [método](12-glossario.md#método) `__init__` (abreviação da palavra em inglês para “inicialização”) é um método especial, invocado quando um objeto é instanciado. Seu nome completo é `__init__` (dois caracteres de sublinhado, seguidos de init, e mais dois sublinhados). Um método `__init__` da classe Time pode ser algo assim:
 
 ```python
 # dentro da classe Time:

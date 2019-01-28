@@ -12,7 +12,7 @@ O operador de fatiamento também funciona com listas:
 ['d', 'e', 'f']
 ```
 
-Se você omitir o primeiro índice, a fatia começa no início. Se você omitir o segundo, a fatia vai até o final. Se você omitir ambos, a fatia é uma cópia da lista inteira.
+Se você omitir o primeiro índice, a fatia começa no início. Se você omitir o segundo, a fatia vai até o final. Se você omitir ambos, a fatia é uma cópia da [lista](14-glossario.md#lista) inteira.
 
 ```python
 >>> t[:]

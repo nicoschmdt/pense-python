@@ -1,6 +1,6 @@
 ## 12.6 - Dicionários e tuplas
 
-Os dicionários têm um método chamado `items` que devolve uma sequência de tuplas, onde cada tupla é um par chave-valor:
+Os dicionários têm um método chamado `items` que devolve uma sequência de tuplas, onde cada [tupla](09-glossario.md#tupla) é um par chave-valor:
 
 ```python
 >>> d = {'a':0, 'b':1, 'c':2}
@@ -9,7 +9,7 @@ Os dicionários têm um método chamado `items` que devolve uma sequência de tu
 dict_items([('c', 2), ('a', 0), ('b', 1)])
 ```
 
-O resultado é um objeto `dict_items`, que é um iterador que percorre os pares chave-valor. Você pode usá-lo em um loop `for`, desta forma:
+O resultado é um objeto `dict_items`, que é um [iterador](09-glossario.md#iterador) que percorre os pares chave-valor. Você pode usá-lo em um loop `for`, desta forma:
 
 ```python
 >>> for key, value in d.items():

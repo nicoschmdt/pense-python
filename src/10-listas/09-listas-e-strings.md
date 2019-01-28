@@ -1,6 +1,6 @@
 ## 10.9 - Listas e strings
 
-Uma string é uma sequência de caracteres e uma lista é uma sequência de valores, mas uma lista de caracteres não é a mesma coisa que uma string. Para converter uma string em uma lista de caracteres, você pode usar list:
+Uma string é uma sequência de caracteres e uma [lista](14-glossario.md#lista) é uma sequência de valores, mas uma lista de caracteres não é a mesma coisa que uma string. Para converter uma string em uma lista de caracteres, você pode usar list:
 
 ```python
 >>> s = 'spam'
@@ -21,7 +21,7 @@ A função `list` quebra uma string em letras individuais. Se você quiser quebr
 ['pining', 'for', 'the', 'fjords']
 ```
 
-Um argumento opcional chamado delimiter especifica quais caracteres podem ser usados para demonstrar os limites das palavras. O exemplo seguinte usa um hífen como delimitador:
+Um argumento opcional chamado delimiter especifica quais caracteres podem ser usados para demonstrar os limites das palavras. O exemplo seguinte usa um hífen como [delimitador](14-glossario.md#delimitador):
 
 ```python
 >>> s = 'spam-spam-spam'

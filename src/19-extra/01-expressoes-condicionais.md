@@ -11,7 +11,7 @@ else:
 
 Esta instrução verifica se x é positivo. Nesse caso, ela calcula math.log. Do contrário, math.log causaria um ValueError. Para evitar interromper o programa, geramos um “NaN”, que é um valor de ponto flutuante especial que representa um “Não número”.
 
-Podemos escrever essa instrução de forma mais concisa usando uma expressão condicional:
+Podemos escrever essa instrução de forma mais concisa usando uma [expressão condicional](10-glossario.md#expressão-condicional):
 
 ```python
 y = math.log(x) if x > 0 else float('nan')

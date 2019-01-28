@@ -1,4 +1,4 @@
-## 8.1 - Uma string é uma sequência
+## 8.1 - Uma string é uma [sequência](12-glossario.md#sequência)
 
 Uma string é uma sequência de caracteres. Você pode acessar um caractere de cada vez com o operador de colchete:
 
@@ -9,7 +9,7 @@ Uma string é uma sequência de caracteres. Você pode acessar um caractere de c
 
 A segunda instrução seleciona o caractere número 1 de fruit e o atribui a letter.
 
-A expressão entre colchetes chama-se índice. O índice aponta qual caractere da sequência você quer (daí o nome).
+A expressão entre colchetes chama-se [índice](12-glossario.md#índice). O índice aponta qual caractere da sequência você quer (daí o nome).
 
 
 ```python

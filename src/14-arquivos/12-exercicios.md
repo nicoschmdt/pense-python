@@ -4,7 +4,7 @@
 
 Escreva uma função chamada sed que receba como argumentos uma string-padrão, uma string de substituição e dois nomes de arquivo; ela deve ler o primeiro arquivo e escrever o conteúdo no segundo arquivo (criando-o, se necessário). Se a string-padrão aparecer em algum lugar do arquivo, ela deve ser substituída pela string de substituição.
 
-Se ocorrer um erro durante a abertura, leitura, escrita ou fechamento dos arquivos, seu programa deve capturar a exceção, exibir uma mensagem de erro e encerrar.
+Se ocorrer um erro durante a abertura, leitura, escrita ou fechamento dos arquivos, seu programa deve [capturar](11-glossario.md#capturar) a exceção, exibir uma mensagem de erro e encerrar.
 
 Solução: [http://thinkpython2.com/code/sed.py](http://thinkpython2.com/code/sed.py).
 
@@ -20,7 +20,7 @@ Solução: [http://thinkpython2.com/code/anagram_db.py](http://thinkpython2.com/
 
 Em uma grande coleção de arquivos MP3 pode haver mais de uma cópia da mesma música, guardada em diretórios diferentes ou com nomes de arquivo diferentes. A meta deste exercício é procurar duplicatas.
 
-1. Escreva um programa que procure um diretório e todos os seus subdiretórios, recursivamente, e retorne uma lista de caminhos completos de todos os arquivos com um dado sufixo (como .mp3). Dica: os.path fornece várias funções úteis para manipular nomes de caminhos e de arquivos.
+1. Escreva um programa que procure um [diretório](11-glossario.md#diretório) e todos os seus subdiretórios, recursivamente, e retorne uma lista de caminhos completos de todos os arquivos com um dado sufixo (como .mp3). Dica: os.path fornece várias funções úteis para manipular nomes de caminhos e de arquivos.
 
 2. Para reconhecer duplicatas, você pode usar md5sum para calcular uma “soma de controle” para cada arquivo. Se dois arquivos tiverem a mesma soma de controle, provavelmente têm o mesmo conteúdo.
 

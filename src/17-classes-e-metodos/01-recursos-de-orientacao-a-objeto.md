@@ -1,6 +1,6 @@
 ## 17.1 - Recursos de orientação a objeto
 
-Python é uma linguagem de programação orientada a objeto, ou seja, ela oferece recursos de programação orientada a objeto que tem a seguintes características:
+Python é uma linguagem de [programação orientada a objeto](12-glossario.md#programação-orientada a objeto), ou seja, ela oferece recursos de programação orientada a objeto que tem a seguintes características:
 
 * Os programas incluem definições de classes e métodos.
 
@@ -14,7 +14,7 @@ Por enquanto, não aproveitamos os recursos que o Python oferece para programaç
 
 Por exemplo, em `Time1.py` não há nenhuma conexão óbvia entre a definição de classe e as definições de função que seguem. Com um pouco de atenção, é evidente que cada função recebe pelo menos um objeto Time como argumento.
 
-Essa observação é a motivação para usar métodos; um método é uma função associada a determinada classe. Vimos métodos de string, listas, dicionários e tuplas. Neste capítulo definiremos métodos para tipos definidos pelo programador.
+Essa observação é a motivação para usar métodos; um [método](12-glossario.md#método) é uma função associada a determinada classe. Vimos métodos de string, listas, dicionários e tuplas. Neste capítulo definiremos métodos para tipos definidos pelo programador.
 
 Métodos são semanticamente o mesmo que funções, mas há duas diferenças sintáticas:
 

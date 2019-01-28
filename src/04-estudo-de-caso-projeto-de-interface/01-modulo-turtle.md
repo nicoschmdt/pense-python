@@ -28,7 +28,7 @@ Isto significa que bob se refere a um objeto com o tipo Turtle definido no módu
 
 mainloop diz que a janela deve esperar que o usuário faça algo, embora neste caso não haja muito a fazer, exceto fechar a janela.
 
-Uma vez que tenha criado o Turtle, você pode chamar um método para movê-lo pela janela. Método é semelhante a uma função, mas usa uma sintaxe ligeiramente diferente. Por exemplo, para mover o turtle para a frente:
+Uma vez que tenha criado o Turtle, você pode chamar um [método](11-glossario.md#método) para movê-lo pela janela. Método é semelhante a uma função, mas usa uma sintaxe ligeiramente diferente. Por exemplo, para mover o turtle para a frente:
 
 ```python
 bob.fd(100)

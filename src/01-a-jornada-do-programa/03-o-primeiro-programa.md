@@ -1,4 +1,4 @@
-## 1.3 - O primeiro programa
+## 1.3 - O primeiro [programa](08-glossario.md#programa)
 
 Tradicionalmente, o primeiro programa que se escreve em uma nova linguagem chama-se “Hello, World!”, porque tudo o que faz é exibir as palavras “Hello, World!” na tela. No Python, ele se parece com isto:
 
@@ -6,7 +6,7 @@ Tradicionalmente, o primeiro programa que se escreve em uma nova linguagem chama
 >>> print('Hello, World!')
 ```
 
-Este é um exemplo de uma instrução print (instrução de impressão), embora na realidade ela não imprima nada em papel. Ela exibe um resultado na tela. Nesse caso, o resultado são as palavras:
+Este é um exemplo de uma [instrução print](08-glossario.md#instrução-print) (instrução de impressão), embora na realidade ela não imprima nada em papel. Ela exibe um resultado na tela. Nesse caso, o resultado são as palavras:
 
 ```python
 Hello, World!

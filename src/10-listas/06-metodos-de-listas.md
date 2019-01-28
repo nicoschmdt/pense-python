@@ -1,6 +1,6 @@
 ## 10.6 - Métodos de listas
 
-O Python oferece métodos que operam em listas. Por exemplo, `append` adiciona um novo elemento ao fim de uma lista:
+O Python oferece métodos que operam em listas. Por exemplo, `append` adiciona um novo [elemento](14-glossario.md#elemento) ao fim de uma [lista](14-glossario.md#lista):
 
 ```python
 >>> t = ['a', 'b', 'c']

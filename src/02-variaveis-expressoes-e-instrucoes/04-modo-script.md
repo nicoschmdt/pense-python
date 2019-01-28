@@ -1,8 +1,8 @@
-## 2.4 - Modo script
+## 2.4 - Modo [script](09-glossario.md#script)
 
-Até agora executamos o Python no modo interativo, no qual você interage diretamente com o interpretador. O modo interativo é uma boa forma de começar, mas se estiver trabalhando com mais do que algumas linhas do código, o processo pode ficar desorganizado.
+Até agora executamos o Python no [modo interativo](09-glossario.md#modo-interativo), no qual você interage diretamente com o interpretador. O modo interativo é uma boa forma de começar, mas se estiver trabalhando com mais do que algumas linhas do código, o processo pode ficar desorganizado.
 
-A alternativa é salvar o código em um arquivo chamado script e então executar o interpretador no modo script para executá-lo. Por convenção, os scripts no Python têm nomes que terminam com .py.
+A alternativa é salvar o código em um arquivo chamado script e então [executar](09-glossario.md#executar) o interpretador no [modo script](09-glossario.md#modo-script) para executá-lo. Por convenção, os scripts no Python têm nomes que terminam com .py.
 
 Se souber como criar e executar um script no seu computador, você está pronto. Senão, recomendo usar o PythonAnywhere novamente. Inseri instruções sobre como executar programas no modo script em [http://tinyurl.com/thinkpython2e](http://tinyurl.com/thinkpython2e).
 
@@ -16,7 +16,7 @@ Por exemplo, se estiver usando o Python como uma calculadora, você poderia digi
 42.182
 ```
 
-A primeira linha atribui um valor a miles, mas não tem efeito visível. A segunda linha é uma expressão, então o interpretador a avalia e exibe o resultado. No fim, chega-se ao resultado de que uma maratona tem aproximadamente 42 quilômetros.
+A primeira linha atribui um valor a miles, mas não tem efeito visível. A segunda linha é uma [expressão](09-glossario.md#expressão), então o interpretador a avalia e exibe o resultado. No fim, chega-se ao resultado de que uma maratona tem aproximadamente 42 quilômetros.
 
 Mas se você digitar o mesmo código em um script e executá-lo, não recebe nenhuma saída. Uma expressão, por conta própria, não tem efeito visível no modo script. O Python, na verdade, avalia a expressão, mas não exibe o valor a menos que você especifique:
 
@@ -27,7 +27,7 @@ print(miles * 1.61)
 
 Este comportamento pode confundir um pouco no início.
 
-Um script normalmente contém uma sequência de instruções. Se houver mais de uma instrução, os resultados aparecem um após o outro, conforme as instruções sejam executadas.
+Um script normalmente contém uma sequência de instruções. Se houver mais de uma [instrução](09-glossario.md#instrução), os resultados aparecem um após o outro, conforme as instruções sejam executadas.
 
 Por exemplo, o script
 
@@ -43,7 +43,7 @@ produz a saída
 2
 ```
 
-A instrução de atribuição não produz nenhuma saída.
+A instrução de [atribuição](09-glossario.md#atribuição) não produz nenhuma saída.
 
 Para verificar sua compreensão, digite as seguintes instruções no interpretador do Python e veja o que fazem:
 

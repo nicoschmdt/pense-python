@@ -1,6 +1,6 @@
 ## 18.10 - Depuração
 
-A herança pode dificultar a depuração porque quando você invoca um método em um objeto, pode ser difícil compreender qual método será invocado.
+A [herança](11-glossario.md#herança) pode dificultar a depuração porque quando você invoca um método em um objeto, pode ser difícil compreender qual método será invocado.
 
 Suponha que esteja escrevendo uma função que funcione com objetos Hand. Você gostaria que ela funcionasse com todos os tipos de Hand, como PokerHands, BridgeHands etc. Se invocar um método como shuffle, poderá receber o que foi definido em Deck, mas se alguma das subclasses ignorar este método, você receberá outra versão. Este comportamento pode ser bom, mas também confuso.
 

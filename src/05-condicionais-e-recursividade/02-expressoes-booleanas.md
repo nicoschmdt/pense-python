@@ -1,6 +1,6 @@
 ## 5.2 - Expressões booleanas
 
-Uma expressão booleana é uma expressão que pode ser verdadeira ou falsa. Os exemplos seguintes usam o operador ==, que compara dois operandos e produz True se forem iguais e False se não forem:
+Uma [expressão booleana](13-glossario.md#expressão-booleana) é uma expressão que pode ser verdadeira ou falsa. Os exemplos seguintes usam o operador ==, que compara dois operandos e produz True se forem iguais e False se não forem:
 
 ```python
 >>> 5 == 5
@@ -28,4 +28,4 @@ x >= y                # x é maior ou igual a y
 x <= y                # x é menor ou igual a y
 ```
 
-Embora essas operações provavelmente sejam familiares para você, os símbolos do Python são diferentes dos símbolos matemáticos. Um erro comum é usar apenas um sinal de igual (=) em vez de um sinal duplo (==). Lembre-se de que = é um operador de atribuição e == é um operador relacional. Não existe =&lt; ou =&gt;.
+Embora essas operações provavelmente sejam familiares para você, os símbolos do Python são diferentes dos símbolos matemáticos. Um erro comum é usar apenas um sinal de igual (=) em vez de um sinal duplo (==). Lembre-se de que = é um operador de atribuição e == é um [operador relacional](13-glossario.md#operador-relacional). Não existe =&lt; ou =&gt;.

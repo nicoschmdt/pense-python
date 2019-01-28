@@ -11,7 +11,7 @@ Os operadores +, - e \* executam a adição, a subtração e a multiplicação, 
 42
 >>> 6 * 7
 42
-O operador / executa a divisão:
+O [operador](08-glossario.md#operador) / executa a divisão:
 >>> 84 / 2
 42.0
 ```

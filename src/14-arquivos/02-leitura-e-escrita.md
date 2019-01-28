@@ -1,6 +1,6 @@
 ## 14.2 - Leitura e escrita
 
-Um arquivo de texto é uma sequência de caracteres armazenados em um meio permanente como uma unidade de disco rígido, pendrive ou CD-ROM. Vimos como abrir e ler um arquivo em “Leitura de listas de palavras” na página 133.
+Um [arquivo de texto](11-glossario.md#arquivo-de texto) é uma sequência de caracteres armazenados em um meio permanente como uma unidade de disco rígido, pendrive ou CD-ROM. Vimos como abrir e ler um arquivo em “Leitura de listas de palavras” na página 133.
 
 Para escrever um arquivo texto, é preciso abri-lo com o modo `'w'` como segundo parâmetro:
 

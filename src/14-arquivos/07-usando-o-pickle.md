@@ -2,7 +2,7 @@
 
 Uma limitação de `dbm` é que as chaves e os valores têm que ser strings ou bytes. Se tentar usar algum outro tipo, vai receber um erro.
 
-O módulo `pickle` pode ajudar. Ele traduz quase qualquer tipo de objeto em uma string conveniente para o armazenamento em um banco de dados, e então traduz strings de volta em objetos.
+O módulo `pickle` pode ajudar. Ele traduz quase qualquer tipo de objeto em uma string conveniente para o armazenamento em um [banco de dados](11-glossario.md#banco-de dados), e então traduz strings de volta em objetos.
 
 pickle.dumps recebe um objeto como parâmetro e retorna uma representação de string:
 

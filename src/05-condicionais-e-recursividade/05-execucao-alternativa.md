@@ -1,6 +1,6 @@
 ## 5.5 - Execução alternativa
 
-Uma segunda forma da instrução if é a “execução alternativa”, na qual há duas possibilidades e a condição determina qual será executada. A sintaxe pode ser algo assim:
+Uma segunda forma da instrução if é a “execução alternativa”, na qual há duas possibilidades e a [condição](13-glossario.md#condição) determina qual será executada. A sintaxe pode ser algo assim:
 
 ```python
 if x % 2 == 0:

@@ -1,4 +1,4 @@
-# Capítulo 4: Estudo de caso: projeto de interface
+# Capítulo 4: Estudo de caso: projeto de [interface](11-glossario.md#interface)
 
 Este capítulo apresenta um estudo de caso que demonstra o processo de criação de funções que operam simultaneamente.
 

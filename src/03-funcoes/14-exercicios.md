@@ -2,7 +2,7 @@
 
 ### Exercício 3.1
 
-Escreva uma função chamada right\_justify, que receba uma string chamada s como parâmetro e exiba a string com espaços suficientes à frente para que a última letra da string esteja na coluna 70 da tela:
+Escreva uma [função](13-glossario.md#função) chamada right\_justify, que receba uma string chamada s como [parâmetro](13-glossario.md#parâmetro) e exiba a string com espaços suficientes à frente para que a última letra da string esteja na coluna 70 da tela:
 
 ```python
 >>> right_justify('monty')
@@ -13,7 +13,7 @@ Dica: Use concatenação de strings e repetição. Além disso, o Python oferece
 
 ### Exercício 3.2
 
-Um objeto de função é um valor que pode ser atribuído a uma variável ou passado como argumento. Por exemplo, do\_twice é uma função que toma um objeto de função como argumento e o chama duas vezes:
+Um objeto de função é um valor que pode ser atribuído a uma variável ou passado como [argumento](13-glossario.md#argumento). Por exemplo, do\_twice é uma função que toma um objeto de função como argumento e o chama duas vezes:
 
 
 ```python
@@ -39,7 +39,7 @@ do_twice(print_spam)
 
 4. Use a versão alterada de `do_twice` para chamar `print_twice` duas vezes, passando `'spam'` como um argumento.
 
-5. Defina uma função nova chamada `do_four` que receba um objeto de função e um valor e chame a função quatro vezes, passando o valor como um parâmetro. Deve haver só duas afirmações no corpo desta função, não quatro.
+5. Defina uma função nova chamada `do_four` que receba um objeto de função e um valor e chame a função quatro vezes, passando o valor como um parâmetro. Deve haver só duas afirmações no [corpo](13-glossario.md#corpo) desta função, não quatro.
 
 Solução: [http://thinkpython2.com/code/do_four.py](http://thinkpython2.com/code/do_four.py).
 

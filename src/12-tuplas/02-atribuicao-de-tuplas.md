@@ -14,7 +14,7 @@ Essa solução é trabalhosa; a atribuição de tuplas é mais elegante:
 >>> a, b = b, a
 ```
 
-O lado esquerdo é uma tupla de variáveis; o lado direito é uma tupla de expressões. Cada valor é atribuído à sua respectiva variável. Todas as expressões no lado direito são avaliadas antes de todas as atribuições.
+O lado esquerdo é uma [tupla](09-glossario.md#tupla) de variáveis; o lado direito é uma tupla de expressões. Cada valor é atribuído à sua respectiva variável. Todas as expressões no lado direito são avaliadas antes de todas as atribuições.
 
 O número de variáveis à esquerda e o número de valores à direita precisam ser iguais:
 

@@ -1,6 +1,6 @@
 ## 8.4 - Fatiamento de strings
 
-Um segmento de uma string é chamado de fatia. Selecionar uma fatia é como selecionar um caractere:
+Um segmento de uma string é chamado de [fatia](12-glossario.md#fatia). Selecionar uma fatia é como selecionar um caractere:
 
 ```python
 >>> s = 'Monty Python'
@@ -15,7 +15,7 @@ O operador `[n:m]` retorna a parte da string do “enésimo” caractere ao “e
 ![Figura 8.1 – Índices de fatias](/fig/tnkp_0801.png).
 <br>_Figura 8.1 – Índices de fatias._
 
-Se você omitir o primeiro índice (antes dos dois pontos), a fatia começa no início da string. Se omitir o segundo índice, a fatia vai ao fim da string:
+Se você omitir o primeiro [índice](12-glossario.md#índice) (antes dos dois pontos), a fatia começa no início da string. Se omitir o segundo índice, a fatia vai ao fim da string:
 
 ```python
 >>> fruit = 'banana'
@@ -25,7 +25,7 @@ Se você omitir o primeiro índice (antes dos dois pontos), a fatia começa no i
 'ana'
 ```
 
-Se o primeiro índice for maior ou igual ao segundo, o resultado é uma string vazia, representada por duas aspas:
+Se o primeiro índice for maior ou igual ao segundo, o resultado é uma [string vazia](12-glossario.md#string-vazia), representada por duas aspas:
 
 ```python
 >>> fruit = 'banana'

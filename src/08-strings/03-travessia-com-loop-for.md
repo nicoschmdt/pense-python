@@ -12,7 +12,7 @@ while index < len(fruit):
     index = index + 1
 ```
 
-Este loop atravessa a string e exibe cada letra sozinha em uma linha. A condição do loop é index &lt;len (fruit), então quando index é igual ao comprimento da string, a condição é falsa e o corpo do loop não é mais executado. O último caractere acessado é aquele com o índice len (fruit)-1, que é o último caractere na string.
+Este loop atravessa a string e exibe cada letra sozinha em uma linha. A condição do loop é index &lt;len (fruit), então quando index é igual ao comprimento da string, a condição é falsa e o corpo do loop não é mais executado. O último caractere acessado é aquele com o [índice](12-glossario.md#índice) len (fruit)-1, que é o último caractere na string.
 
 Como exercício, escreva uma função que receba uma string como argumento e exiba as letras de trás para a frente, uma por linha.
 

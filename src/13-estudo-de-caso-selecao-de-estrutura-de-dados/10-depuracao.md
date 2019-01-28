@@ -18,7 +18,7 @@ Quando estiver depurando um programa, especialmente se estiver trabalhando em um
 
 <dt>Conversa com o pato de borracha (rubberducking)</dt>
 
-  <dd>Ao explicar o problema a alguém, às vezes você consegue encontrar a resposta antes de terminar a explicação. Muitas vezes, não é preciso nem haver outra pessoa; você pode falar até com um pato de borracha. E essa é a origem de uma estratégia bem conhecida chamada de depuração do pato de borracha. Não estou inventando isso, veja [https://en.wikipedia.org/wiki/Rubber_duck_debugging.</dd>](https://en.wikipedia.org/wiki/Rubber_duck_debugging.</dd>)
+  <dd>Ao explicar o problema a alguém, às vezes você consegue encontrar a resposta antes de terminar a explicação. Muitas vezes, não é preciso nem haver outra pessoa; você pode falar até com um pato de borracha. E essa é a origem de uma estratégia bem conhecida chamada de [depuração do pato de borracha](11-glossario.md#depuração-do pato de borracha). Não estou inventando isso, veja [https://en.wikipedia.org/wiki/Rubber_duck_debugging.</dd>](https://en.wikipedia.org/wiki/Rubber_duck_debugging.</dd>)
 
 <dt>Retirada</dt>
 

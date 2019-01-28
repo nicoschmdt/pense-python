@@ -1,6 +1,6 @@
 ## 5.1 - Divisão pelo piso e módulo
 
-O operador de divisão pelo piso, //, divide dois números e arredonda o resultado para um número inteiro para baixo. Por exemplo, suponha que o tempo de execução de um filme seja de 105 minutos. Você pode querer saber a quanto isso corresponde em horas. A divisão convencional devolve um número de ponto flutuante:
+O operador de [divisão pelo piso](13-glossario.md#divisão-pelo piso), //, divide dois números e arredonda o resultado para um número inteiro para baixo. Por exemplo, suponha que o tempo de execução de um filme seja de 105 minutos. Você pode querer saber a quanto isso corresponde em horas. A divisão convencional devolve um número de ponto flutuante:
 
 
 ```python
@@ -28,7 +28,7 @@ Para obter o resto, você pode subtrair uma hora em minutos:
 45
 ```
 
-Uma alternativa é usar o operador módulo, %, que divide dois números e devolve o resto:
+Uma alternativa é usar o [operador módulo](13-glossario.md#operador-módulo), %, que divide dois números e devolve o resto:
 
 
 ```python

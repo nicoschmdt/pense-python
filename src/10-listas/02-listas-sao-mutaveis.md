@@ -1,13 +1,13 @@
 ## 10.2 - Listas são mutáveis
 
-A sintaxe para acessar os elementos de uma lista é a mesma que para acessar os caracteres de uma string: o operador de colchete. A expressão dentro dos colchetes especifica o índice. Lembre-se de que os índices começam em 0:
+A sintaxe para acessar os elementos de uma [lista](14-glossario.md#lista) é a mesma que para acessar os caracteres de uma string: o operador de colchete. A expressão dentro dos colchetes especifica o índice. Lembre-se de que os índices começam em 0:
 
 ```python
 >>> cheeses[0]
 'Cheddar'
 ```
 
-Diferente das strings, listas são mutáveis. Quando o operador de colchete aparece do lado esquerdo de uma atribuição, ele identifica o elemento da lista que será atribuído:
+Diferente das strings, listas são mutáveis. Quando o operador de colchete aparece do lado esquerdo de uma atribuição, ele identifica o [elemento](14-glossario.md#elemento) da lista que será atribuído:
 
 
 ```python

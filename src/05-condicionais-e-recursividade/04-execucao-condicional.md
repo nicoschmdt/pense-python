@@ -7,7 +7,7 @@ if x > 0:
     print('x is positive')
 ```
 
-A expressão booleana depois do if é chamada de condição. Se for verdadeira, a instrução endentada é executada. Se não, nada acontece.
+A [expressão booleana](13-glossario.md#expressão-booleana) depois do if é chamada de [condição](13-glossario.md#condição). Se for verdadeira, a instrução endentada é executada. Se não, nada acontece.
 
 Instruções if têm a mesma estrutura que definições de função: um cabeçalho seguido de um corpo endentado. Instruções como essa são chamadas de instruções compostas.
 

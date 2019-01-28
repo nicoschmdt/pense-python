@@ -39,6 +39,6 @@ Traceback (most recent call last):
 ValueError: math domain error
 ```
 
-A mensagem de erro indica a linha 5, mas não há nada de errado com esta linha. Uma opção para encontrar o verdadeiro erro é exibir o valor de ratio, que acaba sendo 0. O problema está na linha 4, que usa a divisão pelo piso em vez da divisão de ponto flutuante.
+A mensagem de erro indica a linha 5, mas não há nada de errado com esta linha. Uma opção para encontrar o verdadeiro erro é exibir o valor de ratio, que acaba sendo 0. O problema está na linha 4, que usa a [divisão pelo piso](13-glossario.md#divisão-pelo piso) em vez da divisão de ponto flutuante.
 
 É preciso ler as mensagens de erro com atenção, mas não assumir que tudo que dizem esteja correto.
