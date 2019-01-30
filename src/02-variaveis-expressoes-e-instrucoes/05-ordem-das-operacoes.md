@@ -1,6 +1,6 @@
 ## 2.5 - Ordem das operações
 
-Quando uma [expressão](09-glossario.md#expressão) contém mais de um operador, a ordem da avaliação depende da [ordem das operações](09-glossario.md#ordem-das operações). Para operadores matemáticos, o Python segue a convenção matemática. O acrônimo PEMDAS pode ser útil para lembrar das regras:
+Quando uma [expressão](09-glossario.md#expressão) contém mais de um operador, a ordem da avaliação depende da [ordem das operações](09-glossario.md#ordem-das-operações). Para operadores matemáticos, o Python segue a convenção matemática. O acrônimo PEMDAS pode ser útil para lembrar das regras:
 
 * Os Parênteses têm a precedência mais alta e podem ser usados para forçar a avaliação de uma expressão na ordem que você quiser. Como as expressões em parênteses são avaliadas primeiro, `2 * (3-1)` é 4, e `(1+1)**(5-2)` é 8. Também é possível usar parênteses para facilitar a leitura de uma expressão, como no caso de `(minute * 100) / 60`, mesmo se o resultado não for alterado.
 

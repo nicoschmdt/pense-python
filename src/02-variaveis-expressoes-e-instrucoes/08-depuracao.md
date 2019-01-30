@@ -4,7 +4,7 @@ Há três tipos de erros que podem ocorrer em um programa: erros de sintaxe, err
 
 <dl>
 <dt>Erro de sintaxe</dt>
-<dd>A “sintaxe” refere-se à estrutura de um programa e suas respectivas regras. Por exemplo, os parênteses devem vir em pares correspondentes, então (1 + 2) é legal, mas 8) é um [erro de sintaxe](09-glossario.md#erro-de sintaxe).</dd>
+<dd>A “sintaxe” refere-se à estrutura de um programa e suas respectivas regras. Por exemplo, os parênteses devem vir em pares correspondentes, então (1 + 2) é legal, mas 8) é um [erro de sintaxe](09-glossario.md#erro-de-sintaxe).</dd>
 <dd>Se houver um erro de sintaxe em algum lugar no seu programa, o Python exibe uma mensagem de erro e para, e não será possível [executar](09-glossario.md#executar) o programa. Nas primeiras poucas semanas da sua carreira em programação, você pode passar muito tempo rastreando erros de sintaxe. Ao adquirir experiência, você fará menos erros e os encontrará mais rápido.</dd>
 
 <dt>Erro de tempo de execução</dt>
