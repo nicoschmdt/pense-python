@@ -1,40 +1,40 @@
 ## 8.12 - Glossário
 
-<dl>
-<dt><b>objeto</b></dt>
-<dd>Algo a que uma variável pode se referir. Por enquanto, você pode usar “objeto” e “valor” de forma intercambiável.</dd>
 
-<dt><b>sequência</b></dt>
-<dd>Uma coleção ordenada de valores onde cada valor é identificado por um índice de número inteiro.</dd>
+##### objeto
+&nbsp;&nbsp;&nbsp;&nbsp;Algo a que uma variável pode se referir. Por enquanto, você pode usar “objeto” e “valor” de forma intercambiável.
 
-<dt><b>item</b></dt>
-<dd>Um dos valores em uma sequência.</dd>
+##### sequência
+&nbsp;&nbsp;&nbsp;&nbsp;Uma coleção ordenada de valores onde cada valor é identificado por um índice de número inteiro.
 
-<dt><b>índice</b></dt>
-<dd>Um valor inteiro usado para selecionar um item em uma sequência, como um caractere em uma string. No Python, os índices começam em 0.</dd>
+##### item
+&nbsp;&nbsp;&nbsp;&nbsp;Um dos valores em uma sequência.
 
-<dt><b>fatia</b></dt>
-<dd>Parte de uma string especificada por um intervalo de índices.</dd>
+##### índice
+&nbsp;&nbsp;&nbsp;&nbsp;Um valor inteiro usado para selecionar um item em uma sequência, como um caractere em uma string. No Python, os índices começam em 0.
 
-<dt><b>string vazia</b></dt>
-<dd>Uma string sem caracteres e de comprimento 0, representada por duas aspas.</dd>
+##### fatia
+&nbsp;&nbsp;&nbsp;&nbsp;Parte de uma string especificada por um intervalo de índices.
 
-<dt><b>imutável</b></dt>
-<dd>A propriedade de uma sequência cujos itens não podem ser alterados.</dd>
+##### string vazia
+&nbsp;&nbsp;&nbsp;&nbsp;Uma string sem caracteres e de comprimento 0, representada por duas aspas.
 
-<dt><b>atravessar</b></dt>
-<dd>Repetir os itens em uma sequência, executando uma operação semelhante em cada um.</dd>
+##### imutável
+&nbsp;&nbsp;&nbsp;&nbsp;A propriedade de uma sequência cujos itens não podem ser alterados.
 
-<dt><b>busca</b></dt>
-<dd>Um modelo de travessia que é interrompido quando encontra o que está procurando.</dd>
+##### atravessar
+&nbsp;&nbsp;&nbsp;&nbsp;Repetir os itens em uma sequência, executando uma operação semelhante em cada um.
 
-<dt><b>contador</b></dt>
-<dd>Uma variável usada para contar algo, normalmente inicializada com zero e então incrementada.</dd>
+##### busca
+&nbsp;&nbsp;&nbsp;&nbsp;Um modelo de travessia que é interrompido quando encontra o que está procurando.
 
-<dt><b>invocação</b></dt>
-<dd>Uma instrução que chama um método.</dd>
+##### contador
+&nbsp;&nbsp;&nbsp;&nbsp;Uma variável usada para contar algo, normalmente inicializada com zero e então incrementada.
 
-<dt><b>argumento opcional</b></dt>
-<dd>Um argumento de função ou método que não é necessário.</dd>
+##### invocação
+&nbsp;&nbsp;&nbsp;&nbsp;Uma instrução que chama um método.
 
-</dl>
+##### argumento opcional
+&nbsp;&nbsp;&nbsp;&nbsp;Um argumento de função ou método que não é necessário.
+
+

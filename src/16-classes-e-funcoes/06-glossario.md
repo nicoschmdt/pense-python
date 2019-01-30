@@ -1,25 +1,25 @@
 ## 16.6 - Glossário
 
-<dl>
-<dt><b>protótipo e correção</b></dt>
-<dd>Plano de desenvolvimento no qual a escrita do programa parte de um esboço inicial, e depois segue ao teste e correção de erros, conforme sejam encontrados.</dd>
 
-<dt><b>desenvolvimento planejado</b></dt>
-<dd>Plano de desenvolvimento que implica uma compreensão de alto nível do problema e mais planejamento que desenvolvimento incremental ou desenvolvimento prototipado.</dd>
+##### protótipo e correção
+&nbsp;&nbsp;&nbsp;&nbsp;Plano de desenvolvimento no qual a escrita do programa parte de um esboço inicial, e depois segue ao teste e correção de erros, conforme sejam encontrados.
 
-<dt><b>função pura</b></dt>
-<dd>Função que não altera nenhum dos objetos que recebe como argumento. A maior parte das funções puras gera resultado.</dd>
+##### desenvolvimento planejado
+&nbsp;&nbsp;&nbsp;&nbsp;Plano de desenvolvimento que implica uma compreensão de alto nível do problema e mais planejamento que desenvolvimento incremental ou desenvolvimento prototipado.
 
-<dt><b>modificador</b></dt>
-<dd>Função que modifica um ou vários dos objetos que recebe como argumento. A maior parte dos modificadores são nulos; isto é, retornam None.</dd>
+##### função pura
+&nbsp;&nbsp;&nbsp;&nbsp;Função que não altera nenhum dos objetos que recebe como argumento. A maior parte das funções puras gera resultado.
 
-<dt><b>programação funcional</b></dt>
-<dd>Estilo de projeto de programa no qual a maioria das funções são puras.</dd>
+##### modificador
+&nbsp;&nbsp;&nbsp;&nbsp;Função que modifica um ou vários dos objetos que recebe como argumento. A maior parte dos modificadores são nulos; isto é, retornam None.
 
-<dt><b>invariável</b></dt>
-<dd>Condição que sempre deve ser verdadeira durante a execução de um programa.</dd>
+##### programação funcional
+&nbsp;&nbsp;&nbsp;&nbsp;Estilo de projeto de programa no qual a maioria das funções são puras.
 
-<dt><b>instrução assert</b></dt>
-<dd>Instrução que verifica uma condição e levanta uma exceção se esta falhar.</dd>
+##### invariável
+&nbsp;&nbsp;&nbsp;&nbsp;Condição que sempre deve ser verdadeira durante a execução de um programa.
 
-</dl>
+##### instrução assert
+&nbsp;&nbsp;&nbsp;&nbsp;Instrução que verifica uma condição e levanta uma exceção se esta falhar.
+
+

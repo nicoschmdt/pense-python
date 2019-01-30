@@ -2,29 +2,29 @@
 
 Quando estiver depurando um programa, especialmente se estiver trabalhando em um erro difícil, há cinco coisas que você pode tentar:
 
-<dl>
 
-<dt>Leitura</dt>
 
-  <dd>Examine seu código, leia-o para você mesmo e verifique se diz o que você pensou em dizer.</dd>
+##### Leitura
 
-<dt>Execução</dt>
+  &nbsp;&nbsp;&nbsp;&nbsp;Examine seu código, leia-o para você mesmo e verifique se diz o que você pensou em dizer.
 
-  <dd>Experimente fazer alterações e executar versões diferentes. Muitas vezes, ao se expor a coisa certa no lugar certo do programa, o problema fica óbvio, mas pode ser necessário construir o scaffolding.</dd>
+##### Execução
 
-<dt>Ruminação</dt>
+  &nbsp;&nbsp;&nbsp;&nbsp;Experimente fazer alterações e executar versões diferentes. Muitas vezes, ao se expor a coisa certa no lugar certo do programa, o problema fica óbvio, mas pode ser necessário construir o scaffolding.
 
-  <dd>Pense por algum tempo! Qual é o tipo do erro: de sintaxe, de tempo de execução ou semântico? Quais informações você consegue obter a partir das mensagens de erro, ou da saída do programa? Que tipo de erro pode causar o problema que está vendo? O que você mudou por último, antes que o problema aparecesse?</dd>
+##### Ruminação
 
-<dt>Conversa com o pato de borracha (rubberducking)</dt>
+  &nbsp;&nbsp;&nbsp;&nbsp;Pense por algum tempo! Qual é o tipo do erro: de sintaxe, de tempo de execução ou semântico? Quais informações você consegue obter a partir das mensagens de erro, ou da saída do programa? Que tipo de erro pode causar o problema que está vendo? O que você mudou por último, antes que o problema aparecesse?
 
-  <dd>Ao explicar o problema a alguém, às vezes você consegue encontrar a resposta antes de terminar a explicação. Muitas vezes, não é preciso nem haver outra pessoa; você pode falar até com um pato de borracha. E essa é a origem de uma estratégia bem conhecida chamada de [depuração do pato de borracha](11-glossario.md#depuração-do pato de borracha). Não estou inventando isso, veja [https://en.wikipedia.org/wiki/Rubber_duck_debugging.</dd>](https://en.wikipedia.org/wiki/Rubber_duck_debugging.</dd>)
+##### Conversa com o pato de borracha (rubberducking)
 
-<dt>Retirada</dt>
+  &nbsp;&nbsp;&nbsp;&nbsp;Ao explicar o problema a alguém, às vezes você consegue encontrar a resposta antes de terminar a explicação. Muitas vezes, não é preciso nem haver outra pessoa; você pode falar até com um pato de borracha. E essa é a origem de uma estratégia bem conhecida chamada de [depuração do pato de borracha](11-glossario.md#depuração-do pato de borracha). Não estou inventando isso, veja [https://en.wikipedia.org/wiki/Rubber_duck_debugging.</dd>](https://en.wikipedia.org/wiki/Rubber_duck_debugging.)
 
-  <dd>Em um determinado ponto, a melhor coisa a fazer é voltar atrás e desfazer as alterações recentes, até chegar de volta a um programa que funcione e que você entenda. Então você pode começar a reconstruir.</dd>
+##### Retirada
 
-</dl>
+  &nbsp;&nbsp;&nbsp;&nbsp;Em um determinado ponto, a melhor coisa a fazer é voltar atrás e desfazer as alterações recentes, até chegar de volta a um programa que funcione e que você entenda. Então você pode começar a reconstruir.
+
+
 
 Programadores iniciantes às vezes ficam presos em uma dessas atividades e esquecem das outras. Cada atividade vem com o seu próprio modo de falha.
 

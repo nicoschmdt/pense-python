@@ -168,13 +168,13 @@ Para explicar como hashtables funcionam e por que o seu desempenho é tão bom, 
 
 Uso o Python para demonstrar essas implementações, mas, na vida real, eu não escreveria um código como esse no Python; bastaria usar um dicionário! Assim, para o resto deste capítulo, você tem que supor que os dicionários não existem e que quer implementar uma estrutura de dados que faça o mapa de chaves a valores. As operações que precisa implementar são:
 
-<dl>
-<dt>add(k, v)</dt>
-<dd>Insere um novo item que mapeia a chave k ao valor v. Com um dicionário de Python, `d`, essa operação é escrita `d[k] = v`.</dd>
 
-<dt>get(k)</dt>
-<dd>Procura e devolve o valor que corresponde à chave k. Com um dicionário de Python, `d`, esta operação é escrita `d[k]` ou `d.get(k)`.</dd>
-</dl>
+##### add(k, v)
+&nbsp;&nbsp;&nbsp;&nbsp;Insere um novo item que mapeia a chave k ao valor v. Com um dicionário de Python, `d`, essa operação é escrita `d[k] = v`.
+
+##### get(k)
+&nbsp;&nbsp;&nbsp;&nbsp;Procura e devolve o valor que corresponde à chave k. Com um dicionário de Python, `d`, esta operação é escrita `d[k]` ou `d.get(k)`.
+
 
 Por enquanto, vou supor que cada chave só apareça uma vez. A implementação mais simples desta interface usa uma lista de tuplas, onde cada tupla é um par chave-valor:
 
@@ -291,40 +291,40 @@ Você pode baixar minha implementação de `HashMap` em [http://thinkpython2.com
 
 ## B.5 - Glossário
 
-<dl>
-<dt><b>análise de algoritmos</b></dt>
-<dd>Forma de comparar algoritmos quanto às suas exigências de espaço e/ou tempo de execução.</dd>
 
-<dt><b>modelo de máquina</b></dt>
-<dd>Representação simplificada de um computador usada para descrever algoritmos.</dd>
+##### análise de algoritmos
+&nbsp;&nbsp;&nbsp;&nbsp;Forma de comparar algoritmos quanto às suas exigências de espaço e/ou tempo de execução.
 
-<dt><b>pior caso</b></dt>
-<dd>Entrada que faz um dado algoritmo rodar mais lentamente (ou exigir mais espaço).</dd>
+##### modelo de máquina
+&nbsp;&nbsp;&nbsp;&nbsp;Representação simplificada de um computador usada para descrever algoritmos.
 
-<dt><b>termo principal</b></dt>
-<dd>Em um polinômio, o termo com o expoente mais alto.</dd>
+##### pior caso
+&nbsp;&nbsp;&nbsp;&nbsp;Entrada que faz um dado algoritmo rodar mais lentamente (ou exigir mais espaço).
 
-<dt><b>ponto de desvio</b></dt>
-<dd>Tamanho do problema em que dois algoritmos exigem o mesmo tempo de execução ou espaço.</dd>
+##### termo principal
+&nbsp;&nbsp;&nbsp;&nbsp;Em um polinômio, o termo com o expoente mais alto.
 
-<dt><b>ordem de crescimento</b></dt>
-<dd>Conjunto de funções em que todas crescem em uma forma considerada equivalente para os propósitos da análise de algoritmos. Por exemplo, todas as funções que crescem linearmente pertencem à mesma ordem de crescimento.</dd>
+##### ponto de desvio
+&nbsp;&nbsp;&nbsp;&nbsp;Tamanho do problema em que dois algoritmos exigem o mesmo tempo de execução ou espaço.
 
-<dt><b>notação Grande-O (Big-Oh notation)</b></dt>
-<dd>Notação para representar uma ordem de crescimento; por exemplo, O(n) representa o conjunto de funções que crescem linearmente.</dd>
+##### ordem de crescimento
+&nbsp;&nbsp;&nbsp;&nbsp;Conjunto de funções em que todas crescem em uma forma considerada equivalente para os propósitos da análise de algoritmos. Por exemplo, todas as funções que crescem linearmente pertencem à mesma ordem de crescimento.
 
-<dt><b>linear</b></dt>
-<dd>Algoritmo cujo tempo de execução é proporcional ao tamanho do problema, pelo menos para grandes tamanhos de problema.</dd>
+##### notação Grande-O (Big-Oh notation)
+&nbsp;&nbsp;&nbsp;&nbsp;Notação para representar uma ordem de crescimento; por exemplo, O(n) representa o conjunto de funções que crescem linearmente.
 
-<dt><b>quadrático</b></dt>
-<dd>Algoritmo cujo tempo de execução é proporcional a n2, onde n é uma medida de tamanho do problema.</dd>
+##### linear
+&nbsp;&nbsp;&nbsp;&nbsp;Algoritmo cujo tempo de execução é proporcional ao tamanho do problema, pelo menos para grandes tamanhos de problema.
 
-<dt><b>busca</b></dt>
-<dd>Problema de localizar um elemento de uma coleção (como uma lista ou dicionário) ou de decidir que não está presente.</dd>
+##### quadrático
+&nbsp;&nbsp;&nbsp;&nbsp;Algoritmo cujo tempo de execução é proporcional a n2, onde n é uma medida de tamanho do problema.
 
-<dt><b>hashtable</b></dt>
-<dd>Estrutura de dados que representa uma coleção de pares chave-valor e executa buscas em tempo constante.</dd>
-</dl>
+##### busca
+&nbsp;&nbsp;&nbsp;&nbsp;Problema de localizar um elemento de uma coleção (como uma lista ou dicionário) ou de decidir que não está presente.
+
+##### hashtable
+&nbsp;&nbsp;&nbsp;&nbsp;Estrutura de dados que representa uma coleção de pares chave-valor e executa buscas em tempo constante.
+
 
 [1] popen foi descartado, ou seja, devemos parar de usá-lo e começar a usar o módulo subprocess. Entretanto, para casos simples, eu considero subprocess mais complicado que o necessário. Então vou continuar usando popen até que o removam.
 

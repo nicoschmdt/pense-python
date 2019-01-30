@@ -4,21 +4,21 @@ Um __programa__ é uma sequência de instruções que especifica como executar u
 
 Os detalhes parecem diferentes em linguagens diferentes, mas algumas instruções básicas aparecem em quase todas as linguagens:
 
-<dl>
-<dt><b>entrada</b></dt>
-<dd>Receber dados do teclado, de um arquivo, da rede ou de algum outro dispositivo.</dd>
 
-<dt><b>saída</b></dt>
-<dd>Exibir dados na tela, salvá-los em um arquivo, enviá-los pela rede etc.</dd>
+##### entrada
+&nbsp;&nbsp;&nbsp;&nbsp;Receber dados do teclado, de um arquivo, da rede ou de algum outro dispositivo.
 
-<dt><b>matemática</b></dt>
-<dd>Executar operações matemáticas básicas como adição e multiplicação.</dd>
+##### saída
+&nbsp;&nbsp;&nbsp;&nbsp;Exibir dados na tela, salvá-los em um arquivo, enviá-los pela rede etc.
 
-<dt><b>execução condicional</b></dt>
-<dd>Verificar a existência de certas condições e executar o código adequado.</dd>
+##### matemática
+&nbsp;&nbsp;&nbsp;&nbsp;Executar operações matemáticas básicas como adição e multiplicação.
 
-<dt><b>repetição</b></dt>
-<dd>Executar várias vezes alguma ação, normalmente com algumas variações.</dd>
-</dl>
+##### execução condicional
+&nbsp;&nbsp;&nbsp;&nbsp;Verificar a existência de certas condições e executar o código adequado.
+
+##### repetição
+&nbsp;&nbsp;&nbsp;&nbsp;Executar várias vezes alguma ação, normalmente com algumas variações.
+
 
 Acredite ou não, isto é basicamente tudo o que é preciso saber. Cada programa que você já usou, complicado ou não, é composto de instruções muito parecidas com essas. Podemos então chegar à conclusão de que programar é o processo de quebrar uma tarefa grande e complexa em subtarefas cada vez menores, até que estas sejam simples o suficiente para serem executadas por uma dessas instruções básicas.

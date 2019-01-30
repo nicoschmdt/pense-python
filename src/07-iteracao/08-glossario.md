@@ -1,28 +1,28 @@
 ## 7.8 - Glossário
 
-<dl>
-<dt><b>reatribuição</b></dt>
-<dd>Atribuir um novo valor a uma variável que já existe.</dd>
 
-<dt><b>atualização</b></dt>
-<dd>Uma atribuição onde o novo valor da variável dependa do velho.</dd>
+##### reatribuição
+&nbsp;&nbsp;&nbsp;&nbsp;Atribuir um novo valor a uma variável que já existe.
 
-<dt><b>inicialização</b></dt>
-<dd>Uma atribuição que dá um valor inicial a uma variável que será atualizada.</dd>
+##### atualização
+&nbsp;&nbsp;&nbsp;&nbsp;Uma atribuição onde o novo valor da variável dependa do velho.
 
-<dt><b>incremento</b></dt>
-<dd>Uma atualização que aumenta o valor de uma variável (normalmente por uma unidade).</dd>
+##### inicialização
+&nbsp;&nbsp;&nbsp;&nbsp;Uma atribuição que dá um valor inicial a uma variável que será atualizada.
 
-<dt><b>decremento</b></dt>
-<dd>Uma atualização que reduz o valor de uma variável.</dd>
+##### incremento
+&nbsp;&nbsp;&nbsp;&nbsp;Uma atualização que aumenta o valor de uma variável (normalmente por uma unidade).
 
-<dt><b>iteração</b></dt>
-<dd>Execução repetida de um grupo de instruções, usando uma chamada da função recursiva ou um loop.</dd>
+##### decremento
+&nbsp;&nbsp;&nbsp;&nbsp;Uma atualização que reduz o valor de uma variável.
 
-<dt><b>loop infinito</b></dt>
-<dd>Um loop no qual a condição de término nunca é satisfeita.</dd>
+##### iteração
+&nbsp;&nbsp;&nbsp;&nbsp;Execução repetida de um grupo de instruções, usando uma chamada da função recursiva ou um loop.
 
-<dt><b>algoritmo</b></dt>
-<dd>Um processo geral para resolver uma categoria de problemas.</dd>
+##### loop infinito
+&nbsp;&nbsp;&nbsp;&nbsp;Um loop no qual a condição de término nunca é satisfeita.
 
-</dl>
+##### algoritmo
+&nbsp;&nbsp;&nbsp;&nbsp;Um processo geral para resolver uma categoria de problemas.
+
+

@@ -1,37 +1,37 @@
 ## 4.11 - Glossário
 
-<dl>
-<dt><b>método</b></dt>
-<dd>Uma função associada a um objeto e chamada usando a notação de ponto.</dd>
 
-<dt><b>loop</b></dt>
-<dd>Parte de um programa que pode ser executada repetidamente.</dd>
+##### método
+&nbsp;&nbsp;&nbsp;&nbsp;Uma função associada a um objeto e chamada usando a notação de ponto.
 
-<dt><b>encapsulamento</b></dt>
-<dd>O processo de transformar uma sequência de instruções em uma definição de função.</dd>
+##### loop
+&nbsp;&nbsp;&nbsp;&nbsp;Parte de um programa que pode ser executada repetidamente.
 
-<dt><b>generalização</b></dt>
-<dd>O processo de substituir algo desnecessariamente específico (como um número) por algo adequadamente geral (como uma variável ou parâmetro).</dd>
+##### encapsulamento
+&nbsp;&nbsp;&nbsp;&nbsp;O processo de transformar uma sequência de instruções em uma definição de função.
 
-<dt><b>argumento de palavra-chave</b></dt>
-<dd>Um argumento que inclui o nome do parâmetro como uma “palavra-chave”.</dd>
+##### generalização
+&nbsp;&nbsp;&nbsp;&nbsp;O processo de substituir algo desnecessariamente específico (como um número) por algo adequadamente geral (como uma variável ou parâmetro).
 
-<dt><b>interface</b></dt>
-<dd>Uma descrição de como usar uma função, incluindo o nome e as descrições dos argumentos e do valor de retorno.</dd>
+##### argumento de palavra-chave
+&nbsp;&nbsp;&nbsp;&nbsp;Um argumento que inclui o nome do parâmetro como uma “palavra-chave”.
 
-<dt><b>refatoração</b></dt>
-<dd>O processo de alterar um programa funcional para melhorar a interface de funções e outras qualidades do código.</dd>
+##### interface
+&nbsp;&nbsp;&nbsp;&nbsp;Uma descrição de como usar uma função, incluindo o nome e as descrições dos argumentos e do valor de retorno.
 
-<dt><b>plano de desenvolvimento</b></dt>
-<dd>Um processo de escrever programas.</dd>
+##### refatoração
+&nbsp;&nbsp;&nbsp;&nbsp;O processo de alterar um programa funcional para melhorar a interface de funções e outras qualidades do código.
 
-<dt><b>docstring</b></dt>
-<dd>Uma string que aparece no início de uma definição de função para documentar a interface da função.</dd>
+##### plano de desenvolvimento
+&nbsp;&nbsp;&nbsp;&nbsp;Um processo de escrever programas.
 
-<dt><b>precondição</b></dt>
-<dd>Uma exigência que deve ser satisfeita por quem chama a função, antes de executá-la.</dd>
+##### docstring
+&nbsp;&nbsp;&nbsp;&nbsp;Uma string que aparece no início de uma definição de função para documentar a interface da função.
 
-<dt><b>pós-condição</b></dt>
-<dd>Uma exigência que deve ser satisfeita pela função antes que ela seja encerrada.</dd>
+##### precondição
+&nbsp;&nbsp;&nbsp;&nbsp;Uma exigência que deve ser satisfeita por quem chama a função, antes de executá-la.
 
-</dl>
+##### pós-condição
+&nbsp;&nbsp;&nbsp;&nbsp;Uma exigência que deve ser satisfeita pela função antes que ela seja encerrada.
+
+
