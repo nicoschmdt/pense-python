@@ -1,46 +1,46 @@
 ## 14.11 - Glossário
 
-<dl>
-<dt><b>persistente</b></dt>
-<dd>Relativo a um programa que roda indefinidamente e mantém pelo menos alguns dos seus dados em armazenamento permanente.</dd>
 
-<dt><b>operador de formatação</b></dt>
-<dd>Um operador, %, que recebe uma string de formatação e uma tupla e gera uma string que inclui os elementos da tupla formatada como especificado pela string de formatação.</dd>
+##### persistente
+&nbsp;&nbsp;&nbsp;&nbsp;Relativo a um programa que roda indefinidamente e mantém pelo menos alguns dos seus dados em armazenamento permanente.
 
-<dt><b>string de formatação</b></dt>
-<dd>String usada com o operador de formatação, que contém sequências de formatação.</dd>
+##### operador de formatação
+&nbsp;&nbsp;&nbsp;&nbsp;Um operador, %, que recebe uma string de formatação e uma tupla e gera uma string que inclui os elementos da tupla formatada como especificado pela string de formatação.
 
-<dt><b>sequência de formatação</b></dt>
-<dd>Sequência de caracteres em uma string de formatação, como %d, que especifica como um valor deve ser formatado.</dd>
+##### string de formatação
+&nbsp;&nbsp;&nbsp;&nbsp;String usada com o operador de formatação, que contém sequências de formatação.
 
-<dt><b>arquivo de texto</b></dt>
-<dd>Sequência de caracteres guardados em armazenamento permanente, como uma unidade de disco rígido.</dd>
+##### sequência de formatação
+&nbsp;&nbsp;&nbsp;&nbsp;Sequência de caracteres em uma string de formatação, como %d, que especifica como um valor deve ser formatado.
 
-<dt><b>diretório</b></dt>
-<dd>Uma coleção de arquivos nomeada, também chamada de pasta.</dd>
+##### arquivo de texto
+&nbsp;&nbsp;&nbsp;&nbsp;Sequência de caracteres guardados em armazenamento permanente, como uma unidade de disco rígido.
 
-<dt><b>caminho</b></dt>
-<dd>String que identifica um arquivo.</dd>
+##### diretório
+&nbsp;&nbsp;&nbsp;&nbsp;Uma coleção de arquivos nomeada, também chamada de pasta.
 
-<dt><b>caminho relativo</b></dt>
-<dd>Caminho que inicia no diretório atual.</dd>
+##### caminho
+&nbsp;&nbsp;&nbsp;&nbsp;String que identifica um arquivo.
 
-<dt><b>caminho absoluto</b></dt>
-<dd>Caminho que inicia no diretório de posição mais alta (raiz) no sistema de arquivos.</dd>
+##### caminho relativo
+&nbsp;&nbsp;&nbsp;&nbsp;Caminho que inicia no diretório atual.
 
-<dt><b>capturar</b></dt>
-<dd>Impedir uma exceção de encerrar um programa usando as instruções try e except.</dd>
+##### caminho absoluto
+&nbsp;&nbsp;&nbsp;&nbsp;Caminho que inicia no diretório de posição mais alta (raiz) no sistema de arquivos.
 
-<dt><b>banco de dados</b></dt>
-<dd>Um arquivo cujo conteúdo é organizado como um dicionário, com chaves que correspondem a valores.</dd>
+##### capturar
+&nbsp;&nbsp;&nbsp;&nbsp;Impedir uma exceção de encerrar um programa usando as instruções try e except.
 
-<dt><b>objeto bytes</b></dt>
-<dd>Objeto semelhante a uma string.</dd>
+##### banco de dados
+&nbsp;&nbsp;&nbsp;&nbsp;Um arquivo cujo conteúdo é organizado como um dicionário, com chaves que correspondem a valores.
 
-<dt><b>shell</b></dt>
-<dd>Programa que permite aos usuários digitar comandos e executá-los para iniciar outros programas.</dd>
+##### objeto bytes
+&nbsp;&nbsp;&nbsp;&nbsp;Objeto semelhante a uma string.
 
-<dt><b>objeto pipe</b></dt>
-<dd>Objeto que representa um programa em execução, permitindo que um programa do Python execute comandos e leia os resultados.</dd>
+##### shell
+&nbsp;&nbsp;&nbsp;&nbsp;Programa que permite aos usuários digitar comandos e executá-los para iniciar outros programas.
 
-</dl>
+##### objeto pipe
+&nbsp;&nbsp;&nbsp;&nbsp;Objeto que representa um programa em execução, permitindo que um programa do Python execute comandos e leia os resultados.
+
+

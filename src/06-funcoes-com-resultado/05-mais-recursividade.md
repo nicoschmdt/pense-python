@@ -6,10 +6,10 @@ Comprovar esta declaração é um exercício nada trivial realizado pela primeir
 
 Para dar uma ideia do que podemos fazer com as ferramentas que aprendeu até agora, avaliaremos algumas funções matemáticas definidas recursivamente. Uma definição recursiva é semelhante a uma definição circular, no sentido de que a definição contém uma referência à coisa que é definida. Uma definição realmente circular não é muito útil:
 
-<dl>
-<dt>vorpal</dt>
-<dd>Adjetivo usado para descrever algo que é vorpal.</dd>
-</dl>
+
+##### vorpal
+&nbsp;&nbsp;&nbsp;&nbsp;Adjetivo usado para descrever algo que é vorpal.
+
 
 Ver uma definição assim no dicionário pode ser irritante. Por outro lado, se procurar a definição da função de fatorial, denotada pelo símbolo !, você pode encontrar algo assim:
 

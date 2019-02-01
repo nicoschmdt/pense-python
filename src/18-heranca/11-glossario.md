@@ -1,43 +1,43 @@
 ## 18.11 - Glossário
 
-<dl>
-<dt><b>codificar</b></dt>
-<dd>Representar um conjunto de valores usando outro conjunto de valores construindo um mapeamento entre eles.</dd>
 
-<dt><b>atributo de classe</b></dt>
-<dd>Atributo associado a um objeto de classe. Os atributos de classe são definidos dentro de uma definição de classe, mas fora de qualquer método.</dd>
+##### codificar
+&nbsp;&nbsp;&nbsp;&nbsp;Representar um conjunto de valores usando outro conjunto de valores construindo um mapeamento entre eles.
 
-<dt><b>atributo de instância</b></dt>
-<dd>Atributo associado a uma instância de uma classe.</dd>
+##### atributo de classe
+&nbsp;&nbsp;&nbsp;&nbsp;Atributo associado a um objeto de classe. Os atributos de classe são definidos dentro de uma definição de classe, mas fora de qualquer método.
 
-<dt><b>folheado</b></dt>
-<dd>Método ou função que apresenta uma interface diferente para outra função sem fazer muitos cálculos.</dd>
+##### atributo de instância
+&nbsp;&nbsp;&nbsp;&nbsp;Atributo associado a uma instância de uma classe.
 
-<dt><b>herança</b></dt>
-<dd>Capacidade de definir uma nova classe que seja uma versão modificada de uma classe definida anteriormente.</dd>
+##### folheado
+&nbsp;&nbsp;&nbsp;&nbsp;Método ou função que apresenta uma interface diferente para outra função sem fazer muitos cálculos.
 
-<dt><b>classe-pai</b></dt>
-<dd>Classe da qual uma classe-filho herda.</dd>
+##### herança
+&nbsp;&nbsp;&nbsp;&nbsp;Capacidade de definir uma nova classe que seja uma versão modificada de uma classe definida anteriormente.
 
-<dt><b>classe-filho</b></dt>
-<dd>Nova classe criada por herança de uma classe existente; também chamada de “subclasse”.</dd>
+##### classe-pai
+&nbsp;&nbsp;&nbsp;&nbsp;Classe da qual uma classe-filho herda.
 
-<dt><b>relação IS-A</b></dt>
-<dd>Relação entre uma classe-filho e sua classe-pai. Também chamada de herança.</dd>
+##### classe-filho
+&nbsp;&nbsp;&nbsp;&nbsp;Nova classe criada por herança de uma classe existente; também chamada de “subclasse”.
 
-<dt><b>relação HAS-A</b></dt>
-<dd>Relação entre duas classes onde as instâncias de uma classe contêm referências a instâncias da outra. Também chamada de composição.</dd>
+##### relação IS-A
+&nbsp;&nbsp;&nbsp;&nbsp;Relação entre uma classe-filho e sua classe-pai. Também chamada de herança.
 
-<dt><b>dependência</b></dt>
-<dd>Relação entre duas classes onde as instâncias de uma classe usam instâncias de outra classe, mas não as guardam como atributos.</dd>
+##### relação HAS-A
+&nbsp;&nbsp;&nbsp;&nbsp;Relação entre duas classes onde as instâncias de uma classe contêm referências a instâncias da outra. Também chamada de composição.
 
-<dt><b>diagrama de classe</b></dt>
-<dd>Diagrama que mostra as classes em um programa e as relações entre elas.</dd>
+##### dependência
+&nbsp;&nbsp;&nbsp;&nbsp;Relação entre duas classes onde as instâncias de uma classe usam instâncias de outra classe, mas não as guardam como atributos.
 
-<dt><b>multiplicidade</b></dt>
-<dd>Notação em um diagrama de classe que mostra, para uma relação HAS-A, quantas referências a instâncias da outra classe podem existir.</dd>
+##### diagrama de classe
+&nbsp;&nbsp;&nbsp;&nbsp;Diagrama que mostra as classes em um programa e as relações entre elas.
 
-<dt><b>encapsulamento de dados</b></dt>
-<dd>Plano de desenvolvimento de programa que envolve um protótipo usando variáveis globais e uma versão final que transforma as variáveis globais em atributos de instância.</dd>
+##### multiplicidade
+&nbsp;&nbsp;&nbsp;&nbsp;Notação em um diagrama de classe que mostra, para uma relação HAS-A, quantas referências a instâncias da outra classe podem existir.
 
-</dl>
+##### encapsulamento de dados
+&nbsp;&nbsp;&nbsp;&nbsp;Plano de desenvolvimento de programa que envolve um protótipo usando variáveis globais e uma versão final que transforma as variáveis globais em atributos de instância.
+
+

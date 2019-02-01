@@ -34,32 +34,32 @@ Escreva um método Deck chamado `deal_hands` que receba dois parâmetros: o núm
 
 A seguir, as mãos possíveis no pôquer, em ordem crescente de valor e ordem decrescente de probabilidade:
 
-<dl>
-<dt>par</dt>
-<dd>Duas cartas com o mesmo valor.</dd>
 
-<dt>dois pares</dt>
-<dd>Dois pares de cartas com o mesmo valor.</dd>
+##### par
+&nbsp;&nbsp;&nbsp;&nbsp;Duas cartas com o mesmo valor.
 
-<dt>trinca</dt>
-<dd>Três cartas com o mesmo valor.</dd>
+##### dois pares
+&nbsp;&nbsp;&nbsp;&nbsp;Dois pares de cartas com o mesmo valor.
 
-<dt>sequência</dt>
-<dd>Cinco cartas com valores em sequência (os ases podem ser altos ou baixos, então Ace-2-3-4-5 é uma sequência, assim como 10-Jack-Queen-King-Ace, mas Queen-King-Ace-2-3 não é)</dd>
+##### trinca
+&nbsp;&nbsp;&nbsp;&nbsp;Três cartas com o mesmo valor.
 
-<dt>flush</dt>
-<dd>Cinco cartas com o mesmo naipe.</dd>
+##### sequência
+&nbsp;&nbsp;&nbsp;&nbsp;Cinco cartas com valores em sequência (os ases podem ser altos ou baixos, então Ace-2-3-4-5 é uma sequência, assim como 10-Jack-Queen-King-Ace, mas Queen-King-Ace-2-3 não é)
 
-<dt>full house</dt>
-<dd>Três cartas com um valor, duas cartas com outro.</dd>
+##### flush
+&nbsp;&nbsp;&nbsp;&nbsp;Cinco cartas com o mesmo naipe.
 
-<dt>quadra</dt>
-<dd>Quatro cartas com o mesmo valor.</dd>
+##### full house
+&nbsp;&nbsp;&nbsp;&nbsp;Três cartas com um valor, duas cartas com outro.
 
-<dt>straight flush</dt>
-<dd>Cinco cartas em sequência (como definido acima) e com o mesmo naipe.</dd>
+##### quadra
+&nbsp;&nbsp;&nbsp;&nbsp;Quatro cartas com o mesmo valor.
 
-</dl>
+##### straight flush
+&nbsp;&nbsp;&nbsp;&nbsp;Cinco cartas em sequência (como definido acima) e com o mesmo naipe.
+
+
 
 A meta desses exercícios é estimar a probabilidade de ter estas várias mãos.
 

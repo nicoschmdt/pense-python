@@ -18,28 +18,28 @@ Ao ler uma frase em português ou uma declaração em uma linguagem formal, é p
 
 Embora as linguagens formais e naturais tenham muitas características em comum – símbolos, estrutura e sintaxe – há algumas diferenças:
 
-<dl>
-<dt>ambiguidade</dt>
-<dd>As linguagens naturais são cheias de ambiguidade e as pessoas lidam com isso usando pistas contextuais e outras informações. As linguagens formais são criadas para ser quase ou completamente inequívocas, ou seja, qualquer afirmação tem exatamente um significado, independentemente do contexto.</dd>
 
-<dt>redundância</dt>
-<dd>Para compensar a ambiguidade e reduzir equívocos, as linguagens naturais usam muita redundância. Por causa disso, muitas vezes são verborrágicas. As linguagens formais são menos redundantes e mais concisas.</dd>
+##### ambiguidade
+&nbsp;&nbsp;&nbsp;&nbsp;As linguagens naturais são cheias de ambiguidade e as pessoas lidam com isso usando pistas contextuais e outras informações. As linguagens formais são criadas para ser quase ou completamente inequívocas, ou seja, qualquer afirmação tem exatamente um significado, independentemente do contexto.
 
-<dt>literalidade</dt>
-<dd>As linguagens naturais são cheias de expressões e metáforas. Se eu digo “Caiu a ficha”, provavelmente não há ficha nenhuma na história, nem nada que tenha caído (esta é uma expressão para dizer que alguém entendeu algo depois de certo período de confusão). As linguagens formais têm significados exatamente iguais ao que expressam.</dd>
-</dl>
+##### redundância
+&nbsp;&nbsp;&nbsp;&nbsp;Para compensar a ambiguidade e reduzir equívocos, as linguagens naturais usam muita redundância. Por causa disso, muitas vezes são verborrágicas. As linguagens formais são menos redundantes e mais concisas.
+
+##### literalidade
+&nbsp;&nbsp;&nbsp;&nbsp;As linguagens naturais são cheias de expressões e metáforas. Se eu digo “Caiu a ficha”, provavelmente não há ficha nenhuma na história, nem nada que tenha caído (esta é uma expressão para dizer que alguém entendeu algo depois de certo período de confusão). As linguagens formais têm significados exatamente iguais ao que expressam.
+
 
 Como todos nós crescemos falando linguagens naturais, às vezes é difícil se ajustar a linguagens formais. A diferença entre a linguagem natural e a formal é semelhante à diferença entre poesia e prosa, mas vai além:
 
-<dl>
-<dt>Poesia</dt>
-<dd>As palavras são usadas tanto pelos sons como pelos significados, e o poema [inteiro](08-glossario.md#inteiro) cria um efeito ou resposta emocional. A ambiguidade não é apenas comum, mas muitas vezes proposital.</dd>
 
-<dt>Prosa</dt>
-<dd>O significado literal das palavras é o mais importante e a estrutura contribui para este significado. A prosa é mais acessível à análise que a poesia, mas muitas vezes ainda é ambígua.</dd>
+##### Poesia
+&nbsp;&nbsp;&nbsp;&nbsp;As palavras são usadas tanto pelos sons como pelos significados, e o poema [inteiro](08-glossario.md#inteiro) cria um efeito ou resposta emocional. A ambiguidade não é apenas comum, mas muitas vezes proposital.
 
-<dt>Programas</dt>
-<dd>A significado de um [programa](08-glossario.md#programa) de computador é inequívoco e literal e pode ser entendido inteiramente pela análise dos símbolos e da estrutura.</dd>
-</dl>
+##### Prosa
+&nbsp;&nbsp;&nbsp;&nbsp;O significado literal das palavras é o mais importante e a estrutura contribui para este significado. A prosa é mais acessível à análise que a poesia, mas muitas vezes ainda é ambígua.
+
+##### Programas
+&nbsp;&nbsp;&nbsp;&nbsp;A significado de um [programa](08-glossario.md#programa) de computador é inequívoco e literal e pode ser entendido inteiramente pela análise dos símbolos e da estrutura.
+
 
 As linguagens formais são mais densas que as naturais, então exigem mais tempo para a leitura. Além disso, a estrutura é importante, então nem sempre é melhor ler de cima para baixo e da esquerda para a direita. Em vez disso, aprenda a analisar o programa primeiro, identificando os símbolos e interpretando a estrutura. E os detalhes fazem diferença. Pequenos erros em ortografia e pontuação, que podem não importar tanto nas linguagens naturais, podem fazer uma grande diferença em uma língua formal.
