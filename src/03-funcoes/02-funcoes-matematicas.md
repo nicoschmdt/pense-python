@@ -2,20 +2,20 @@
 
 O Python tem um [módulo](13-glossario.md#módulo) matemático que oferece a maioria das funções matemáticas comuns. Um módulo é um arquivo que contém uma coleção de funções relacionadas.
 
-Antes que possamos usar as funções em um módulo, precisamos importá-lo com uma [instrução de importação](13-glossario.md#instrução-de importação):
+Antes que possamos usar as funções em um módulo, precisamos importá-lo com uma [instrução de importação](13-glossario.md#instrução-de-importação):
 
 ```python
 >>> import math
 ```
 
-Esta instrução cria um [objeto de módulo](13-glossario.md#objeto-de módulo) chamado math (matemática). Ao se exibir o objeto de módulo, são apresentadas informações sobre ele:
+Esta instrução cria um [objeto de módulo](13-glossario.md#objeto-de-módulo) chamado math (matemática). Ao se exibir o objeto de módulo, são apresentadas informações sobre ele:
 
 ```python
 >>> math
 <module 'math' (built-in)>
 ```
 
-O objeto de módulo contém as funções e variáveis definidas no módulo. Para acessar uma das funções, é preciso especificar o nome do módulo e o nome da [função](13-glossario.md#função), separados por um ponto. Este formato é chamado de [notação de ponto](13-glossario.md#notação-de ponto).
+O objeto de módulo contém as funções e variáveis definidas no módulo. Para acessar uma das funções, é preciso especificar o nome do módulo e o nome da [função](13-glossario.md#função), separados por um ponto. Este formato é chamado de [notação de ponto](13-glossario.md#notação-de-ponto).
 
 
 ```python

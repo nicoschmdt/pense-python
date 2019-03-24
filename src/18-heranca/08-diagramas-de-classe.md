@@ -2,7 +2,7 @@
 
 Por enquanto vimos diagramas de pilha, que mostram o estado de um programa e diagramas de objeto, que mostram os atributos de um objeto e seus valores. Esses diagramas representam um retrato da execução de um programa, então eles mudam no decorrer da execução do programa.
 
-Eles também são altamente detalhados; para alguns objetivos, detalhados demais. Um [diagrama de classe](11-glossario.md#diagrama-de classe) é uma representação mais abstrata da estrutura de um programa. Em vez de mostrar objetos individuais, ele mostra classes e as relações entre elas.
+Eles também são altamente detalhados; para alguns objetivos, detalhados demais. Um [diagrama de classe](11-glossario.md#diagrama-de-classe) é uma representação mais abstrata da estrutura de um programa. Em vez de mostrar objetos individuais, ele mostra classes e as relações entre elas.
 
 Há vários tipos de relações entre as classes:
 

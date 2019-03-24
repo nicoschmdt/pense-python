@@ -37,7 +37,7 @@ False
 True
 ```
 
-A Figura 15.3 mostra como fica o [diagrama de objeto](08-glossario.md#diagrama-de objeto). Esta operação chama-se [cópia superficial](08-glossario.md#cópia-superficial) porque copia o objeto e qualquer referência que contenha, mas não os objetos integrados.
+A Figura 15.3 mostra como fica o [diagrama de objeto](08-glossario.md#diagrama-de-objeto). Esta operação chama-se [cópia superficial](08-glossario.md#cópia-superficial) porque copia o objeto e qualquer referência que contenha, mas não os objetos integrados.
 
 ![Figura 15.3 – Diagrama: dois objetos Rectangle compartilhando o mesmo Point](/fig/tnkp_1503.png).
 <br>_Figura 15.3 – Diagrama: dois objetos_ `Rectangle` _compartilhando o mesmo_ `Point`.

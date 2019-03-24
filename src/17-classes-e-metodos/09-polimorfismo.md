@@ -1,6 +1,6 @@
 ## 17.9 - Polimorfismo
 
-O [despacho por tipo](12-glossario.md#despacho-por tipo) é útil, mas (felizmente) nem sempre é necessário. Muitas vezes, você pode evitá-lo escrevendo funções que funcionem corretamente para argumentos de tipos diferentes.
+O [despacho por tipo](12-glossario.md#despacho-por-tipo) é útil, mas (felizmente) nem sempre é necessário. Muitas vezes, você pode evitá-lo escrevendo funções que funcionem corretamente para argumentos de tipos diferentes.
 
 Muitas das funções que escrevemos para strings também funcionam para outros tipos de sequência. Por exemplo, em “Um dicionário como uma coleção de contadores”, na página 163, usamos histogram para contar o número de vezes que cada letra aparece numa palavra:
 

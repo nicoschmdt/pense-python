@@ -61,7 +61,7 @@ A razão dessa convenção é uma metáfora implícita:
 
 * A sintaxe de uma chamada de função, `print_time(start)`, sugere que a função é o agente ativo. Ela diz algo como: “Ei, `print_time`! Aqui está um objeto para você exibir”.
 
-* Na [programação orientada a objeto](12-glossario.md#programação-orientada a objeto), os objetos são os agentes ativos. Uma invocação de método `como start.print_time()` diz: “Ei, `start`! Por favor, exiba-se”.
+* Na [programação orientada a objeto](12-glossario.md#programação-orientada a-objeto), os objetos são os agentes ativos. Uma invocação de método `como start.print_time()` diz: “Ei, `start`! Por favor, exiba-se”.
 
 Essa mudança de perspectiva pode ser mais polida, mas não é óbvio que seja útil. Nos exemplos que vimos até agora, pode não ser. Porém, às vezes, deslocar a responsabilidade das funções para os objetos permite escrever funções (ou métodos) mais versáteis e facilita a manutenção e reutilização do código.
 

@@ -1,6 +1,6 @@
 ## 16.4 - Prototipação versus planejamento
 
-O plano de desenvolvimento que estou demonstrando chama-se “[protótipo e correção](06-glossario.md#protótipo-e correção)”. Para cada função, escrevi um protótipo que executa o cálculo básico e então testa a função, corrigindo erros no decorrer do caminho.
+O plano de desenvolvimento que estou demonstrando chama-se “[protótipo e correção](06-glossario.md#protótipo-e-correção)”. Para cada função, escrevi um protótipo que executa o cálculo básico e então testa a função, corrigindo erros no decorrer do caminho.
 
 Esta abordagem pode ser eficaz, especialmente se você ainda não tem uma compreensão profunda do problema. Porém, as correções incrementais podem gerar código que se complica desnecessariamente (pois trata de muitos casos especiais) e pouco confiáveis (já que é difícil saber se todos os erros foram encontrados).
 

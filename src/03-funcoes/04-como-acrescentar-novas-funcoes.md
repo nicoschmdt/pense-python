@@ -10,7 +10,7 @@ def print_lyrics():
     print("I sleep all night and I work all day.")
 ```
 
-`def` é uma palavra-chave que indica uma [definição de função](13-glossario.md#definição-de função). O nome da função é `print_lyrics`. As regras para nomes de função são as mesmas que as das variáveis: letras, números e sublinhado são legais, mas o primeiro caractere não pode ser um número. Não podemos usar uma palavra-chave como nome de uma função e devemos evitar ter uma variável e uma função com o mesmo nome.
+`def` é uma palavra-chave que indica uma [definição de função](13-glossario.md#definição-de-função). O nome da função é `print_lyrics`. As regras para nomes de função são as mesmas que as das variáveis: letras, números e sublinhado são legais, mas o primeiro caractere não pode ser um número. Não podemos usar uma palavra-chave como nome de uma função e devemos evitar ter uma variável e uma função com o mesmo nome.
 
 Os parênteses vazios depois do nome indicam que esta função não usa argumentos.
 

@@ -1,6 +1,6 @@
 ## 3.1 - Chamada de [função](13-glossario.md#função)
 
-Já vimos um exemplo de [chamada de função](13-glossario.md#chamada-de função):
+Já vimos um exemplo de [chamada de função](13-glossario.md#chamada-de-função):
 
 ```python
 >>> type(42)
@@ -9,7 +9,7 @@ Já vimos um exemplo de [chamada de função](13-glossario.md#chamada-de funçã
 
 O nome da função é type. A expressão entre parênteses é chamada de [argumento](13-glossario.md#argumento) da função. Para esta função, o resultado é o tipo do argumento.
 
-É comum dizer que uma função “recebe” um argumento e “retorna” um resultado. O resultado também é chamado de [valor de retorno](13-glossario.md#valor-de retorno).
+É comum dizer que uma função “recebe” um argumento e “retorna” um resultado. O resultado também é chamado de [valor de retorno](13-glossario.md#valor-de-retorno).
 
 O Python oferece funções que convertem valores de um tipo em outro. A função int recebe qualquer valor e o converte em um número inteiro, se for possível, ou declara que há um erro:
 

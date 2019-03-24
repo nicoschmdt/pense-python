@@ -1,6 +1,6 @@
 ## 3.9 - Diagrama da pilha
 
-Para monitorar quais variáveis podem ser usadas e onde, é uma boa ideia desenhar um [diagrama da pilha](13-glossario.md#diagrama-da pilha). Assim como diagramas de estado, os diagramas da pilha mostram o valor de cada variável, mas também mostram a [função](13-glossario.md#função) à qual cada variável pertence.
+Para monitorar quais variáveis podem ser usadas e onde, é uma boa ideia desenhar um [diagrama da pilha](13-glossario.md#diagrama-da-pilha). Assim como diagramas de estado, os diagramas da pilha mostram o valor de cada variável, mas também mostram a [função](13-glossario.md#função) à qual cada variável pertence.
 
 Cada função é representada por um [frame](13-glossario.md#frame) (quadro). Um frame é uma caixa com o nome de uma função junto a ele e os parâmetros e as variáveis da função dentro dele. O diagrama da pilha para o exemplo anterior é exibido na Figura 3.1.
 
@@ -11,7 +11,7 @@ Os frames são organizados em uma pilha que indica qual função que foi chamada
 
 Cada [parâmetro](13-glossario.md#parâmetro) refere-se ao mesmo valor como seu [argumento](13-glossario.md#argumento) correspondente. Desta forma, part1 tem o mesmo valor que line1, part2 tem o mesmo valor que line2 e bruce tem o mesmo valor que cat.
 
-Se ocorrer um erro durante uma [chamada de função](13-glossario.md#chamada-de função), o Python exibe o nome da função, o nome da função que a chamou e o nome da função que chamou esta função por sua vez, voltando até `__main__`.
+Se ocorrer um erro durante uma [chamada de função](13-glossario.md#chamada-de-função), o Python exibe o nome da função, o nome da função que a chamou e o nome da função que chamou esta função por sua vez, voltando até `__main__`.
 
 Por exemplo, se você tentar acessar `cat` de dentro de `print_twice`, receberá uma mensagem de `NameError`:
 

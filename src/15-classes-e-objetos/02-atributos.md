@@ -11,7 +11,7 @@ Essa sintaxe é semelhante à usada para selecionar uma variável de um módulo,
 
 Em inglês, quando é um substantivo, a palavra “AT-trib-ute” é pronunciada com ênfase na primeira sílaba, ao contrário de “a-TRIB-ute”, que é um verbo.
 
-O diagrama seguinte mostra o resultado dessas atribuições. Um diagrama de estado que mostra um objeto e seus atributos chama-se [diagrama de objeto](08-glossario.md#diagrama-de objeto); veja a Figura 15.1.
+O diagrama seguinte mostra o resultado dessas atribuições. Um diagrama de estado que mostra um objeto e seus atributos chama-se [diagrama de objeto](08-glossario.md#diagrama-de-objeto); veja a Figura 15.1.
 
 ![Figura 15.1 – Diagrama de um objeto Point](/fig/tnkp_1501.png).
 <br>_Figura 15.1 – Diagrama de um objeto_ `Point`.

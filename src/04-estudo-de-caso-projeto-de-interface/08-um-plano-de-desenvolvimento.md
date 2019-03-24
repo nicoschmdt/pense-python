@@ -1,4 +1,4 @@
-## 4.8 - Um [plano de desenvolvimento](11-glossario.md#plano-de desenvolvimento)
+## 4.8 - Um [plano de desenvolvimento](11-glossario.md#plano-de-desenvolvimento)
 
 Um plano de desenvolvimento é um processo para escrever programas. O processo que usamos neste estudo de caso é “[encapsulamento](11-glossario.md#encapsulamento) e [generalização](11-glossario.md#generalização)”. Os passos deste processo são:
 

@@ -8,4 +8,4 @@ Exemplos de programas persistentes são sistemas operacionais, que rodam pratica
 
 Uma das formas mais simples para programas manterem seus dados é lendo e escrevendo arquivos de texto. Já vimos programas que leem arquivos de texto; neste capítulo veremos programas que os escrevem.
 
-Uma alternativa é armazenar o estado do programa em um [banco de dados](11-glossario.md#banco-de dados). Neste capítulo apresentarei um banco de dados simples e um módulo, pickle, que facilita o armazenamento de dados de programas.
+Uma alternativa é armazenar o estado do programa em um [banco de dados](11-glossario.md#banco-de-dados). Neste capítulo apresentarei um banco de dados simples e um módulo, pickle, que facilita o armazenamento de dados de programas.
