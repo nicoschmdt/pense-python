@@ -2,7 +2,7 @@
 
 ### Exercício 9.7
 
-Esta pergunta é baseada em um quebra-cabeça veiculado em um programa de rádio chamado Car Talk (http://www.cartalk.com/content/puzzlers):
+Esta pergunta é baseada em um quebra-cabeça veiculado em um programa de rádio chamado Car Talk (<http://www.cartalk.com/content/puzzlers>):
 
 Dê uma palavra com três letras duplas consecutivas. Vou dar exemplos de palavras que quase cumprem a condição, mas não chegam lá. Por exemplo, a palavra committee, c-o-m-m-i-t-t-e-e. Seria perfeita se não fosse aquele ‘i’ que se meteu ali no meio. Ou Mississippi: M-i-s-s-i-s-s-i-p-p-i. Se pudesse tirar aqueles ‘is’, daria certo. Mas há uma palavra que tem três pares consecutivos de letras e, que eu saiba, pode ser a única palavra que existe. É claro que provavelmente haja mais umas 500, mas só consigo pensar nessa. Qual é a palavra?
 
@@ -12,7 +12,7 @@ Solução: [http://thinkpython2.com/code/cartalk1.py](http://thinkpython2.com/co
 
 ### Exercício 9.8
 
-Aqui está outro quebra-cabeça do programa Car Talk (http://www.cartalk.com/content/puzzlers):
+Aqui está outro quebra-cabeça do programa Car Talk (<http://www.cartalk.com/content/puzzlers>):
 
 “Estava dirigindo outro dia e percebi algo no hodômetro que chamou a minha atenção. Como a maior parte dos hodômetros, ele mostra seis dígitos, apenas em milhas inteiras. Por exemplo, se o meu carro tivesse 300.000 milhas, eu veria 3-0-0-0-0-0.
 
@@ -28,7 +28,7 @@ Solução: [http://thinkpython2.com/code/cartalk2.py](http://thinkpython2.com/co
 
 ### Exercício 9.9
 
-Aqui está outro problema do Car Talk que você pode resolver com uma busca (http://www.cartalk.com/content/puzzlers):
+Aqui está outro problema do Car Talk que você pode resolver com uma busca (<http://www.cartalk.com/content/puzzlers>):
 
 “Há pouco tempo recebi uma visita da minha mãe e percebemos que os dois dígitos que compõem a minha idade, quando invertidos, representavam a idade dela. Por exemplo, se ela tem 73 anos, eu tenho 37 anos. Ficamos imaginando com que frequência isto aconteceu nos anos anteriores, mas acabamos mudando de assunto e não chegamos a uma resposta.
 

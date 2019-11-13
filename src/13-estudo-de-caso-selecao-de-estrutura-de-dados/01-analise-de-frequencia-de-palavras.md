@@ -18,7 +18,7 @@ Além disso, você pode usar os métodos de string, strip, replace e translate.
 
 ### Exercício 13.2
 
-Acesse o Projeto Gutenberg (http://gutenberg.org) e baixe seu livro favorito em domínio público em formato de texto simples.
+Acesse o Projeto Gutenberg (<https://gutenberg.org>) e baixe seu livro favorito em domínio público em formato de texto simples.
 
 Altere seu programa do exercício anterior para ler o livro que você baixou, pulando as informações do cabeçalho no início do arquivo e processando o resto das palavras como antes.
 
