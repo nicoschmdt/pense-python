@@ -1,6 +1,6 @@
 ## 17.1 - Recursos de orientação a objeto
 
-Python é uma linguagem de [programação orientada a objeto](12-glossario.md#programação-orientada a-objeto), ou seja, ela oferece recursos de programação orientada a objeto que tem a seguintes características:
+Python é uma linguagem de [programação orientada a objeto](12-glossario.md#programação-orientada-a-objeto), ou seja, ela oferece recursos de programação orientada a objeto que tem a seguintes características:
 
 * Os programas incluem definições de classes e métodos.
 
