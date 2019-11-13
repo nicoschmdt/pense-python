@@ -37,7 +37,7 @@ Solução: [http://thinkpython2.com/code/metathesis.py](http://thinkpython2.com/
 
 ### Exercício 12.4
 
-Aqui está outro quebra-cabeça do programa Car Talk (http://www.cartalk.com/content/puzzlers):
+Aqui está outro quebra-cabeça do programa Car Talk (<http://www.cartalk.com/content/puzzlers>):
 
 Qual é a palavra inglesa mais longa, que permanece uma palavra inglesa válida, conforme vai removendo suas letras, uma após a outra?
 

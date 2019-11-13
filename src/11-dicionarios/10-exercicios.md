@@ -36,7 +36,7 @@ Solução: [http://thinkpython2.com/code/rotate_pairs.py](http://thinkpython2.co
 
 ### Exercício 11.6
 
-Aqui está outro quebra-cabeça do programa Car Talk (http://www.cartalk.com/content/puzzlers):
+Aqui está outro quebra-cabeça do programa Car Talk (<http://www.cartalk.com/content/puzzlers>):
 
 Ele foi enviado por Dan O’Leary. Dan descobriu uma palavra comum, com uma sílaba e cinco letras que tem a seguinte propriedade única. Ao removermos a primeira letra, as letras restantes formam um homófono da palavra original, que é uma palavra que soa exatamente da mesma forma. Substitua a primeira letra, isto é, coloque-a de volta, retire a segunda letra e o resultado é um outro homófono da palavra original. E a pergunta é, qual é a palavra?
 
