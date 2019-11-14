@@ -48,21 +48,21 @@ Em geral, esperamos que um algoritmo com um termo principal menor seja um algori
 
 Se dois algoritmos tiverem o mesmo termo principal de ordem, é difícil dizer qual é melhor; mais uma vez, a resposta depende dos detalhes. Assim, para a análise algorítmica, funções com o mesmo termo principal são consideradas equivalentes, mesmo se tiverem coeficientes diferentes.
 
-Uma ordem de crescimento é um conjunto de funções cujo comportamento de crescimento é considerado equivalente. Por exemplo, 2n, 100n e n+1 pertencem à mesma ordem de crescimento, que se escreve O(n) em notação Grande-O e muitas vezes é chamada de linear, porque cada função no conjunto cresce linearmente em relação a n.
+Uma ordem de crescimento é um conjunto de funções cujo comportamento de crescimento é considerado equivalente. Por exemplo, 2n, 100n e n+1 pertencem à mesma ordem de crescimento, que se escreve \\( O(n) \\) em notação Grande-O e muitas vezes é chamada de linear, porque cada função no conjunto cresce linearmente em relação a n.
 
-Todas as funções com o termo principal n2 pertencem a O(n2); elas são chamadas de quadráticas.
+Todas as funções com o termo principal \\( n^2 \\) pertencem a \\( O(n^2) \\); elas são chamadas de quadráticas.
 
 A tabela seguinte mostra algumas ordens de crescimento mais comuns na análise algorítmica, em ordem crescente de complexidade.
 
-| Ordem de crescimento | Nome                          |
-|----------------------|-------------------------------|
-| \\( (1) \\)          | constante                     |
-| \\( (log_b n) \\)    | logarítmica (para qualquer b) |
-| \\( (n) \\)          | linear                        |
-| \\( (n log_b n) \\)  | log-linear                    |
-| \\( (n^2)  \\)       | quadrática                    |
-| \\( (n^3) \\)        | cúbica                        |
-| \\( O(c^n) \\)       | exponencial (para qualquer c) |
+| Ordem de crescimento  | Nome                          |
+|-----------------------|-------------------------------|
+| \\( O(1) \\)          | constante                     |
+| \\( O(\log_b n) \\)   | logarítmica (para qualquer b) |
+| \\( O(n) \\)          | linear                        |
+| \\( O(n \log_b n) \\) | log-linear                    |
+| \\( O(n^2)  \\)       | quadrática                    |
+| \\( O(n^3) \\)        | cúbica                        |
+| \\( O(c^n) \\)        | exponencial (para qualquer c) |
 
 Para os termos logarítmicos, a base do logaritmo não importa; a alteração de bases é o equivalente da multiplicação por uma constante, o que não altera a ordem de crescimento. De forma similar, todas as funções exponenciais pertencem à mesma ordem de crescimento, apesar da base do expoente. As funções exponenciais crescem muito rapidamente, então os algoritmos exponenciais só são úteis para pequenos problemas.
 
