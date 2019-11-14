@@ -18,13 +18,13 @@ A meta da análise de algoritmos é fazer comparações significativas entre alg
 
 * O desempenho relativo também depende do tamanho do problema. Um algoritmo de ordenação que é rápido para pequenas listas pode ser lento para longas listas. A solução habitual para este problema é expressar o tempo de execução (ou o número de operações) como uma função do tamanho de problema e funções de grupo em categorias que dependem de sua velocidade de crescimento quando o tamanho de problema aumenta.
 
-Uma coisa boa sobre este tipo de comparação é que ela é própria para a classificação simples de algoritmos. Por exemplo, se souber que o tempo de execução do algoritmo A tende a ser proporcional ao tamanho da entrada n, e o algoritmo B tende a ser proporcional a n2, então espero que A seja mais rápido que B, pelo menos para valores grandes de n.
+Uma coisa boa sobre este tipo de comparação é que ela é própria para a classificação simples de algoritmos. Por exemplo, se souber que o tempo de execução do algoritmo A tende a ser proporcional ao tamanho da entrada n, e o algoritmo B tende a ser proporcional a \\( n^2 \\), então espero que A seja mais rápido que B, pelo menos para valores grandes de n.
 
 Esse tipo de análise tem algumas desvantagens, mas falaremos disso mais adiante.
 
 ## B.1 - Ordem de crescimento
 
-Vamos supor que você analisou dois algoritmos e expressou seus tempos de execução em relação ao tamanho da entrada: o algoritmo A leva 100n+1 passos para resolver um problema com o tamanho n; o algoritmo B leva n2 + n + 1 passos.
+Vamos supor que você analisou dois algoritmos e expressou seus tempos de execução em relação ao tamanho da entrada: o algoritmo A leva 100n+1 passos para resolver um problema com o tamanho n; o algoritmo B leva \\( n^2 + n + 1 \\) passos.
 
 A tabela seguinte mostra o tempo de execução desses algoritmos para tamanhos de problema diferentes:
 
@@ -38,9 +38,9 @@ A tabela seguinte mostra o tempo de execução desses algoritmos para tamanhos d
 
 Ao chegar em n=10, o algoritmo A parece bem ruim; ele é quase dez vezes mais longo que o algoritmo B. No entanto, para n=100 eles são bem parecidos, e, para valores maiores, A é muito melhor.
 
-A razão fundamental é que para grandes valores de n, qualquer função que contenha um termo n2 será mais rápida que uma função cujo termo principal seja n. O termo principal é o que tem o expoente mais alto.
+A razão fundamental é que para grandes valores de n, qualquer função que contenha um termo \\( n^2 \\) será mais rápida que uma função cujo termo principal seja n. O termo principal é o que tem o expoente mais alto.
 
-Para o algoritmo A, o termo principal tem um grande coeficiente, 100, que é a razão de B ser melhor que A para um valor pequeno de n. Entretanto, apesar dos coeficientes, sempre haverá algum valor de n em que an2 > bn, para valores de a e b.
+Para o algoritmo A, o termo principal tem um grande coeficiente, 100, que é a razão de B ser melhor que A para um valor pequeno de n. Entretanto, apesar dos coeficientes, sempre haverá algum valor de n em que \\( an^2 > bn \\), para valores de a e b.
 
 O mesmo argumento se aplica aos termos que não são principais. Mesmo se o tempo de execução do algoritmo A fosse n+1000000, ainda seria melhor que o algoritmo B para um valor suficientemente grande de n.
 
@@ -48,21 +48,21 @@ Em geral, esperamos que um algoritmo com um termo principal menor seja um algori
 
 Se dois algoritmos tiverem o mesmo termo principal de ordem, é difícil dizer qual é melhor; mais uma vez, a resposta depende dos detalhes. Assim, para a análise algorítmica, funções com o mesmo termo principal são consideradas equivalentes, mesmo se tiverem coeficientes diferentes.
 
-Uma ordem de crescimento é um conjunto de funções cujo comportamento de crescimento é considerado equivalente. Por exemplo, 2n, 100n e n+1 pertencem à mesma ordem de crescimento, que se escreve O(n) em notação Grande-O e muitas vezes é chamada de linear, porque cada função no conjunto cresce linearmente em relação a n.
+Uma ordem de crescimento é um conjunto de funções cujo comportamento de crescimento é considerado equivalente. Por exemplo, 2n, 100n e n+1 pertencem à mesma ordem de crescimento, que se escreve \\( O(n) \\) em notação Grande-O e muitas vezes é chamada de linear, porque cada função no conjunto cresce linearmente em relação a n.
 
-Todas as funções com o termo principal n2 pertencem a O(n2); elas são chamadas de quadráticas.
+Todas as funções com o termo principal \\( n^2 \\) pertencem a \\( O(n^2) \\); elas são chamadas de quadráticas.
 
 A tabela seguinte mostra algumas ordens de crescimento mais comuns na análise algorítmica, em ordem crescente de complexidade.
 
-| Ordem de crescimento | Nome                          |
-|----------------------|-------------------------------|
-| O(1)                 | constante                     |
-| O(logb n)            | logarítmica (para qualquer b) |
-| O(n)                 | linear                        |
-| O(n logb n)          | log-linear                    |
-| O(n2)                | quadrática                    |
-| O(n3)                | cúbica                        |
-| O(cn)                | exponencial (para qualquer c) |
+| Ordem de crescimento  | Nome                          |
+|-----------------------|-------------------------------|
+| \\( O(1) \\)          | constante                     |
+| \\( O(\log_b n) \\)   | logarítmica (para qualquer b) |
+| \\( O(n) \\)          | linear                        |
+| \\( O(n \log_b n) \\) | log-linear                    |
+| \\( O(n^2)  \\)       | quadrática                    |
+| \\( O(n^3) \\)        | cúbica                        |
+| \\( O(c^n) \\)        | exponencial (para qualquer c) |
 
 Para os termos logarítmicos, a base do logaritmo não importa; a alteração de bases é o equivalente da multiplicação por uma constante, o que não altera a ordem de crescimento. De forma similar, todas as funções exponenciais pertencem à mesma ordem de crescimento, apesar da base do expoente. As funções exponenciais crescem muito rapidamente, então os algoritmos exponenciais só são úteis para pequenos problemas.
 
@@ -70,17 +70,17 @@ Para os termos logarítmicos, a base do logaritmo não importa; a alteração de
 
 Leia a página da Wikipédia sobre a notação Grande-O (Big-Oh notation) em [http://en.wikipedia.org/wiki/Big_O_notation](http://en.wikipedia.org/wiki/Big_O_notation) e responda às seguintes perguntas:
 
-1. Qual é a ordem de crescimento de n3 + n2? E de 1000000n3 + n2? Ou de n3 + 1000000n2?
+1. Qual é a ordem de crescimento de \\( n^3 + n^2 \\)? E de \\( 1000000n^3 + n^2 \\)? Ou de \\( n^3 + 1000000n^2 \\)?
 
-2. Qual é a ordem de crescimento de (n2 + n) . (n + 1)? Antes de começar a multiplicar, lembre-se de que você só precisa do termo principal.
+2. Qual é a ordem de crescimento de \\( (n^2 + n) . (n + 1) \\)? Antes de começar a multiplicar, lembre-se de que você só precisa do termo principal.
 
-3. Se f está em O(g), para alguma função não especificada g, o que podemos dizer de af+b?
+3. Se f está em \\( O(g) \\), para alguma função não especificada g, o que podemos dizer de af+b?
 
-4. Se f1 e f2 estão em O(g), o que podemos dizer a respeito de f1 + f2?
+4. Se f1 e f2 estão em \\( O(g) \\), o que podemos dizer a respeito de f1 + f2?
 
-5. Se f1 está em O(g) e f2 está em O(h), o que podemos dizer a respeito de f1 + f2?
+5. Se f1 está em \\( O(g) \\) e f2 está em \\( O(h) \\), o que podemos dizer a respeito de f1 + f2?
 
-6. Se f1 está em O(g) e f2 é O(h), o que podemos dizer a respeito de f1 . f2?
+6. Se f1 está em \\( O(g) \\) e f2 é O(h) \\), o que podemos dizer a respeito de f1 . f2?
 
 Programadores que se preocupam com o desempenho muitas vezes consideram esse tipo de análise difícil de engolir. A razão para isso é: às vezes os coeficientes e os termos não principais fazem muita diferença. Os detalhes do hardware, a linguagem de programação e as características da entrada fazem grande diferença. E para pequenos problemas, o comportamento assintótico é irrelevante.
 
@@ -102,9 +102,9 @@ for x in t:
 
 A função integrada sum também é linear porque faz a mesma coisa, mas tende a ser mais rápida porque é uma implementação mais eficiente; na linguagem da análise algorítmica, tem um coeficiente principal menor.
 
-Via de regra, se o corpo de um loop está em O(na), então o loop inteiro está em O(na + 1). A exceção é se você puder mostrar que o loop encerra depois de um número constante de iterações. Se um loop é executado k vezes, não importa o valor de n, então o loop está em O(na), mesmo para valores grandes de k.
+Via de regra, se o corpo de um loop está em \\( O(na) \\), então o loop inteiro está em \\( O(na + 1) \\). A exceção é se você puder mostrar que o loop encerra depois de um número constante de iterações. Se um loop é executado k vezes, não importa o valor de n, então o loop está em \\( O(na) \\), mesmo para valores grandes de k.
 
-A multiplicação por k não altera a ordem de crescimento, nem a divisão. Então, se o corpo de um loop está em O(na) e é executado n/k vezes, o loop está em O(na + 1), mesmo para valores grandes de k.
+A multiplicação por k não altera a ordem de crescimento, nem a divisão. Então, se o corpo de um loop está em \\( O(na) \\) e é executado n/k vezes, o loop está em \\( O(na + 1) \\), mesmo para valores grandes de k.
 
 A maior parte das operações de strings e tuplas são lineares, exceto a indexação e len, que são de tempo constante. As funções integradas min e max são lineares. O tempo de execução de uma operação de fatia é proporcional ao comprimento da saída, mas não depende do tamanho da entrada.
 
@@ -114,11 +114,11 @@ Todos os métodos de string são lineares, mas se os comprimentos das strings fo
 
 A maior parte dos métodos de lista são lineares, mas há algumas exceções:
 
-* A soma de um elemento ao fim de uma lista é de tempo constante em média; quando o espaço acaba, ela ocasionalmente é copiada a uma posição maior, mas o tempo total de operações n é O(n), portanto o tempo médio de cada operação é O(1).
+* A soma de um elemento ao fim de uma lista é de tempo constante em média; quando o espaço acaba, ela ocasionalmente é copiada a uma posição maior, mas o tempo total de operações n é \\( O(n) \\), portanto o tempo médio de cada operação é \\( O(1) \\).
 
 * A remoção de um elemento do fim de uma lista é de tempo constante.
 
-* A ordenação é O(n log n).
+* A ordenação é \\( O(n \log n) \\).
 
 A maior parte das operações e métodos de dicionário são de tempo constante, mas há algumas exceções:
 
@@ -144,7 +144,7 @@ Leia a página da Wikipédia sobre algoritmos de ordenação em [http://en.wikip
 
 6. Que algoritmo de ordenação a biblioteca C usa? Que algoritmo de ordenação o Python usa? Esses algoritmos são estáveis? Você pode ter que pesquisar no Google para encontrar essas respostas.
 
-7. Muitos dos tipos de não comparação são lineares, então, por que o Python usa um tipo de comparação O(n log n)?
+7. Muitos dos tipos de não comparação são lineares, então, por que o Python usa um tipo de comparação \\( O(n \log n) \\)?
 
 ## B.3 - Análise de algoritmos de busca
 
@@ -154,7 +154,7 @@ O algoritmo de busca mais simples é uma “busca linear”, que atravessa os it
 
 O operador in para sequências usa uma busca linear; assim como métodos de string como find e count.
 
-Se os elementos da sequência estiverem em ordem, você pode usar uma busca por bisseção, que é O(log n). A busca por bisseção é semelhante ao algoritmo que você poderia usar para procurar uma palavra em um dicionário (um dicionário de papel, não a estrutura de dados). Em vez de começar no início e verificar cada item em ordem, você começa com o item do meio e verifica se a palavra que está procurando vem antes ou depois. Se vier antes, então procura na primeira metade da sequência. Se não, procura na segunda metade. Seja como for, você corta o número de itens restantes pela metade.
+Se os elementos da sequência estiverem em ordem, você pode usar uma busca por bisseção, que é \\( O(\log n) \\). A busca por bisseção é semelhante ao algoritmo que você poderia usar para procurar uma palavra em um dicionário (um dicionário de papel, não a estrutura de dados). Em vez de começar no início e verificar cada item em ordem, você começa com o item do meio e verifica se a palavra que está procurando vem antes ou depois. Se vier antes, então procura na primeira metade da sequência. Se não, procura na segunda metade. Seja como for, você corta o número de itens restantes pela metade.
 
 Se a sequência tiver um milhão de itens, serão necessários cerca de 20 passos para encontrar a palavra ou concluir que não está lá. Então é aproximadamente 50 mil vezes mais rápido que uma busca linear.
 
@@ -198,7 +198,7 @@ class LinearMap:
 
 `get` usa um loop for para buscar na lista: se encontrar a chave-alvo, retorna o valor correspondente; do contrário, exibe um KeyError. Então get é linear.
 
-Uma alternativa é manter uma lista ordenada por chaves. Assim, get poderia usar uma busca por bisseção, que é O(log n). Porém, inserir um novo item no meio de uma lista é linear, então isso pode não ser a melhor opção. Há outras estruturas de dados que podem implementar `add` e `get` em tempo logarítmico, mas isso não é tão bom como tempo constante, então vamos continuar.
+Uma alternativa é manter uma lista ordenada por chaves. Assim, get poderia usar uma busca por bisseção, que é \\( O(\log n) \\). Porém, inserir um novo item no meio de uma lista é linear, então isso pode não ser a melhor opção. Há outras estruturas de dados que podem implementar `add` e `get` em tempo logarítmico, mas isso não é tão bom como tempo constante, então vamos continuar.
 
 Uma forma de melhorar `LinearMap` é quebrar a lista de pares chave-valor em listas menores. Aqui está uma implementação chamada `BetterMap`, que é uma lista de cem LinearMaps. Como veremos em um segundo, a ordem de crescimento para get ainda é linear, mas `BetterMap` é um passo no caminho em direção a hashtables:
 
@@ -276,7 +276,7 @@ O próximo add custa cinco unidades, mas os três seguintes são só uma unidade
 
 O próximo add custa nove unidades, mas então podemos inserir mais sete antes da próxima alteração de tamanho, então o total é de 30 unidades para as primeiras 16 inserções.
 
-Depois de 32 inserções, o custo total é de 62 unidades, e espero que você esteja começando a ver um padrão. Depois de n inserções, nas quais n é uma potência de dois, o custo total é de 2n-2 unidades, então o trabalho médio por inserção é um pouco menos de duas unidades. Quando n é uma potência de dois, esse é o melhor caso; para outros valores de n, o trabalho médio é um pouco maior, mas isso não é importante. O importante é que seja O(1).
+Depois de 32 inserções, o custo total é de 62 unidades, e espero que você esteja começando a ver um padrão. Depois de n inserções, nas quais n é uma potência de dois, o custo total é de 2n-2 unidades, então o trabalho médio por inserção é um pouco menos de duas unidades. Quando n é uma potência de dois, esse é o melhor caso; para outros valores de n, o trabalho médio é um pouco maior, mas isso não é importante. O importante é que seja \\( O(1) \\).
 
 A Figura 21.1 mostra graficamente como isso funciona. Cada bloco representa uma unidade de trabalho. As colunas mostram o trabalho total para cada inserção na ordem da esquerda para a direita: os primeiros dois adds custam uma unidade, o terceiro custa três unidades etc.
 
@@ -311,13 +311,13 @@ Você pode baixar minha implementação de `HashMap` em [http://thinkpython2.com
 &nbsp;&nbsp;&nbsp;&nbsp;Conjunto de funções em que todas crescem em uma forma considerada equivalente para os propósitos da análise de algoritmos. Por exemplo, todas as funções que crescem linearmente pertencem à mesma ordem de crescimento.
 
 ##### notação Grande-O (Big-Oh notation)
-&nbsp;&nbsp;&nbsp;&nbsp;Notação para representar uma ordem de crescimento; por exemplo, O(n) representa o conjunto de funções que crescem linearmente.
+&nbsp;&nbsp;&nbsp;&nbsp;Notação para representar uma ordem de crescimento; por exemplo, \\( O(n) \\) representa o conjunto de funções que crescem linearmente.
 
 ##### linear
 &nbsp;&nbsp;&nbsp;&nbsp;Algoritmo cujo tempo de execução é proporcional ao tamanho do problema, pelo menos para grandes tamanhos de problema.
 
 ##### quadrático
-&nbsp;&nbsp;&nbsp;&nbsp;Algoritmo cujo tempo de execução é proporcional a n2, onde n é uma medida de tamanho do problema.
+&nbsp;&nbsp;&nbsp;&nbsp;Algoritmo cujo tempo de execução é proporcional a \\( n^2 \\), onde n é uma medida de tamanho do problema.
 
 ##### busca
 &nbsp;&nbsp;&nbsp;&nbsp;Problema de localizar um elemento de uma coleção (como uma lista ou dicionário) ou de decidir que não está presente.

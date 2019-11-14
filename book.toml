@@ -5,6 +5,9 @@ description = "Pense como um cientista da computação"
 multilingual = false
 src = "src"
 
+[output.html]
+mathjax-support = true
+
 [build]
 build-dir = "book"
 create-missing = false
