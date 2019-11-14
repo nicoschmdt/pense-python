@@ -8,7 +8,7 @@ A meta prática da análise de algoritmos é prever o desempenho de algoritmos d
 
 Durante a campanha presidencial dos Estados Unidos de 2008, pediram ao candidato Barack Obama para fazer uma entrevista de emprego improvisada quando visitou a Google. O diretor executivo, Eric Schmidt, brincou, pedindo a ele “a forma mais eficiente de classificar um milhão de números inteiros de 32 bits”. Aparentemente, Obama tinha sido alertado porque respondeu na hora: “Creio que a ordenação por bolha (bubble sort) não seria a escolha certa”. Veja [http://bit.ly/1MpIwTf](http://bit.ly/1MpIwTf).
 
-Isso é verdade: a ordenação por bolha é conceitualmente simples, mas lenta para grandes conjuntos de dados. A resposta que Schmidt procurava provavelmente é “ordenação radix” [radix sort](http://en.wikipedia.org/wiki/Radix_sort)[2].
+Isso é verdade: a ordenação por bolha é conceitualmente simples, mas lenta para grandes conjuntos de dados. A resposta que Schmidt procurava provavelmente é “ordenação radix” [(radix sort)](http://en.wikipedia.org/wiki/Radix_sort)[2].
 
 A meta da análise de algoritmos é fazer comparações significativas entre algoritmos, mas há alguns problemas:
 
