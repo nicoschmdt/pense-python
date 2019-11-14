@@ -1,6 +1,6 @@
 ## 16.2 - Funções puras
 
-Nas próximas seções, vamos escrever duas funções que adicionam valores de tempo. Elas demonstram dois tipos de funções: funções puras e modificadores. Também demonstram um plano de desenvolvimento que chamarei de [protótipo e correção](06-glossario.md#protótipo-e correção), que é uma forma de atacar um problema complexo começando com um protótipo simples e lidando com as complicações de forma incremental.
+Nas próximas seções, vamos escrever duas funções que adicionam valores de tempo. Elas demonstram dois tipos de funções: funções puras e modificadores. Também demonstram um plano de desenvolvimento que chamarei de [protótipo e correção](06-glossario.md#protótipo-e-correção), que é uma forma de atacar um problema complexo começando com um protótipo simples e lidando com as complicações de forma incremental.
 
 Aqui está um protótipo simples de `add_time`:
 

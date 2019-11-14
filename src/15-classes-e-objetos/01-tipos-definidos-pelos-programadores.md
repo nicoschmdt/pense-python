@@ -23,7 +23,7 @@ class Point:
 
 O cabeçalho indica que a nova classe se chama `Point`. O corpo é uma docstring que explica para que a classe serve. Você pode definir variáveis e métodos dentro de uma definição de classe, mas voltaremos a isso depois.
 
-Definir uma classe denominada `Point` cria um [objeto de classe](08-glossario.md#objeto-de classe):
+Definir uma classe denominada `Point` cria um [objeto de classe](08-glossario.md#objeto-de-classe):
 
 ```python
 >>> Point

@@ -21,7 +21,7 @@ Na seção anterior, acrescentamos dois objetos Time, mas você também pode que
 
 A função construída isinstance recebe um valor e um objeto de classe e retorna True se o valor for uma instância da classe.
 
-Se other for um objeto Time, `__add__` invoca `add_time`. Do contrário, assume que o parâmetro seja um número e invoca increment. Essa operação chama-se [despacho por tipo](12-glossario.md#despacho-por tipo) porque despacha a operação a métodos diferentes, baseados no tipo dos argumentos.
+Se other for um objeto Time, `__add__` invoca `add_time`. Do contrário, assume que o parâmetro seja um número e invoca increment. Essa operação chama-se [despacho por tipo](12-glossario.md#despacho-por-tipo) porque despacha a operação a métodos diferentes, baseados no tipo dos argumentos.
 
 Veja exemplos que usam o operador `+` com tipos diferentes:
 

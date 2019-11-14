@@ -5,7 +5,7 @@
 ```python
 >>> greeting = 'Hello, world!'
 >>> greeting[0] = 'J'
-TypeError: 'str' object does not support [item](12-glossario.md#item) assignment
+TypeError: 'str' object does not support item assignment
 ```
 
 O “[objeto](12-glossario.md#objeto)” neste caso é a string e o “item” é o caractere que você tentou atribuir. Por enquanto, um objeto é a mesma coisa que um valor, mas refinaremos esta definição mais adiante ([Objetos e valores](../10-listas/10-objetos-e-valores.md), no capítulo 10).

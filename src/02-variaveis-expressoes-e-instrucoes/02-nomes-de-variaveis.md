@@ -6,7 +6,7 @@ Nomes de variáveis podem ser tão longos quanto você queira. Podem conter tant
 
 O caractere de sublinhar (\_) pode aparecer em um nome. Muitas vezes é usado em nomes com várias palavras, como your\_name ou airspeed\_of\_unladen\_swallow.
 
-Se você der um nome ilegal a uma variável, recebe um [erro de sintaxe](09-glossario.md#erro-de sintaxe):
+Se você der um nome ilegal a uma variável, recebe um [erro de sintaxe](09-glossario.md#erro-de-sintaxe):
 
 ```
 >>> 76trombones = 'big parade'

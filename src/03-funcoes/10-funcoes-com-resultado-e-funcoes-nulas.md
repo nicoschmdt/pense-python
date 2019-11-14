@@ -16,7 +16,7 @@ Quando você chama uma função no modo interativo, o Python exibe o resultado:
 2.2360679774997898
 ```
 
-Mas em um script, se você chamar uma [função com resultado](13-glossario.md#função-com resultado) e mais nada, o [valor de retorno](13-glossario.md#valor-de retorno) é perdido para sempre!
+Mas em um script, se você chamar uma [função com resultado](13-glossario.md#valor-de-retorno) e mais nada, o [valor de retorno](13-glossario.md#valor-de-retorno) é perdido para sempre!
 
 ```python
 math.sqrt(5)
