@@ -56,13 +56,13 @@ A tabela seguinte mostra algumas ordens de crescimento mais comuns na análise a
 
 | Ordem de crescimento | Nome                          |
 |----------------------|-------------------------------|
-| O(1)                 | constante                     |
-| O(logb n)            | logarítmica (para qualquer b) |
-| O(n)                 | linear                        |
-| O(n logb n)          | log-linear                    |
-| O(n2)                | quadrática                    |
-| O(n3)                | cúbica                        |
-| O(cn)                | exponencial (para qualquer c) |
+| \\( (1) \\)          | constante                     |
+| \\( (log_b n) \\)    | logarítmica (para qualquer b) |
+| \\( (n) \\)          | linear                        |
+| \\( (n log_b n) \\)  | log-linear                    |
+| \\( (n^2)  \\)       | quadrática                    |
+| \\( (n^3) \\)        | cúbica                        |
+| \\( O(c^n) \\)       | exponencial (para qualquer c) |
 
 Para os termos logarítmicos, a base do logaritmo não importa; a alteração de bases é o equivalente da multiplicação por uma constante, o que não altera a ordem de crescimento. De forma similar, todas as funções exponenciais pertencem à mesma ordem de crescimento, apesar da base do expoente. As funções exponenciais crescem muito rapidamente, então os algoritmos exponenciais só são úteis para pequenos problemas.
 
