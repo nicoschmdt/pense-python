@@ -14,7 +14,7 @@ def print_lyrics():
 
 Os parênteses vazios depois do nome indicam que esta função não usa argumentos.
 
-A primeira linha da definição de função chama-se [cabeçalho](13-glossario.md#cabeçalho); o resto é chamado de [corpo](13-glossario.md#corpo). O cabeçalho precisa terminar em dois pontos e o corpo precisa ser endentado. Por convenção, a endentação sempre é de quatro espaços. O corpo pode conter qualquer número de instruções.
+A primeira linha da definição de função chama-se [cabeçalho](13-glossario.md#cabeçalho); o resto é chamado de [corpo](13-glossario.md#corpo). O cabeçalho precisa terminar em dois pontos e o corpo precisa ser indentado. Por convenção, a endentação sempre é de quatro espaços. O corpo pode conter qualquer número de instruções.
 
 As strings nas instruções de exibição são limitadas por aspas duplas. As aspas simples e as aspas duplas fazem a mesma coisa; a maior parte das pessoas usa aspas simples apenas nos casos em que aspas simples (que também são apóstrofes) aparecem na string.
 

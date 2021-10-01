@@ -23,7 +23,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;A expressão booleana em uma instrução condicional que determina qual ramo deve ser executado.
 
 ##### instrução composta
-&nbsp;&nbsp;&nbsp;&nbsp;Uma instrução composta de um cabeçalho e um corpo. O cabeçalho termina em dois pontos (:). O corpo é endentado em relação ao cabeçalho.
+&nbsp;&nbsp;&nbsp;&nbsp;Uma instrução composta de um cabeçalho e um corpo. O cabeçalho termina em dois pontos (:). O corpo é indentado em relação ao cabeçalho.
 
 ##### ramo
 &nbsp;&nbsp;&nbsp;&nbsp;Uma das sequências alternativas de instruções em uma instrução condicional.

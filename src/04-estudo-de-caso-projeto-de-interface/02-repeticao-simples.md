@@ -39,7 +39,7 @@ for i in range(4):
     bob.lt(90)
 ```
 
-A sintaxe de uma instrução for é semelhante à definição de uma função. Tem um cabeçalho que termina em dois pontos e um corpo endentado. O corpo pode conter qualquer número de instruções.
+A sintaxe de uma instrução for é semelhante à definição de uma função. Tem um cabeçalho que termina em dois pontos e um corpo indentado. O corpo pode conter qualquer número de instruções.
 
 Uma instrução for também é chamada de [loop](11-glossario.md#loop) porque o fluxo da execução passa pelo corpo e depois volta ao topo. Neste caso, ele passa pelo corpo quatro vezes.
 

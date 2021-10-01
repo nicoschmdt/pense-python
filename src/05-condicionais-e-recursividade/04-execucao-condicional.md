@@ -9,7 +9,7 @@ if x > 0:
 
 A [expressão booleana](13-glossario.md#expressão-booleana) depois do if é chamada de [condição](13-glossario.md#condição). Se for verdadeira, a instrução endentada é executada. Se não, nada acontece.
 
-Instruções if têm a mesma estrutura que definições de função: um cabeçalho seguido de um corpo endentado. Instruções como essa são chamadas de instruções compostas.
+Instruções if têm a mesma estrutura que definições de função: um cabeçalho seguido de um corpo indentado. Instruções como essa são chamadas de instruções compostas.
 
 Não há limite para o número de instruções que podem aparecer no corpo, mas deve haver pelo menos uma. Ocasionalmente, é útil ter um corpo sem instruções (normalmente como um espaço reservado para código que ainda não foi escrito). Neste caso, você pode usar a instrução pass, que não faz nada.
 
